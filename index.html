@@ -1,0 +1,2162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MAT1001 期中 · 一体化复习包 · 原题+答案+解析+专题（2022/2024/2025 期中 + 2022 期末进阶）</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\(',right:'\\)',display:false}],throwOnError:false});"></script>
+<style>
+:root{
+  --bg:#f6f7f9; --panel:#ffffff; --ink:#1c2331; --ink2:#4a5568; --ink3:#718096;
+  --line:#e2e6ec; --brand:#3551c8; --brand-soft:#eef1fd; --brand-line:#d7ddfa;
+  --green:#0f7b52; --green-soft:#e8f6f0; --green-line:#c9e9dc;
+  --amber:#a1620b; --amber-soft:#fdf4e5; --amber-line:#f0dcb8;
+  --red:#b3261e; --red-soft:#fdeceb; --red-line:#f3cfcc;
+  --code:#f3f4f7;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+  font-size:15px;line-height:1.72;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1060px;margin:0 auto;padding:24px 18px 90px}
+code,kbd,pre,.mono{font-family:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace}
+h1{font-size:25px;margin:0 0 6px;letter-spacing:.2px}
+h2{font-size:19.5px;margin:34px 0 10px;padding-bottom:8px;border-bottom:2px solid var(--line)}
+h3{font-size:16px;margin:20px 0 6px}
+h4{font-size:14.5px;margin:14px 0 4px;color:var(--ink2)}
+p{margin:7px 0}
+a{color:var(--brand)}
+.hero{background:linear-gradient(135deg,#3551c8 0%,#5a3fc0 100%);color:#fff;border-radius:14px;padding:20px 22px;margin-bottom:18px}
+.hero h1{color:#fff}
+.hero p{color:#e6e9fb;margin:6px 0 0;font-size:13.5px}
+.chips{margin-top:12px;display:flex;flex-wrap:wrap;gap:7px}
+.chip{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:3px 11px;font-size:12.5px}
+.bar{position:sticky;top:0;z-index:9;background:rgba(246,247,249,.96);backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--line);padding:8px 0;margin-bottom:8px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.bar button{font:inherit;font-size:13px;padding:5px 12px;border-radius:8px;border:1px solid var(--brand-line);
+  background:#fff;color:#2b41a8;cursor:pointer}
+.bar button:hover{background:var(--brand-soft)}
+.bar .hint{font-size:12.5px;color:var(--ink3)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:12px 0}
+.card.tint{background:var(--brand-soft);border-color:var(--brand-line)}
+.card.warn{background:var(--amber-soft);border-color:var(--amber-line)}
+.card.bad{background:var(--red-soft);border-color:var(--red-line)}
+.card.good{background:var(--green-soft);border-color:var(--green-line)}
+.card.analysis{background:#fbfcff;border-color:var(--brand-line);border-left:4px solid var(--brand)}
+table{width:100%;border-collapse:collapse;background:#fff;font-size:13.8px;margin:9px 0;border-radius:9px;overflow:hidden}
+th,td{border:1px solid var(--line);padding:6px 9px;text-align:left;vertical-align:top}
+th{background:#f4f6fa;font-weight:600}
+td.k{white-space:nowrap;font-weight:600}
+.small{font-size:12.8px;color:var(--ink2)}
+.tag{display:inline-block;font-size:11.5px;padding:1px 8px;border-radius:6px;background:#eef0f5;color:var(--ink2);margin-right:5px;white-space:nowrap}
+.tag.b{background:var(--brand-soft);color:#2b41a8}
+.tag.g{background:var(--green-soft);color:var(--green)}
+.tag.a{background:var(--amber-soft);color:var(--amber)}
+.tag.r{background:var(--red-soft);color:var(--red)}
+pre{background:var(--code);border:1px solid var(--line);border-left:3px solid #b9c2d8;border-radius:8px;
+  padding:10px 12px;overflow-x:auto;font-size:13px;line-height:1.58;margin:8px 0}
+ul,ol{margin:6px 0 6px 20px;padding:0}
+li{margin:3px 0}
+hr{border:0;border-top:1px solid var(--line);margin:22px 0}
+.imgbox{background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px;margin:8px 0;overflow-x:auto;text-align:center}
+.toc{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:7px;margin:10px 0}
+.toc a{display:block;background:#fff;border:1px solid var(--line);border-radius:9px;padding:8px 11px;
+  color:var(--brand);text-decoration:none;font-size:13.5px}
+.toc a:hover{background:var(--brand-soft)}
+.toc a b{display:block;font-weight:600;font-size:12px;color:var(--ink3)}
+.anchor{scroll-margin-top:56px}
+/* 原题卡 */
+.qcard{background:#fff;border:1px solid var(--line);border-radius:11px;padding:0;margin:12px 0;overflow:hidden}
+.qcard.past{border-left:4px solid var(--brand)}
+.qcard.final{border-left:4px solid #7a3fc0}
+.qhead{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:8px 13px;background:#f7f8fb;border-bottom:1px solid var(--line)}
+.qno{font-weight:700;font-size:13.5px;color:#2b41a8}
+.qcard.final .qno{color:#7a3fc0}
+.qmeta{font-size:12px;color:var(--ink3)}
+.qbody{padding:10px 14px 4px}
+.stem{margin:0 0 6px}
+.stem-en{font-size:14.6px}
+.opts{margin:6px 0 4px;display:grid;gap:3px}
+.op{font-size:14px;padding:1px 0}
+.op b{color:#2b41a8}
+/* 折叠 */
+details{border:1px solid var(--brand-line);background:#fbfdff;border-radius:9px;margin:9px 0}
+details>.dsum{cursor:pointer;padding:7px 12px;font-size:13.3px;font-weight:600;color:#2b41a8;
+  display:flex;align-items:center;gap:7px;list-style:none;user-select:none}
+details>.dsum::-webkit-details-marker{display:none}
+details>.dsum::before{content:"▶";font-size:9px;color:#8a97b5;transition:transform .15s}
+details[open]>.dsum::before{transform:rotate(90deg)}
+details>.dsum:hover{background:var(--brand-soft);border-radius:8px}
+.dbody{padding:2px 14px 12px;border-top:1px dashed var(--brand-line)}
+details.ans{border-color:var(--green-line);background:#fbfefd}
+details.ans>.dsum{color:var(--green)}
+details.ans>.dsum:hover{background:var(--green-soft)}
+details.ans>.dbody{border-top-color:var(--green-line)}
+details.en{border-color:#c3cef6;background:#f9fbff}
+details.en>.dsum{color:#2b41a8}
+details.en>.dsum:hover{background:var(--brand-soft)}
+details.en>.dbody{border-top-color:var(--brand-line)}
+details.en ul{margin:6px 0 10px}
+details.en li{font-size:13.6px;line-height:1.72;margin:5px 0}
+.en-badge{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:.6px;color:#fff;
+  background:#2b41a8;border-radius:4px;padding:1px 6px;vertical-align:2px;margin-right:7px}
+.ans-line{background:var(--green-soft);border:1px solid var(--green-line);border-radius:8px;padding:7px 12px;margin:8px 0;font-size:14px}
+.ans-line b{color:var(--green)}
+.pt{font-size:13.5px;color:var(--ink2)}
+.pt b{color:var(--ink)}
+.err{background:var(--amber-soft);border:1px solid var(--amber-line);border-radius:8px;padding:7px 12px;margin:8px 0;font-size:13.5px}
+.err b{color:#8a5200}
+.topic{background:#fff;border:1px solid var(--line);border-radius:14px;padding:4px 16px 16px;margin:20px 0}
+.topic>h2{margin-top:14px;border-bottom-width:2px}
+.freq{font-size:12px;font-weight:400;color:var(--ink3);background:#f0f2f7;border-radius:999px;padding:2px 10px;vertical-align:2px}
+.footer{margin-top:34px;padding-top:14px;border-top:1px dashed var(--line);color:var(--ink3);font-size:12.8px}
+.katex{font-size:1.06em}
+/* 收藏 */
+.star{margin-left:auto;border:1px solid #e3e8f2;background:#fff;color:#b9902a;border-radius:7px;
+  padding:1px 8px;font-size:14px;line-height:1.6;cursor:pointer;font-family:inherit}
+.star:hover{background:#fff8e6;border-color:#e0a800}
+.star.on{background:#ffcf3f;border-color:#d99a00;color:#6b4700;font-weight:700}
+.qcard.fav{box-shadow:inset 4px 0 0 #ffcf3f,0 1px 3px rgba(0,0,0,.05)}
+.qcard.fav .qno{background:#fff3cf;border-radius:4px;padding:0 5px}
+.card.analysis.fav{border-color:#e0a800 !important;background:#fffdf5}
+body.favmode .wrap > .nothavfav{display:none}
+body.favmode section h3{display:none}
+body.favmode .card.analysis:not(.fav){display:none}
+body.favmode .qcard:not(.fav){display:none}
+body.favmode .fav-btn{background:#ffcf3f;border-color:#d99a00;color:#6b4700;font-weight:700}
+body.favmode .fav-btn .fav-badge{background:#fff;color:#8a5a00}
+.fav-badge{display:inline-block;min-width:17px;padding:0 5px;border-radius:9px;background:#ffcf3f;
+  color:#6b4700;font-weight:700;font-size:11.5px;text-align:center}
+/* 中英双版（默认英文，点「译」切中文） */
+.qcard .ver.zh{display:none}
+.qcard.zhmode .ver.en{display:none}
+.qcard.zhmode .ver.zh{display:block}
+.qcard .aver.zh{display:none}
+.qcard.zhmode .aver.en{display:none}
+.qcard.zhmode .aver.zh{display:block}
+.trbtn{border:1px solid #e3e8f2;background:#fff;color:#5a6b8c;border-radius:7px;
+  padding:1px 8px;font-size:12.5px;line-height:1.6;cursor:pointer;font-family:inherit}
+.trbtn:hover{background:#eef3ff;border-color:#2b41a8;color:#2b41a8}
+.trbtn.on{background:#2b41a8;border-color:#2b41a8;color:#fff;font-weight:600}
+.enexp{background:#eef3ff;border-left:3px solid var(--brand);border-radius:8px;
+  padding:8px 11px;margin:0 0 9px;font-size:13.2px;line-height:1.78;color:#22335c}
+.enexp .entag{display:inline-block;background:#2b41a8;color:#fff;border-radius:5px;
+  font-size:10.5px;font-weight:700;padding:1px 5px;margin-right:6px;letter-spacing:.5px}
+@media print{
+  body{background:#fff;font-size:11.5px}
+  .bar{display:none}
+  .hero{background:#fff;color:#000;border:1px solid #999}
+  .hero h1,.hero p,.hero .chip{color:#000}
+  .chip{border-color:#bbb}
+  details{border-color:#bbb}
+  details:not([open])>.dbody{display:block}
+  .card,table,pre,.qcard{break-inside:avoid}
+  .star,.trbtn{display:none !important}
+  .qcard .ver.zh{display:block !important}
+  .qcard .ver.en{display:block !important}
+  .qcard .aver.zh{display:block !important}
+  .qcard .aver.en{display:block !important}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="hero">
+  <h1>MAT1001 期中 · 一体化复习包</h1>
+  <p>原题 + 答案 + 逐步解析 + 专题分析，全部按题型聚合在一个页面里｜2022 / 2024 / 2025 三年期中真题 + 2022 期末进阶卷</p>
+  <div class="chips">
+    <span class="chip">9 个专题</span>
+    <span class="chip">48 道大题（含全部小问）</span>
+    <span class="chip">4 套真题卷</span>
+    <span class="chip">2022 期中附官方手写答案卷</span>
+    <span class="chip">答案默认折叠</span>
+    <span class="chip">每题中英双版 · 默认英文原题</span>
+    <span class="chip">每专题附中英知识点</span>
+    <span class="chip">公式 KaTeX 渲染</span>
+    <span class="chip" title="2024 / 2025 期中与 2022 期末暂无官方答案，解析为 AI 求解并经逐步验算；如与老师讲评冲突，以老师为准。" style="background:var(--amber-soft);border-color:var(--amber-line);color:#8a5200;cursor:help">⚠ 2022 期中=官方答案，其余为 AI 解析（欢迎勘误）</span>
+  </div>
+</div>
+
+<div class="bar">
+  <button onclick="setAll(true)">展开全部答案</button>
+  <button onclick="setAll(false)">全部折叠</button>
+  <button class="en-btn" id="trAllBtn" onclick="toggleAllTr()">全部切中文</button>
+  <button class="fav-btn" onclick="toggleFavMode()">★ 我的收藏 <span id="favBadge" class="fav-badge">0</span></button>
+  <span class="hint" id="barHint">每道题和每个专题右上角的 <b>★</b> 点一下即收藏；点顶部<b>「★ 我的收藏」</b>页面就只剩你收藏的题（原题 + 答案 + 解析）。答案藏在绿色的「Answer &amp; Explanation」条里 —— 先自己做一遍再点开。</span>
+</div>
+
+<div class="card tint">
+  <b>这份复习包怎么用</b>
+  <ul>
+    <li><b>按专题聚合</b>：48 道题来自 2022/2024/2025 三年期中卷 + 2022 期末卷（进阶），全部按 9 个考点专题重排。每张题卡保留试卷原始题号（如 <span class="mono">2024期中 Q6</span>），想按整卷刷就顺着题号排序看。</li>
+    <li><b>答案与解析在同卡折叠条里</b>：默认显示<b>英文原题</b>，点题卡右上角「<b>译</b>」整卡切中文（题干 + 答案解析一起换）。答案分「最终答案」+「逐步解析」+「易错点」。</li>
+    <li><b>收藏（★）</b>：点题卡或专题分析右上角的 <span class="mono">★</span> 收藏，再点顶部「★ 我的收藏」只看收藏的题（答案自动展开）。收藏存本机浏览器 localStorage，<b>换浏览器 / 清缓存会丢</b>。</li>
+    <li><b>答案可信度</b>：2022 期中题目标了 <span class="tag g">官方答案卷</span>（对照学校流出的手写答案 PDF 逐题核对）；其余三套标 <span class="tag b">AI 解析</span>，已逐步验算，但<b>没有官方答案兜底</b>，发现可疑请以老师讲评为准。</li>
+    <li><b>范围提醒</b>：2022 期末卷含积分技巧、反常积分、弧长/做功等<b>期末内容</b>，期中前刷它属于超纲进阶，量力而行。</li>
+  </ul>
+</div>
+
+<h2 id="toc-h">目录 · 专题导航</h2>
+<div class="toc">
+  <a href="#t1"><b>快答 · 判断与小题综合</b>T1 · 8 题</a>
+  <a href="#t2"><b>极限：夹逼 · 有理化 · 黎曼和</b>T2 · 6 题</a>
+  <a href="#t3"><b>求导：定义 · 隐/反函数 · 边际成本</b>T3 · 4 题</a>
+  <a href="#t4"><b>微分 · 线性化 · 牛顿法</b>T4 · 3 题</a>
+  <a href="#t5"><b>中值定理与函数性态</b>T5 · 6 题</a>
+  <a href="#t6"><b>相关变化率与最优化</b>T6 · 8 题</a>
+  <a href="#t7"><b>运动学与定积分应用</b>T7 · 8 题</a>
+  <a href="#t8"><b>积分计算 · 数值与反常积分</b>T8 · 3 题</a>
+  <a href="#t9"><b>微分方程与初值问题</b>T9 · 2 题</a>
+  <a href="#keys"><b>四套卷答案速查表</b>附录</a>
+</div>
+
+<!-- ==================== T1 ==================== -->
+<section class="topic anchor" id="t1">
+<h2>T1 · 快答：判断题与小题综合 <span class="freq">8 题</span></h2>
+
+<div class="card analysis" id="kp1" data-key="K::T1 · 判断与概念快答" data-label="T1 · 判断与概念快答" data-topic="t1" data-tname="T1 · 判断与概念快答" data-kp="IVT 夹逼 极限不等式 渐近线 线性化 εΔx Rolle 条件 拐点定义 二阶导判定 链式法则 奇偶积分 黎曼和 部分分式 斜率场">
+  <h4 style="margin-top:0">专题分析<button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这个专题的知识点">☆</button></h4>
+  <table>
+    <tr><th class="k">考什么</th><td>极限/连续的定义级判断（IVT、夹逼、极限不等号）、渐近线、线性化 \(\Delta y\approx dy\)、Rolle 定理前提、拐点与二阶导、链式法则、奇偶函数积分、黎曼和写法、部分分式、斜率场识别</td></tr>
+    <tr><th class="k">怎么识别</th><td>题干出现 True or False / No explanation required / short questions —— 不写过程，<b>但判断必须秒出</b>，靠的是把定理「条件」背熟</td></tr>
+    <tr><th class="k">易错</th><td>① 严格不等号取极限后只能保证 \(\le\)；② 夹逼要求<b>两端极限相等</b>；③ IVT 要「闭区间连续」；④ Rolle 要「区间内处处可导」，\(|x|\) 在 0 不可导就不行；⑤ \(f''(c)=0\) 不代表拐点，要<b>凹性真的改变</b>；⑥ \(f''(0)=0\) 也可以有局部极小（如 \(x^4\)）</td></tr>
+  </table>
+  <details class="en"><summary class="dsum">Key points (EN)</summary><div class="dbody">
+    <ul>
+      <li>Strict inequality \(f&lt;g\) only gives \(\lim f \le \lim g\) after taking limits.</li>
+      <li>Squeeze Theorem needs the two outer limits to be <b>equal</b>; IVT needs continuity on a <b>closed</b> interval.</li>
+      <li>Rolle's Theorem requires differentiability at <b>every</b> interior point — \(|x|\) fails at 0.</li>
+      <li>Inflection point = tangent line exists <b>and</b> concavity changes; \(f''(c)=0\) alone is not enough (\(x^4\)).</li>
+      <li>Odd integrand over a symmetric interval integrates to 0 — use it before computing anything.</li>
+    </ul>
+  </div></details>
+</div>
+
+<div class="qcard past" id="q1" data-key="P::2022期中 Q1" data-label="2022期中 Q1" data-topic="t1" data-tname="T1 · 判断与概念快答" data-kp="IVT 线性化 极限不等号 渐近线 夹逼">
+  <div class="qhead"><span class="qno">2022期中 Q1</span><span class="qmeta">判断 ×5 · 10 分</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+  <div class="qbody">
+    <div class="ver en">
+      <p class="stem stem-en">[10] True or False (in general)? No explanation is required.</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> If \(f(4)=-\pi\), \(f(8)=\sqrt{2}\), and \(f\) is differentiable everywhere, then the equation \(f(x)=0\) must have at least one solution on the interval \((4,8)\).</div>
+        <div class="op"><b>(ii)</b> Suppose that \(y=f(x)\) is increasing and differentiable on the real line. Then for any \(x\), if \(\Delta x&gt;0\) then \(\Delta y &gt; dy\).</div>
+        <div class="op"><b>(iii)</b> If \(f(x)&lt;g(x)\) for all \(x\in(-1,1)\), and the limits of \(f\) and \(g\) both exist as \(x\to 0\), then \(\lim_{x\to0}f(x)&lt;\lim_{x\to0}g(x)\).</div>
+        <div class="op"><b>(iv)</b> The function \(y=\frac{\sin x}{x}\) has a horizontal asymptote as \(x\to\infty\).</div>
+        <div class="op"><b>(v)</b> Suppose \(g(x)\le f(x)\le h(x)\) for all \(x&gt;0\), and the limits of \(g\) and \(h\) both exist as \(x\to1\). Then \(\lim_{x\to1}f(x)\) must exist.</div>
+      </div>
+    </div>
+    <div class="ver zh">
+      <p class="stem">[10] 判断对错（一般情形），无需解释。</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> 若 \(f(4)=-\pi\)、\(f(8)=\sqrt2\)，且 \(f\) 处处可导，则 \(f(x)=0\) 在 \((4,8)\) 内必有解。</div>
+        <div class="op"><b>(ii)</b> 设 \(y=f(x)\) 在实轴上递增且可导，则对任意 \(x\)，当 \(\Delta x&gt;0\) 时必有 \(\Delta y &gt; dy\)。</div>
+        <div class="op"><b>(iii)</b> 若在 \((-1,1)\) 上恒有 \(f(x)&lt;g(x)\)，且两者在 \(x\to0\) 时极限都存在，则 \(\lim_{x\to0}f(x)&lt;\lim_{x\to0}g(x)\)。</div>
+        <div class="op"><b>(iv)</b> \(y=\dfrac{\sin x}{x}\) 当 \(x\to\infty\) 时有水平渐近线。</div>
+        <div class="op"><b>(v)</b> 若 \(x&gt;0\) 时 \(g(x)\le f(x)\le h(x)\)，且 \(g,h\) 在 \(x\to1\) 时极限都存在，则 \(\lim_{x\to1}f(x)\) 必存在。</div>
+      </div>
+    </div>
+  </div>
+  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> <b>(i) T</b> (differentiable ⇒ continuous, IVT). <b>(ii) F</b> — true only for concave-up graphs. <b>(iii) F</b> — limits only preserve \(\le\). <b>(iv) T</b> — \(y\to 0\). <b>(v) F</b> — squeeze needs the outer limits <i>equal</i>.</div></div>
+    <div class="aver zh">
+    <div class="ans-line"><b>答案：(i) T　(ii) F　(iii) F　(iv) T　(v) F</b><span class="tag g">官方答案卷</span></div>
+    <p><b>(i)</b> 可导 ⇒ 连续，两端函数值一负一正，IVT 给出根。<b>(ii)</b> \(\Delta y &gt; dy\) 只在<b>凹向上</b>时成立（切线在曲线下方），凹向下时反过来。<b>(iii)</b> 严格不等号取极限后只能保证 \(\le\)：例如 \(f=-x^2,\ g=x^2\)，极限都是 0。<b>(iv)</b> \(|{\sin x}/x|\le 1/x\to 0\)，水平渐近线 \(y=0\)。<b>(v)</b> 夹逼定理要求两端极限<b>相等</b>，只「都存在」不够。</p>
+    <p class="pt"><b>知识点：</b>IVT 的前提是闭区间连续；夹逼 = 两端极限存在<b>且相等</b>；不等号经过极限会被「抹平」成等号可能。</p>
+  </div>
+  </div></details>
+</div>
+
+<div class="qcard past" id="q2" data-key="P::2022期中 Q2" data-label="2022期中 Q2" data-topic="t1" data-tname="T1 · 判断与概念快答" data-kp="间断点 可导区间 乘法法则 二阶导 商法则 振动 增量 初值问题">
+  <div class="qhead"><span class="qno">2022期中 Q2</span><span class="qmeta">简答 ×8 · 16 分</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+  <div class="qbody">
+    <div class="ver en">
+      <p class="stem stem-en">[16] Short questions: no explanation is required.</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> \(f''(x)&lt;0\) for \(x&lt;0\), \(f''(x)&gt;0\) for \(x&gt;0\), but both \(f'\) and \(f''\) fail to exist at \(x=0\), with a vertical tangent there. Which must be correct? A) local max at \(x=0\)　B) local min　C) \((0,f(0))\) is an inflection point　D) \(x=0\) is a discontinuity.</div>
+        <div class="op"><b>(ii)</b> \(f(x)=|x-3|\) is differentiable over which domain? A) \((-4,4)\)　B) \((-5,1)\)　C) \((-\infty,+\infty)\)　D) \((-1,5)\)</div>
+        <div class="op"><b>(iii)</b> Compute \(f'(x)\), where \(f(x)=x^2\sin^3(4x)\). No need to simplify.</div>
+        <div class="op"><b>(iv)</b> \(F(x)=f(x)g(x)\), \(f,g\) smooth. Express \(F''\) in terms of \(f,g\) and their derivatives.</div>
+        <div class="op"><b>(v)</b> Compute \(\dfrac{d}{dx}\dfrac{u(x)+v^2(x)}{w(x)}\) in terms of \(u,v,w,u',v',w'\).</div>
+        <div class="op"><b>(vi)</b> \(x(t)=8\sin t\) cm. Find velocity and acceleration at \(t=\frac{2\pi}{3}\).</div>
+        <div class="op"><b>(vii)</b> For (vi), in what direction is the particle moving at \(t=\frac{2\pi}{3}\)?</div>
+        <div class="op"><b>(viii)</b> Find \(y=f(x)\) for \(x&gt;0\) with \(y'=\dfrac{1+x^3}{x^2}\), \(y(2)=1\).</div>
+      </div>
+    </div>
+    <div class="ver zh">
+      <p class="stem">[16] 简答，无需解释。</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> \(f''\) 在 \(x&lt;0\) 为负、\(x&gt;0\) 为正，但 \(f',f''\) 在 \(x=0\) 都不存在且该处有竖直切线。下列<b>必定</b>正确的是？A) \(x=0\) 局部最大　B) 局部最小　C) \((0,f(0))\) 是拐点　D) \(x=0\) 不连续</div>
+        <div class="op"><b>(ii)</b> \(f(x)=|x-3|\) 在哪个区间上可导？</div>
+        <div class="op"><b>(iii)</b> 求 \(f'(x)\)，\(f(x)=x^2\sin^3(4x)\)，不必化简。</div>
+        <div class="op"><b>(iv)</b> \(F=fg\)，用 \(f,g\) 及其一、二阶导表示 \(F''\)。</div>
+        <div class="op"><b>(v)</b> 求 \(\dfrac{d}{dx}\dfrac{u+v^2}{w}\)（用 \(u,v,w\) 及其导数表示）。</div>
+        <div class="op"><b>(vi)</b> 质点 \(x(t)=8\sin t\)（cm），求 \(t=\frac{2\pi}{3}\) 时的速度与加速度。</div>
+        <div class="op"><b>(vii)</b> 承(vi)，\(t=\frac{2\pi}{3}\) 时质点向哪个方向运动？</div>
+        <div class="op"><b>(viii)</b> 求 \(x&gt;0\) 上满足 \(y'=\dfrac{1+x^3}{x^2},\ y(2)=1\) 的函数。</div>
+      </div>
+    </div>
+  </div>
+  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> (i) <b>C</b> (ii) <b>B</b> (iii) \(2x\sin^3(4x)+12x^2\sin^2(4x)\cos(4x)\) (iv) \(F''=fg''+2f'g'+f''g\) (v) \(\frac{w(u'+2vv')-(u+v^2)w'}{w^2}\) (vi) \(v=-4\) cm/s, \(a=-4\sqrt3\) cm/s² (vii) toward \(-\infty\) (leftward) (viii) \(y=-\frac1x+\frac{x^2}{2}-\frac12\).</div></div>
+    <div class="aver zh">
+    <div class="ans-line"><b>答案：(i) C　(ii) B　(iii)…(viii) 见下</b><span class="tag g">官方答案卷</span></div>
+    <p><b>(i)</b> 凹性从凹向<b>下</b>变凹向<b>上</b>，且该点连续、有切线 → 拐点，选 <b>C</b>。注意竖直切线也算切线，A/B 不保证（还需看 \(f'\) 两侧符号），D 错（有竖直切线说明连续）。<br>
+    <b>(ii)</b> 不可导点只有 \(x=3\)，不含 3 的区间才行 → <b>B</b> \((-5,1)\)。<br>
+    <b>(iii)</b> 乘法法则 + 链式：\(f'=2x\sin^3(4x)+x^2\cdot 3\sin^2(4x)\cos(4x)\cdot 4\)。<br>
+    <b>(iv)</b> 对 \(F'=f'g+fg'\) 再求导：\(F''=f''g+2f'g'+fg''\)。<br>
+    <b>(v)</b> 商法则：\(\dfrac{w\,(u'+2vv')-(u+v^2)\,w'}{w^2}\)。先算分子导数 \(u'+2vv'\) 再套商法则，一步到位。<br>
+    <b>(vi)</b> \(v=x'=8\cos t\to v(\frac{2\pi}{3})=8\times(-\frac12)=-4\) cm/s；\(a=v'=-8\sin t\to a(\frac{2\pi}{3})=-8\times\frac{\sqrt3}{2}=-4\sqrt3\) cm/s²。<br>
+    <b>(vii)</b> \(v=-4&lt;0\) → 向 \(x\) 轴负方向（向 \(-\infty\)）运动。<br>
+    <b>(viii)</b> \(y'=x^{-2}+x\Rightarrow y=-x^{-1}+\frac{x^2}{2}+C\)；\(y(2)=-\frac12+2+C=1\Rightarrow C=-\frac12\)，故 \(y=-\frac1x+\frac{x^2}{2}-\frac12\)。</p>
+    <p class="pt"><b>易错：</b>(i) 很多人看见 \(f''\) 变号就选拐点、看见竖直切线就以为间断——要按定义逐条核对；(iii) 链式法则别忘了内层 \(4x\) 的系数 4。</p>
+  </div>
+  </div></details>
+</div>
+
+<div class="qcard past" id="q3" data-key="P::2024期中 Q1" data-label="2024期中 Q1" data-topic="t1" data-tname="T1 · 判断与概念快答" data-kp="最值定理 MVT 加速度 IVT 单调函数 可积性">
+  <div class="qhead"><span class="qno">2024期中 Q1</span><span class="qmeta">判断 ×5 · 10 分</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+  <div class="qbody">
+    <div class="ver en">
+      <p class="stem stem-en">[10] True or False? No need to show intermediate steps.</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> If \(f\) is continuous on \((a,b)\) then \(f\) attains an absolute maximum value \(f(c)\) and an absolute minimum value \(f(d)\) at some numbers \(c,d\) in \((a,b)\).</div>
+        <div class="op"><b>(ii)</b> If a car's speedometer reads 30 km/h at 2:00 PM and 50 km/h at 2:10 PM, then at some moment between 2:00 and 2:10 the car's acceleration is exactly 120 km/(hour)². (Assume velocity is differentiable.)</div>
+        <div class="op"><b>(iii)</b> \(f(x)=x^3+2x+\tan x\) does not have any local maximum or minimum values.</div>
+        <div class="op"><b>(iv)</b> If \(x=1\) is a critical point of \(f\), \(f'&lt;0\) on \((0,1)\), and \(f'&gt;0\) on \((1,2)\), then \(f(1)\) is a local minimum of \(f\).</div>
+        <div class="op"><b>(v)</b> If \(f\) is continuous on \([a,b]\) except at \(c\in[a,b]\) with a finite jump, then \(\int_a^b f\,dx=\int_a^c f\,dx+\int_c^b f\,dx\) still holds.</div>
+      </div>
+    </div>
+    <div class="ver zh">
+      <p class="stem">[10] 判断对错，无需过程。</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> \(f\) 在开区间 \((a,b)\) 连续，则 \(f\) 必在 \((a,b)\) 内某点取得绝对最大值与绝对最小值。</div>
+        <div class="op"><b>(ii)</b> 汽车 2:00 时速度表读 30 km/h，2:10 时读 50 km/h，则 2:00–2:10 之间必有某时刻加速度恰为 120 km/h²（设速度可导）。</div>
+        <div class="op"><b>(iii)</b> \(f(x)=x^3+2x+\tan x\) 没有任何局部极值。</div>
+        <div class="op"><b>(iv)</b> \(x=1\) 是 \(f\) 的驻点，\(f'&lt;0\) 于 \((0,1)\)、\(f'&gt;0\) 于 \((1,2)\)，则 \(f(1)\) 是局部极小值。</div>
+        <div class="op"><b>(v)</b> \(f\) 在 \([a,b]\) 上除有限跳跃间断点 \(c\) 外连续，则 \(\int_a^b f=\int_a^c f+\int_c^b f\) 仍成立。</div>
+      </div>
+    </div>
+  </div>
+  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> <b>(i) F</b> (needs closed interval) <b>(ii) T</b> (MVT on velocity) <b>(iii) T</b> (\(f'&gt;0\) always) <b>(iv) T</b> (First Derivative Test) <b>(v) T</b> (additivity holds for integrable functions).</div></div>
+    <div class="aver zh">
+    <div class="ans-line"><b>答案：(i) F　(ii) T　(iii) T　(iv) T　(v) T</b><span class="tag b">AI 解析</span></div>
+    <p><b>(i)</b> 最值定理（Extreme Value Theorem）要求<b>闭区间</b> \([a,b]\) 连续；开区间上如 \(f(x)=x\) 就取不到。<br>
+    <b>(ii)</b> 对速度 \(v(t)\) 用 MVT：\(\dfrac{v(2{:}10)-v(2{:}00)}{1/6\text{ h}}=\dfrac{50-30}{1/6}=120\)，故某时刻 \(v'(t)=a=120\) km/h²。<br>
+    <b>(iii)</b> \(f'=3x^2+2+\sec^2x\ge 2&gt;0\) 恒成立 → 严格递增，无局部极值。<br>
+    <b>(iv)</b> 一阶导数判别法：\(f'\) 由负变正 → 局部极小，前提只是 \(f\) 在 1 连续（驻点处天然满足）。<br>
+    <b>(v)</b> 有限跳跃间断不破坏可积性，区间可加性对可积函数恒成立。</p>
+    <p class="pt"><b>易错：</b>(ii) 用的是「对 \(v\) 用 MVT」而不是对位置；(v) 别和「\(\int\) 要求连续」混淆——可积只需要有界且间断点有限。</p>
+  </div>
+  </div></details>
+</div>
+
+<div class="qcard past" id="q4" data-key="P::2024期中 Q2" data-label="2024期中 Q2" data-topic="t1" data-tname="T1 · 判断与概念快答" data-kp="可去间断 竖直渐近线 导数定义 链式法则 牛顿法 IVT">
+  <div class="qhead"><span class="qno">2024期中 Q2</span><span class="qmeta">简答 ×6 · 18 分</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+  <div class="qbody">
+    <div class="ver en">
+      <p class="stem stem-en">[18] Short questions. No need to show intermediate steps.</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> Is \(f(x)=\begin{cases}\frac{x^2-x}{x^2-1}, &amp; x\neq1\\ 1, &amp; x=1\end{cases}\) continuous at \(x=1\)? If not, state the type of discontinuity.</div>
+        <div class="op"><b>(ii)</b> Determine the vertical asymptotes of \(f(x)=\dfrac{x}{x^2-1}\).</div>
+        <div class="op"><b>(iii)</b> Give the definition of the derivative \(f'(x)\) at a point \(x\) in the domain.</div>
+        <div class="op"><b>(iv)</b> \(y=y(u)\) differentiable at \(u=1\) with \(\frac{dy}{du}=10\); \(u=u(x)\) with \(u=1\) at \(x=26\) and \(\frac{du}{dx}=2024\) there. Find \(\frac{dy}{dx}\) at \(x=26\).</div>
+        <div class="op"><b>(v)</b> Newton's method for \(f(x)=x^3-x-5=0\) with \(x_0=0\): the next estimate is (A) \(-1\)　(B) \(-5\)　(C) \(-7\)　(D) \(4\).</div>
+        <div class="op"><b>(vi)</b> \(f\) continuous, \(f(0)=-1\), \(f(2)=1\). Then: (A) \(f(x)=0\) has a unique solution　(B) \(-1&lt;f(x)&lt;1\) on \((0,2]\)　(C) \(f(1)=0\)　(D) there is at least one solution of \(f(x)=0\) in \((-1,2)\).</div>
+      </div>
+    </div>
+    <div class="ver zh">
+      <p class="stem">[18] 简答，无需过程。</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> \(f(x)=\begin{cases}\frac{x^2-x}{x^2-1}, &amp; x\neq1\\ 1, &amp; x=1\end{cases}\) 在 \(x=1\) 处连续吗？若不连续，指出间断类型。</div>
+        <div class="op"><b>(ii)</b> 求 \(f(x)=\dfrac{x}{x^2-1}\) 的竖直渐近线。</div>
+        <div class="op"><b>(iii)</b> 写出导数 \(f'(x)\) 在定义域内一点 \(x\) 处的定义。</div>
+        <div class="op"><b>(iv)</b> \(y\) 对 \(u\) 在 \(u=1\) 处可导且变化率为 10；\(u\) 对 \(x\) 可导，\(x=26\) 时 \(u=1\) 且变化率为 2024。求 \(x=26\) 时 \(y\) 对 \(x\) 的变化率。</div>
+        <div class="op"><b>(v)</b> 用牛顿法解 \(x^3-x-5=0\)，取 \(x_0=0\)，下一步估计 \(x_1=\)？</div>
+        <div class="op"><b>(vi)</b> \(f\) 连续，\(f(0)=-1\)，\(f(2)=1\)，则哪个选项正确？</div>
+      </div>
+    </div>
+  </div>
+  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> (i) not continuous; <b>removable</b> (limit \(=\frac12\neq f(1)=1\)). (ii) \(x=\pm1\). (iii) \(f'(x)=\lim_{h\to0}\frac{f(x+h)-f(x)}{h}\). (iv) \(10\times2024=20240\). (v) <b>B</b>, \(x_1=-5\). (vi) <b>D</b>.</div></div>
+    <div class="aver zh">
+    <div class="ans-line"><b>答案：(i) 不连续，可去间断　(ii) \(x=\pm1\)　(iii) 定义式见解析　(iv) 20240　(v) B　(vi) D</b><span class="tag b">AI 解析</span></div>
+    <p><b>(i)</b> \(x\to1\)：\(\dfrac{x(x-1)}{(x-1)(x+1)}=\dfrac{x}{x+1}\to\dfrac12\)，极限存在但 \(\neq f(1)=1\) → <b>可去间断点</b>。<br>
+    <b>(ii)</b> 分母 \(x^2-1=(x-1)(x+1)=0\) 且分子不为零 → \(x=\pm1\) 都是竖直渐近线。<br>
+    <b>(iii)</b> \(f'(x)=\lim\limits_{h\to0}\dfrac{f(x+h)-f(x)}{h}\)（或等价的差商形式）。<br>
+    <b>(iv)</b> 链式法则一步：\(\dfrac{dy}{dx}=\dfrac{dy}{du}\cdot\dfrac{du}{dx}=10\times2024=20240\)。<br>
+    <b>(v)</b> \(x_1=x_0-\dfrac{f(x_0)}{f'(x_0)}=0-\dfrac{-5}{3\cdot0^2-1}=0-\dfrac{-5}{-1}=-5\)，选 <b>B</b>。教训：\(x_0=0\) 恰好落在 \(f'(0)=-1\neq0\) 处但离根很远，第一跳就是 \(-5\)。<br>
+    <b>(vi)</b> IVT 给出 \((0,2)\) 内有根，\((0,2)\subset(-1,2)\)，D 对；A/B/C 都「过强」，反例随便找（如 \(f(x)=x-1\) 在 (0,1] 上取值不止 \(\pm1\) 之间？——\(f(0.5)=-0.5\in(-1,1)\)，换 \(f(x)=2(x-1)+\frac13\sin(10\pi x)\) 即可同时否掉 A/B/C）。</p>
+    <p class="pt"><b>易错：</b>(v) 牛顿法公式分子是 \(f(x_0)\)、分母是 \(f'(x_0)\)，符号别搞反；(vi) IVT 只保证「存在」，不保证「唯一」也不告诉你根在哪。</p>
+  </div>
+  </div></details>
+</div>
+
+<div class="qcard past" id="q5" data-key="P::2025期中 Q1" data-label="2025期中 Q1" data-topic="t1" data-tname="T1 · 判断与概念快答" data-kp="高阶导 极限趋势 渐近线 介值 连续性 切线 线性化 Rolle 拐点 二阶导 奇偶积分 黎曼和 牛顿法 不定积分">
+  <div class="qhead"><span class="qno">2025期中 Q1</span><span class="qmeta">小题 ×15 · 45 分</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+  <div class="qbody">
+    <div class="ver en">
+      <p class="stem stem-en">(45 points) Short Questions — NO need to show your work, NO partial credits.</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> Given \(f(t)=\cos t\), \(f^{(27)}(t)=\) (a) \(\sin t\)　(b) \(-\sin t\)　(c) \(\cos t\)　(d) \(-\cos t\).</div>
+        <div class="op"><b>(ii)</b> Rational \(f=\frac{P}{Q}\), degrees \(n\ge k\) with leading coefficients \(a_n,b_k&gt;0\). Which is correct about limits at \(\pm\infty\)? (a) if \(n=k\), \(\lim_{+\infty}f=-\lim_{-\infty}f\)　(b) if \(n&gt;k\), \(\lim_{+\infty}f=0\)　(c) if \(n&gt;k\), \(\lim_{-\infty}f=-\infty\)　(d) none.</div>
+        <div class="op"><b>(iii)</b> Find all asymptotes of \(f(x)=\dfrac{x^2+1}{x-1}\).</div>
+        <div class="op"><b>(iv)</b> T/F: \(x^3-3x+1=0\) has at least two roots in \([0,2]\).</div>
+        <div class="op"><b>(v)</b> T/F: if \((f(x))^3\) is continuous then \(f(x)\) is continuous.</div>
+        <div class="op"><b>(vi)</b> Tangent line to \(f(x)=\tan x+9\cos x\) at \(x=\pi\).</div>
+        <div class="op"><b>(vii)</b> T/F: if \(f\) is differentiable at \(x_0\), then \(f(x_0+\Delta x)-f(x_0)=f'(x_0)\Delta x+\varepsilon\Delta x\) for some \(\varepsilon\to0\) as \(\Delta x\to0\).</div>
+        <div class="op"><b>(viii)</b> \(g(x)=|x|\) on \([-1,1]\). Which is correct? (a) some \(c\) with \(g'(c)=0\) by Rolle　(b) exactly one such \(c\)　(c) Rolle fails: \(g\) not continuous at 0　(d) Rolle fails: \(g\) not differentiable on \((-1,1)\).</div>
+        <div class="op"><b>(ix)</b> T/F: if \((c,f(c))\) is an inflection point, then near \((c,f(c))\) the graph crosses the tangent line through \((c,f(c))\).</div>
+        <div class="op"><b>(x)</b> T/F: if \(f''\) exists everywhere and \(f(0)\) is a local minimum, then 0 is a critical point and \(f''(0)&gt;0\).</div>
+        <div class="op"><b>(xi)</b> \(a=\int_{-\pi/2}^{\pi/2}\frac{\sin x}{1+x^2\cos^4x}dx\), \(b=\int_{-\pi/2}^{\pi/2}(\sin^3x+\cos^4x)dx\), \(c=\int_{-\pi/2}^{\pi/2}(x^2\sin^3x-\cos^4x)dx\). Then (a) \(b&lt;c&lt;a\)　(b) \(a&lt;c&lt;b\)　(c) \(b&lt;a&lt;c\)　(d) \(c&lt;a&lt;b\).</div>
+        <div class="op"><b>(xii)</b> \(f&gt;0\) continuous on \([a,b]\). The number of roots in \((a,b)\) of \(\int_a^x f+\int_x^b f=0\) is (a) 0　(b) 1　(c) 2　(d) 3.</div>
+        <div class="op"><b>(xiii)</b> Newton's method for \(\cos x=2x\) with \(x_0=0\): the next approximation is ___.</div>
+        <div class="op"><b>(xiv)</b> Express \(\lim_{n\to\infty}\left(\frac{1}{n+1}+\frac{1}{n+2}+\cdots+\frac{1}{2n}\right)\) as a definite integral via Riemann sums (hint: \(\frac{1}{n+i}=\frac{1}{n}\cdot\frac{1}{1+i/n}\)).</div>
+        <div class="op"><b>(xv)</b> Find \(\int\left(2x(1-x^{-3})-\sec^2(2x)\right)dx\).</div>
+      </div>
+    </div>
+    <div class="ver zh">
+      <p class="stem">(45 分) 小题快答，不写过程，每小题不分步给分。</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> \(f(t)=\cos t\)，\(f^{(27)}(t)=\)？</div>
+        <div class="op"><b>(ii)</b> 有理函数 \(P/Q\)，\(a_n,b_k&gt;0\)，比较 \(\pm\infty\) 方向的极限，哪个说法对？</div>
+        <div class="op"><b>(iii)</b> 求 \(f(x)=\dfrac{x^2+1}{x-1}\) 的全部渐近线（水平/竖直/斜）。</div>
+        <div class="op"><b>(iv)</b> 判断：\(x^3-3x+1=0\) 在 \([0,2]\) 内至少有两个根。</div>
+        <div class="op"><b>(v)</b> 判断：\((f(x))^3\) 连续 \(\Rightarrow f(x)\) 连续。</div>
+        <div class="op"><b>(vi)</b> 求 \(f(x)=\tan x+9\cos x\) 在 \(x=\pi\) 处的切线。</div>
+        <div class="op"><b>(vii)</b> 判断：\(f\) 在 \(x_0\) 可导 \(\Rightarrow f(x_0+\Delta x)-f(x_0)=f'(x_0)\Delta x+\varepsilon\Delta x\)，其中 \(\varepsilon\to0\)（\(\Delta x\to0\)）。</div>
+        <div class="op"><b>(viii)</b> \(g(x)=|x|\) 于 \([-1,1]\)，Rolle 定理结论如何？</div>
+        <div class="op"><b>(ix)</b> 判断：拐点附近图线必穿过该点处的切线。</div>
+        <div class="op"><b>(x)</b> 判断：\(f''\) 处处存在且 \(f(0)\) 是局部极小 \(\Rightarrow\) 0 是驻点且 \(f''(0)&gt;0\)。</div>
+        <div class="op"><b>(xi)</b> 比较三个对称区间积分 \(a,b,c\) 的大小。</div>
+        <div class="op"><b>(xii)</b> \(f&gt;0\) 且在 \([a,b]\) 连续，方程 \(\int_a^x f+\int_x^b f=0\) 在 \((a,b)\) 内有几个根？</div>
+        <div class="op"><b>(xiii)</b> 牛顿法解 \(\cos x=2x\)，\(x_0=0\)，求下一次近似。</div>
+        <div class="op"><b>(xiv)</b> 用黎曼和把 \(\lim_{n\to\infty}\left(\frac{1}{n+1}+\cdots+\frac{1}{2n}\right)\) 写成定积分（不求值）。</div>
+        <div class="op"><b>(xv)</b> 求 \(\int\left(2x(1-x^{-3})-\sec^2(2x)\right)dx\)。</div>
+      </div>
+    </div>
+  </div>
+  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> (i) a　(ii) d　(iii) vertical \(x=1\), oblique \(y=x+1\), no horizontal　(iv) T　(v) T　(vi) \(y=x-\pi-9\)　(vii) T　(viii) d　(ix) F (see note)　(x) F　(xi) d　(xii) a　(xiii) \(x_1=\frac12\)　(xiv) \(\int_0^1\frac{dx}{1+x}\)　(xv) \(x^2+\frac{2}{x}-\frac12\tan(2x)+C\).</div></div>
+    <div class="aver zh">
+    <div class="ans-line"><b>答案：(i) a　(ii) d　(iii) \(x=1\) 竖直，\(y=x+1\) 斜，无水平　(iv) T　(v) T　(vi) \(y=x-\pi-9\)　(vii) T　(viii) d　(ix) F　(x) F　(xi) d　(xii) a　(xiii) \(x_1=\tfrac12\)　(xiv) \(\int_0^1\frac{dx}{1+x}\)　(xv) \(x^2+\frac{2}{x}-\frac12\tan2x+C\)</b><span class="tag b">AI 解析</span></div>
+    <p><b>(i)</b> 求导周期 4：\(\cos\to-\sin\to-\cos\to\sin\to\cos\)，\(27\bmod4=3\) → \(\sin t\)，选 a。<br>
+    <b>(ii)</b> \(n=k\) 时两侧极限同为 \(a_n/b_k\)（相等，不是相反）；\(n&gt;k\) 时 \(x\to+\infty\) 发散到 \(+\infty\) 而非 0；\(x\to-\infty\) 的符号取决于 \(n-k\) 的奇偶 → 三个都不对，选 <b>d</b>。<br>
+    <b>(iii)</b> \(x=1\) 竖直渐近线；带余除法 \(x^2+1=(x-1)(x+1)+2\) → \(f=x+1+\frac{2}{x-1}\)，斜渐近线 \(y=x+1\)。<br>
+    <b>(iv)</b> \(g(x)=x^3-3x+1\)：\(g(0)=1,\ g(1)=-1,\ g(2)=3\)，两次介值 → 两个根，<b>T</b>。<br>
+    <b>(v)</b> \(f=\sqrt[3]{f^3}\)，立方根连续 → \(f\) 连续，<b>T</b>。<br>
+    <b>(vi)</b> \(f(\pi)=0-9=-9\)，\(f'=\sec^2x-9\sin x\)，\(f'(\pi)=1\) → \(y=-9+(x-\pi)=x-\pi-9\)。<br>
+    <b>(vii)</b> 这正是可导的等价刻画（增量 = 微分 + 高阶无穷小），<b>T</b>。<br>
+    <b>(viii)</b> \(|x|\) 在 \(0\) 不可导，Rolle 前提（区间内处处可导）不满足 → <b>d</b>。<br>
+    <b>(ix)</b> <b>F</b>。反例 \(y=\sqrt[3]{x}\)：\((0,0)\) 是拐点、切线是竖直线 \(x=0\)，但函数图像在每个 \(x\) 只有一个点，谈不上「穿过」这条竖直切线。（补充：若切线非竖直——\(f\) 在 \(c\) 可导且两侧凹性区间式改变——则可证必穿过切线，见下方易错框。）<span class="tag a">争议：部分老师按「非竖直切线必穿过」判 T，写明理由即可</span><br>
+    <b>(x)</b> 0 确是驻点（Fermat 定理），但 \(f''(0)&gt;0\) 不必然：\(f(x)=x^4\) 有局部极小而 \(f''(0)=0\) → <b>F</b>。<br>
+    <b>(xi)</b> \(a=0\)（奇函数）；\(\int_{-\pi/2}^{\pi/2}\cos^4x\,dx=2\cdot\frac34\cdot\frac12\cdot\frac\pi2=\frac{3\pi}{8}\)，且 \(\sin^3x\)、\(x^2\sin^3x\) 都是奇函数积分为 0 → \(b=\frac{3\pi}{8}\)，\(c=-\frac{3\pi}{8}\) → \(c&lt;a&lt;b\)，选 <b>d</b>。全题<b>不用算任何积分</b>，靠奇偶性。<br>
+    <b>(xii)</b> \(\int_a^x f+\int_x^b f=\int_a^b f&gt;0\) 对一切 \(x\) 成立，方程恒不成立 → <b>0 个根</b>，选 a。<br>
+    <b>(xiii)</b> \(f=\cos x-2x\)，\(f'=-\sin x-2\)；\(x_1=0-\frac{1}{-2}=\frac12\)。<br>
+    <b>(xiv)</b> \(\frac1{n+i}=\frac1n\cdot\frac{1}{1+i/n}\)，和式即 \(f(x)=\frac{1}{1+x}\) 在 \([0,1]\) 上的右端点黎曼和 → \(\displaystyle\int_0^1\frac{dx}{1+x}\)（值是 \(\ln2\)，题目不要求）。<br>
+    <b>(xv)</b> 拆开：\(\int(2x-2x^{-2}-\sec^22x)dx=x^2+\frac{2}{x}-\frac12\tan(2x)+C\)。</p>
+    <div class="err"><b>易错集中营：</b>(xi) 别硬算——对称区间先查奇偶；(xii) 把两个积分拼成 \(\int_a^b f\) 是一步到位的关键；(ix) 是「拐点是否穿切线」的经典坑，竖直切线是反例来源。</div>
+  </div>
+  </div></details>
+</div>
+
+<div class="qcard final" id="q6" data-key="P::2022期末 Q1" data-label="2022期末 Q1" data-topic="t1" data-tname="T1 · 判断与概念快答" data-kp="大O记号 增长速度 复合函数单调性 单调判定">
+  <div class="qhead"><span class="qno">2022期末 Q1</span><span class="qmeta">判断 ×6 · 12 分 · 期末进阶</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+  <div class="qbody">
+    <div class="ver en">
+      <p class="stem stem-en">[12] True or False (in general)? For (i)–(iv), \(f,g&gt;0\) for large \(x\) and \(x\to\infty\).</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> If \(f=o(g)\), then \(f=O(g)\).</div>
+        <div class="op"><b>(ii)</b> If \(f\) and \(g\) grow at the same rate, then \(f=O(g)\) and \(g=O(f)\).</div>
+        <div class="op"><b>(iii)</b> \(\log_2 x\) grows faster than \(\log_{10} x\).</div>
+        <div class="op"><b>(iv)</b> \(\ln(\ln x)=O(\ln x)\).</div>
+        <div class="op"><b>(v)</b> If \(f,g\) are both increasing and differentiable on \((-\infty,\infty)\), then \(f\circ g\) is also increasing and differentiable on \((-\infty,\infty)\).</div>
+        <div class="op"><b>(vi)</b> \(f(x)=x-\sin x\) is increasing on \((-\infty,\infty)\).</div>
+      </div>
+    </div>
+    <div class="ver zh">
+      <p class="stem">[12] 判断对错。(i)–(iv) 中设 \(f,g\) 在 \(x\) 充分大时为正，考虑 \(x\to\infty\)。</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> \(f=o(g)\Rightarrow f=O(g)\)。</div>
+        <div class="op"><b>(ii)</b> \(f,g\) 同阶增长 \(\Rightarrow f=O(g)\) 且 \(g=O(f)\)。</div>
+        <div class="op"><b>(iii)</b> \(\log_2 x\) 比 \(\log_{10}x\) 增长快。</div>
+        <div class="op"><b>(iv)</b> \(\ln(\ln x)=O(\ln x)\)。</div>
+        <div class="op"><b>(v)</b> \(f,g\) 都在 \(\mathbb{R}\) 上递增且可导 \(\Rightarrow f\circ g\) 也递增且可导。</div>
+        <div class="op"><b>(vi)</b> \(f(x)=x-\sin x\) 在 \(\mathbb{R}\) 上递增。</div>
+      </div>
+    </div>
+  </div>
+  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> <b>(i) T (ii) T (iii) F (iv) T (v) T (vi) T</b>.</div></div>
+    <div class="aver zh">
+    <div class="ans-line"><b>答案：(i) T　(ii) T　(iii) F　(iv) T　(v) T　(vi) T</b><span class="tag b">AI 解析</span></div>
+    <p><b>(i)</b> \(f/g\to0\) 当然满足 \(|f|\le Cg\)（取 \(C=1\) 即可，充分大 \(x\) 后）。<br>
+    <b>(ii)</b> 同阶 = 比值趋于非零常数，两个方向的 \(O\) 都成立（定义）。<br>
+    <b>(iii)</b> \(\log_2x=\dfrac{\ln x}{\ln 2}\)，只差常数倍 → 同阶不分快慢，<b>F</b>。<br>
+    <b>(iv)</b> \(\dfrac{\ln\ln x}{\ln x}\to0\)（令 \(u=\ln x\)，则 \(\frac{\ln u}{u}\to0\)），比值趋于 0 当然是 \(O\)，<b>T</b>。<br>
+    <b>(v)</b> 链式法则给可导性，递增函数复合递增函数仍递增，<b>T</b>。<br>
+    <b>(vi)</b> \(f'=1-\cos x\ge0\)，只在孤立点 \(x=2k\pi\) 等于 0，不影响整体递增，<b>T</b>。</p>
+    <p class="pt"><b>知识点：</b>\(o(g)\subset O(g)\)；「同阶」是双向 \(O\)；对数换底只差常数；\(f'\ge0\) 且零点孤立 ⇒ 递增。</p>
+  </div>
+  </div></details>
+</div>
+
+<div class="qcard final" id="q7" data-key="P::2022期末 Q2" data-label="2022期末 Q2" data-topic="t1" data-tname="T1 · 判断与概念快答" data-kp="隐函数求导 反导数 指数求导 变限积分求导 部分分式">
+  <div class="qhead"><span class="qno">2022期末 Q2</span><span class="qmeta">简答 ×5 · 15 分 · 期末进阶</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+  <div class="qbody">
+    <div class="ver en">
+      <p class="stem stem-en">[15] Short Questions. No explanation is required.</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> \(x^3-3y+1=e^y\) determines \(y\) implicitly as a function of \(x\). Find \(dy/dx\) at \(x=0\) (note \((x,y)=(0,0)\) satisfies the equation).</div>
+        <div class="op"><b>(ii)</b> Fill in the blank: \(\operatorname{arccot}'(x)=\) ___. </div>
+        <div class="op"><b>(iii)</b> Find \(dy/dx\), where \(y=x^{\sqrt{x}}\).</div>
+        <div class="op"><b>(iv)</b> Find \(f'(x)\), where \(f(x)=\int_{\cos x}^{1}\sqrt{1-t^2}\,dt\).</div>
+        <div class="op"><b>(v)</b> Decompose into partial fractions: \(\dfrac{1}{(x-1)^2(x-2)}\).</div>
+      </div>
+    </div>
+    <div class="ver zh">
+      <p class="stem">[15] 简答，无需解释。</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> \(x^3-3y+1=e^y\) 隐函数确定 \(y(x)\)，求 \(x=0\) 处的 \(dy/dx\)（\((0,0)\) 在曲线上）。</div>
+        <div class="op"><b>(ii)</b> 填空：\(\operatorname{arccot}'(x)=\)___。</div>
+        <div class="op"><b>(iii)</b> 求 \(y=x^{\sqrt{x}}\) 的导数。</div>
+        <div class="op"><b>(iv)</b> 求 \(f'(x)\)，\(f(x)=\int_{\cos x}^{1}\sqrt{1-t^2}\,dt\)。</div>
+        <div class="op"><b>(v)</b> 把 \(\dfrac{1}{(x-1)^2(x-2)}\) 拆成部分分式。</div>
+      </div>
+    </div>
+  </div>
+  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> (i) \(0\)　(ii) \(-\frac{1}{1+x^2}\)　(iii) \(x^{\sqrt x}\,\frac{\ln x+2}{2\sqrt x}\)　(iv) \(\sin^2 x\) (more precisely \(\sin x\,|\sin x|\))　(v) \(-\frac{1}{x-1}-\frac{1}{(x-1)^2}+\frac{1}{x-2}\).</div></div>
+    <div class="aver zh">
+    <div class="ans-line"><b>答案：(i) \(0\)　(ii) \(-\frac{1}{1+x^2}\)　(iii) \(x^{\sqrt x}\,\frac{\ln x+2}{2\sqrt x}\)　(iv) \(\sin^2 x\)　(v) \(-\frac{1}{x-1}-\frac{1}{(x-1)^2}+\frac{1}{x-2}\)</b><span class="tag b">AI 解析</span></div>
+    <p><b>(i)</b> 两边对 \(x\) 求导：\(3x^2-3y'=e^y y'\)。代 \((0,0)\)：\(-3y'=y'\Rightarrow y'=0\)。<br>
+    <b>(ii)</b> \(\operatorname{arccot}x\) 导数是 \(\arctan\) 导数的相反数：\(-\dfrac{1}{1+x^2}\)。<br>
+    <b>(iii)</b> 指数化：\(y=e^{\sqrt x\ln x}\)，\(y'=x^{\sqrt x}\left(\dfrac{\ln x}{2\sqrt x}+\dfrac{\sqrt x}{x}\right)=x^{\sqrt x}\cdot\dfrac{\ln x+2}{2\sqrt x}\)。<br>
+    <b>(iv)</b> 变限积分求导（下限变动要加负号）：\(f'=-\sqrt{1-\cos^2x}\cdot(\cos x)'=-|\sin x|\cdot(-\sin x)=\sin x\,|\sin x|\)；在不严格追究符号的课程语境下写 \(\sin^2x\) 即可。<br>
+    <b>(v)</b> 设 \(\frac{A}{x-1}+\frac{B}{(x-1)^2}+\frac{C}{x-2}\)。代 \(x=1\Rightarrow B=-1\)；代 \(x=2\Rightarrow C=1\)；代 \(x=0\Rightarrow 1=2A-2B+C\Rightarrow A=-1\)。</p>
+    <p class="pt"><b>易错：</b>(iv) 下限在动别忘了负号；(v) 二重因子 \((x-1)^2\) 要拆成两层。</p>
+  </div>
+  </div></details>
+</div>
+
+<div class="qcard final" id="q8" data-key="P::2022期末 Q3" data-label="2022期末 Q3" data-topic="t1" data-tname="T1 · 判断与概念快答" data-kp="斜率场 等斜线 零斜线">
+  <div class="qhead"><span class="qno">2022期末 Q3</span><span class="qmeta">匹配 · 4 分 · 期末进阶</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+  <div class="qbody">
+    <div class="ver en">
+      <p class="stem stem-en">[4] Match the differential equations (1)–(4) with their slope fields (I)–(IV).<br>(1) \(y'=\sin x\sin y\)　(2) \(y'=2-y\)　(3) \(y'=x(2-y)\)　(4) \(y'=x+y-1\)</p>
+    </div>
+    <div class="ver zh">
+      <p class="stem">[4] 把微分方程 (1)–(4) 与斜率场 (I)–(IV) 配对。</p>
+    </div>
+  </div>
+  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> (1)→I　(2)→II　(3)→III　(4)→IV.</div></div>
+    <div class="aver zh">
+    <div class="ans-line"><b>答案：(1)→I　(2)→II　(3)→III　(4)→IV</b><span class="tag b">AI 解析</span></div>
+    <p><b>识别套路（不用真算）：找「零斜线」。</b><br>
+    (1) \(\sin x\sin y=0\) 沿 \(x=0,\pi,\dots\) <b>和</b> \(y=0,\pi,\dots\) 两条网格线同时水平 → 场 I（横竖都有水平段）。<br>
+    (2) \(2-y=0\) 只在 \(y=2\) 这条<b>水平线</b>上斜率为零，且同一行斜率处处相同（右边只含 \(y\)）→ 场 II（每行斜率一致）。<br>
+    (3) \(x(2-y)=0\) 沿 \(x=0\)（竖线）<b>或</b> \(y=2\)（横线）为零，左右两侧符号翻转 → 场 III。<br>
+    (4) \(x+y-1=0\) 沿<b>斜线</b> \(y=1-x\) 为零 → 场 IV（斜带状）。</p>
+    <p class="pt"><b>知识点：</b>斜率场 = 在每个格点画一小段斜率为 \(f(x,y)\) 的短线；先找 \(y'=0\) 的等斜线（零斜线）形状（横线/竖线/斜线）即可秒配。</p>
+  </div>
+  </div></details>
+</div>
+
+</section>
+
+<!-- ==================== T2 ==================== -->
+<section class="topic anchor" id="t2">
+<h2>T2 · 极限：夹逼、有理化、渐近级数与定积分形式 <span class="freq">6 题</span></h2>
+
+<div class="card analysis" id="kp2" data-key="K::T2 · 极限求值" data-label="T2 · 极限求值" data-topic="t2" data-tname="T2 · 极限求值" data-kp="两个重要极限 有理化 无穷远泰勒 tan/ap 渐近 有界量乘无穷小 黎曼和极限 立方差有理化 ∞-∞ 型 1^∞ 型">
+  <h4 style="margin-top:0">专题分析<button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这个专题的知识点">☆</button></h4>
+  <table>
+    <tr><th class="k">考什么</th><td>两个重要极限、\(\infty-\infty\) 型（根式有理化 / 倒代换）、\(0/0\) 型（拆标准极限）、有界量×无穷小（夹逼）、\(\lim(1+u)^{v}\) 型、数列和写成定积分（黎曼和）</td></tr>
+    <tr><th class="k">怎么识别</th><td>① 出现 \(\sqrt{ax^2+bx}-\sqrt{cx^2+dx}\) → 有理化；② \(x\to-\infty\) 时根号开出来带负号要小心；③ 出现 Cantor 型 \(\sin(1/x)\) → 夹逼；④ 和式分子是 \(n\)、分母二次 → 黎曼和</td></tr>
+    <tr><th class="k">易错</th><td>① \(x\to-\infty\) 时 \(\sqrt{x^2}=|x|=-x\)，别漏符号；② 二十份方法受限时（不许 L'Hôpital）必须回到标准极限 \(\sin u/u\to1\)；③ 判断「极限是否存在」要左右极限相等；④ \(1^\infty\) 型先取对数；⑤ 黎曼和的分点是 \(\frac{i}{n}\)，提取因子 \(\frac1n\)</td></tr>
+  </table>
+  <details class="en"><summary class="dsum">Key points (EN)</summary><div class="dbody">
+    <ul>
+      <li>\(\infty-\infty\) with roots: rationalize first, then divide by \(x\) (<b>careful with the sign when \(x\to-\infty\)</b>).</li>
+      <li>Only methods from Chapters 2–4 are allowed in some years: no L'Hôpital — rewrite to \(\frac{\sin u}{u}\to 1\) or \(\frac{\tan u}{u}\to1\).</li>
+      <li>Squeeze: bounded factor \(\times\) vanishing factor tends to 0.</li>
+      <li>\(1^{\infty}\): take logs, \(L=\exp(\lim v\ln(1+u))\).</li>
+      <li>Sums whose terms are \(\frac{n}{n^2+i^2}=\frac1n\cdot\frac{1}{1+(i/n)^2}\) are Riemann sums → \(\int_0^1\frac{dx}{1+x^2}\).</li>
+    </ul>
+  </div></details>
+</div>
+
+<div class="qcard past" id="q9" data-key="P::2022期中 Q4" data-label="2022期中 Q4" data-topic="t2" data-tname="T2 · 极限求值" data-kp="重要极限 sin x/x 根式有理化 负无穷符号 复合渐近">
+  <div class="qhead"><span class="qno">2022期中 Q4</span><span class="qmeta">计算 ×3 · 12 分</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+  <div class="qbody">
+    <div class="ver en">
+      <p class="stem stem-en">[12] Evaluate the following limits. <b>Use only methods and theories from Chapters 2, 3, or 4</b> in the textbook.</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> \(\displaystyle\lim_{x\to0}\frac{8x}{3\sin x-x}\)</div>
+        <div class="op"><b>(ii)</b> \(\displaystyle\lim_{x\to-\infty}\left(\sqrt{x^2+3x}-\sqrt{x^2-2x}\right)\)</div>
+        <div class="op"><b>(iii)</b> \(\displaystyle\lim_{x\to9}\frac{\sin(\sqrt x-3)}{x-9}\)</div>
+      </div>
+    </div>
+    <div class="ver zh">
+      <p class="stem">[12] 求下列极限。<b>只能用教材第 2、3、4 章的方法</b>（即不许用洛必达）。</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> \(\displaystyle\lim_{x\to0}\frac{8x}{3\sin x-x}\)</div>
+        <div class="op"><b>(ii)</b> \(\displaystyle\lim_{x\to-\infty}\left(\sqrt{x^2+3x}-\sqrt{x^2-2x}\right)\)</div>
+        <div class="op"><b>(iii)</b> \(\displaystyle\lim_{x\to9}\frac{\sin(\sqrt x-3)}{x-9}\)</div>
+      </div>
+    </div>
+  </div>
+  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> (i) <b>4</b> (ii) <b>\(-\frac52\)</b> (iii) <b>\(\frac16\)</b>.</div></div>
+    <div class="aver zh">
+    <div class="ans-line"><b>答案：(i) 4　(ii) \(-\dfrac52\)　(iii) \(\dfrac16\)</b><span class="tag g">官方答案卷</span></div>
+    <p><b>(i)</b> 分子分母同除以 \(x\)：\(\dfrac{8}{3\frac{\sin x}{x}-1}\to\dfrac{8}{3\cdot1-1}=\dfrac82=4\)。<br>
+    <b>(ii)</b> 有理化：<br>
+    \(\displaystyle\sqrt{x^2+3x}-\sqrt{x^2-2x}=\frac{(x^2+3x)-(x^2-2x)}{\sqrt{x^2+3x}+\sqrt{x^2-2x}}=\frac{5x}{\sqrt{x^2+3x}+\sqrt{x^2-2x}}\)。<br>
+    因为 \(x\to-\infty\)，\(\sqrt{x^2}=|x|=-x\)，故分母提出 \(|x|\)：\(|x|\left(\sqrt{1+\frac3x}+\sqrt{1-\frac2x}\right)\)，于是原式 \(=\dfrac{5x}{|x|\left(\sqrt{1+\frac3x}+\sqrt{1-\frac2x}\right)}=\dfrac{-5}{\sqrt{1+\frac3x}+\sqrt{1-\frac2x}}\to-\dfrac52\)。<br>
+    <b>(iii)</b> 令 \(u=\sqrt x-3\to0\)，则 \(x=(u+3)^2\)，\(x-9=u^2+6u=u(u+6)\)。<br>
+    原式 \(=\lim\dfrac{\sin u}{u(u+6)}=\lim\dfrac{\sin u}{u}\cdot\dfrac{1}{u+6}=1\cdot\dfrac16=\dfrac16\)。</p>
+    <div class="err"><b>易错：</b>(ii) 若把 \(\sqrt{x^2}\) 当 \(x\) 处理会得到 \(+\frac52\)，<b>符号正好相反</b>——这是整套卷最经典的扣分点；(iii) 别直接写成 \(\frac{\sin(\sqrt x-3)}{\sqrt x-3}\)，少了 \(\frac{\sqrt x-3}{x-9}\to\frac16\) 这一步。</div>
+  </div>
+  </div></details>
+</div>
+
+<div class="qcard past" id="q10" data-key="P::2022期中 Q11" data-label="2022期中 Q11" data-topic="t2" data-tname="T2 · 极限求值" data-kp="立方差有理化 连续性 复合极限">
+  <div class="qhead"><span class="qno">2022期中 Q11</span><span class="qmeta">5 分</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+  <div class="qbody">
+    <div class="ver en">
+      <p class="stem stem-en">[5] Suppose \(f(x)\) is continuous for \(x\in[-1,1]\) and \(f(0)=3\). Determine the value of the following limit, or explain why it does not exist:</p>
+      <p class="stem stem-en" style="text-align:center;font-size:16px">\(\displaystyle\lim_{x\to0}\frac{\sqrt[3]{1+f(x)\sin x}-1}{x}\)</p>
+    </div>
+    <div class="ver zh">
+      <p class="stem">[5] 设 \(f(x)\) 在 \([-1,1]\) 上连续且 \(f(0)=3\)。求下列极限的值，或说明它为何不存在：</p>
+      <p class="stem" style="text-align:center;font-size:16px">\(\displaystyle\lim_{x\to0}\frac{\sqrt[3]{1+f(x)\sin x}-1}{x}\)</p>
+    </div>
+  </div>
+  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> Limit \(=\mathbf{1}\). Rationalize the cube root with \(A^3-1=(A-1)(A^2+A+1)\).</div></div>
+    <div class="aver zh">
+    <div class="ans-line"><b>答案：\(1\)</b><span class="tag g">官方答案卷</span></div>
+    <p>记 \(A=\sqrt[3]{1+f(x)\sin x}\)，则 \(A^3-1=f(x)\sin x\)。用立方差公式「有理化」分子：<br>
+    \(A-1=\dfrac{A^3-1}{A^2+A+1}=\dfrac{f(x)\sin x}{A^2+A+1}\)。<br>
+    于是原式 \(=\displaystyle\lim_{x\to0}\frac{f(x)}{A^2+A+1}\cdot\frac{\sin x}{x}\)。<br>
+    由连续性 \(f(x)\to f(0)=3\)，\(\sin x\to0\) 故 \(A\to1\)，因此 \(\dfrac{f(x)}{A^2+A+1}\to\dfrac{3}{3}=1\)，\(\dfrac{\sin x}{x}\to1\)，乘起来得 <b>1</b>。</p>
+    <p class="pt"><b>知识点：</b>三次根式的「有理化」要用 \(a^3-b^3=(a-b)(a^2+ab+b^2)\) 而非共轭；这类题的关键是把 \(\frac{\sin x}{x}\) 单独分离出来。</p>
+  </div>
+  </div></details>
+</div>
+
+<div class="qcard past" id="q11" data-key="P::2024期中 Q3" data-label="2024期中 Q3" data-topic="t2" data-tname="T2 · 极限求值" data-kp="∞-∞ 根式有理化 正无穷">
+  <div class="qhead"><span class="qno">2024期中 Q3</span><span class="qmeta">6 分</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+  <div class="qbody">
+    <div class="ver en">
+      <p class="stem stem-en">[6] Find the limit \(\displaystyle\lim_{x\to\infty}\left(\sqrt{x^2+x}-\sqrt{x^2-x}\right)\).</p>
+    </div>
+    <div class="ver zh">
+      <p class="stem">[6] 求极限 \(\displaystyle\lim_{x\to\infty}\left(\sqrt{x^2+x}-\sqrt{x^2-x}\right)\)。</p>
+    </div>
+  </div>
+  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> Limit \(=\mathbf{1}\). Same rationalization as 2022 Q4(ii) but with \(x\to+\infty\), so no sign flip.</div></div>
+    <div class="aver zh">
+    <div class="ans-line"><b>答案：\(1\)</b><span class="tag b">AI 解析</span></div>
+    <p>有理化：<br>
+    \(\displaystyle\sqrt{x^2+x}-\sqrt{x^2-x}=\frac{(x^2+x)-(x^2-x)}{\sqrt{x^2+x}+\sqrt{x^2-x}}=\frac{2x}{\sqrt{x^2+x}+\sqrt{x^2-x}}\)。<br>
+    这里 \(x\to+\infty\)，\(\sqrt{x^2}=x\)，提公因子得 \(\dfrac{2x}{x\left(\sqrt{1+\frac1x}+\sqrt{1-\frac1x}\right)}=\dfrac{2}{\sqrt{1+\frac1x}+\sqrt{1-\frac1x}}\to\dfrac{2}{1+1}=1\)。</p>
+    <p class="pt"><b>和 2022 期中 Q4(ii) 对照：</b>同一道题把 \(-\infty\) 换成 \(+\infty\)，答案从 \(-\frac52\) 变成结构相同的「次数比」，<b>符号处理是唯一考点</b>。</p>
+  </div>
+  </div></details>
+</div>
+
+<div class="qcard past" id="q12" data-key="P::2024期中 Q4" data-label="2024期中 Q4" data-topic="t2" data-tname="T2 · 极限求值" data-kp="分段函数极限 参数讨论 连续性 夹逼 有界乘无穷小">
+  <div class="qhead"><span class="qno">2024期中 Q4</span><span class="qmeta">12 分 · 含参数 \(a\)</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+  <div class="qbody">
+    <div class="ver en">
+      <p class="stem stem-en">[12] Let \(a\) be a nonzero real number and \(g\) be a function satisfying \(|g(x)|\le2\) for all \(x&gt;0\). Consider</p>
+      <p class="stem stem-en" style="text-align:center;font-size:15.5px">\(f(x)=\begin{cases}\dfrac{\sin(a^2x)-x}{x}, &amp; x&lt;0,\\[4pt] a+1, &amp; x=0,\\[4pt] \cos^2\!\left(x+\dfrac{\pi}{2}\right)\,g\!\left(\dfrac1x\right), &amp; x&gt;0.\end{cases}\)</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> Find \(\lim_{x\to0^-}f(x)\) and \(\lim_{x\to0^+}f(x)\).</div>
+        <div class="op"><b>(ii)</b> Determine all possible values of \(a\) for which \(\lim_{x\to0}f(x)\) exists. What are the values of \(a\), if any, such that \(f\) is continuous at \(x=0\)?</div>
+      </div>
+    </div>
+    <div class="ver zh">
+      <p class="stem">[12] 设 \(a\neq0\)，且 \(|g(x)|\le2\)（\(x&gt;0\)）。考虑</p>
+      <p class="stem" style="text-align:center;font-size:15.5px">\(f(x)=\begin{cases}\dfrac{\sin(a^2x)-x}{x}, &amp; x&lt;0,\\[4pt] a+1, &amp; x=0,\\[4pt] \cos^2\!\left(x+\dfrac{\pi}{2}\right)\,g\!\left(\dfrac1x\right), &amp; x&gt;0.\end{cases}\)</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> 求 \(\lim_{x\to0^-}f(x)\) 与 \(\lim_{x\to0^+}f(x)\)。</div>
+        <div class="op"><b>(ii)</b> 求使 \(\lim_{x\to0}f(x)\) 存在的全部 \(a\) 值；再求使 \(f\) 在 \(x=0\) 连续的 \(a\) 值（若有）。</div>
+      </div>
+    </div>
+  </div>
+  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> (i) left \(a^2-1\), right \(0\). (ii) limit exists iff \(a=\pm1\); continuous at 0 only for \(a=-1\).</div></div>
+    <div class="aver zh">
+    <div class="ans-line"><b>答案：(i) 左极限 \(a^2-1\)，右极限 \(0\)　(ii) 极限存在 \(\Leftrightarrow a=\pm1\)；连续 \(\Leftrightarrow a=-1\)</b><span class="tag b">AI 解析</span></div>
+    <p><b>(i)</b> 左：\(\dfrac{\sin(a^2x)-x}{x}=a^2\cdot\dfrac{\sin(a^2x)}{a^2x}-1\to a^2-1\)（因 \(a\neq0\)，\(a^2x\to0\)）。<br>
+    右：\(\cos^2\left(x+\frac\pi2\right)=\sin^2x\to0\)，而 \(\left|g\left(\frac1x\right)\right|\le2\) 有界，<b>有界量 × 无穷小 = 无穷小</b> → 右极限 \(=0\)。<br>
+    <b>(ii)</b> 极限存在要求左右相等：\(a^2-1=0\Rightarrow a=\pm1\)（都满足 \(a\neq0\)）。此时极限值为 0。<br>
+    在 0 处连续还要极限值 = 函数值：\(0=f(0)=a+1\Rightarrow a=-1\)。<br>
+    所以 \(a=-1\) 时连续（因为此时 \(f(0)=0\) 与极限吻合）；\(a=1\) 时 \(f(0)=2\)，极限存在但不连续。</p>
+    <p class="pt"><b>套路：</b>三段讨论「① 左右极限 ② 极限存在 ③ 连续」——第三步必须再和 \(f(0)\) 比一次，别停在第二步。</p>
+  </div>
+  </div></details>
+</div>
+
+<div class="qcard past" id="q13" data-key="P::2025期中 Q2" data-label="2025期中 Q2" data-topic="t2" data-tname="T2 · 极限求值" data-kp="标准极限 sin/tan 平移代换 左右极限 分段 倒代换 ∞-∞">
+  <div class="qhead"><span class="qno">2025期中 Q2</span><span class="qmeta">极限 ×4 · 24 分 · 禁用洛必达</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+  <div class="qbody">
+    <div class="ver en">
+      <p class="stem stem-en">(24 points) Find each of the following limits or explain why the limit does not exist (the limit is allowed to be \(\infty\) or \(-\infty\)). <b>You are NOT allowed to use L'Hôpital's Rule</b> — no credits if you use it!</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> \(\displaystyle\lim_{x\to0}\frac{\sin(3x)}{\tan(2x)}\)</div>
+        <div class="op"><b>(ii)</b> \(\displaystyle\lim_{x\to\pi}\frac{\sin(3x)}{\tan(2x)}\)</div>
+        <div class="op"><b>(iii)</b> \(\displaystyle\lim_{x\to2}f(x)\), where \(f(x)=\begin{cases}(x-2)^4\sin\frac{1}{x-2}, &amp; x&lt;2;\\[2pt] x^2-x-6, &amp; x\ge2.\end{cases}\)</div>
+        <div class="op"><b>(iv)</b> \(\displaystyle\lim_{x\to-\infty}\left(x+\sqrt{x^2-x}\right)\)</div>
+      </div>
+    </div>
+    <div class="ver zh">
+      <p class="stem">(24 分) 求下列极限，或说明极限不存在（允许为 \(\infty\) 或 \(-\infty\)）。<b>不许用洛必达法则，用了不给分。</b></p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> \(\displaystyle\lim_{x\to0}\frac{\sin(3x)}{\tan(2x)}\)</div>
+        <div class="op"><b>(ii)</b> \(\displaystyle\lim_{x\to\pi}\frac{\sin(3x)}{\tan(2x)}\)</div>
+        <div class="op"><b>(iii)</b> \(\displaystyle\lim_{x\to2}f(x)\)，其中 \(f(x)=\begin{cases}(x-2)^4\sin\frac{1}{x-2}, &amp; x&lt;2;\\[2pt] x^2-x-6, &amp; x\ge2.\end{cases}\)</div>
+        <div class="op"><b>(iv)</b> \(\displaystyle\lim_{x\to-\infty}\left(x+\sqrt{x^2-x}\right)\)</div>
+      </div>
+    </div>
+  </div>
+  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> (i) \(\frac32\)　(ii) \(-\frac32\)　(iii) <b>does not exist</b> (left 0, right \(-4\))　(iv) \(\frac12\).</div></div>
+    <div class="aver zh">
+    <div class="ans-line"><b>答案：(i) \(\dfrac32\)　(ii) \(-\dfrac32\)　(iii) 不存在　(iv) \(\dfrac12\)</b><span class="tag b">AI 解析</span></div>
+    <p><b>(i)</b> \(\dfrac{\sin3x}{\tan2x}=\dfrac{\sin3x}{3x}\cdot\dfrac{2x}{\tan2x}\cdot\dfrac{3}{2}\to1\cdot1\cdot\dfrac32=\dfrac32\)。<br>
+    <b>(ii)</b> 令 \(u=x-\pi\to0\)：\(\sin(3x)=\sin(3u+3\pi)=-\sin3u\)，\(\tan(2x)=\tan(2u+2\pi)=\tan2u\)，故极限 \(=-\dfrac32\)。<br>
+    <b>(iii)</b> 左极限：\((x-2)^4\to0\) 且 \(\left|\sin\frac1{x-2}\right|\le1\) → 左极限 \(=0\)；右极限：\(4-2-6=-4\)。左右不等 → <b>极限不存在</b>。<br>
+    <b>(iv)</b> 令 \(t=-x\to+\infty\)：\(x+\sqrt{x^2-x}=-t+\sqrt{t^2+t}=\dfrac{(t^2+t)-t^2}{\sqrt{t^2+t}+t}=\dfrac{t}{\sqrt{t^2+t}+t}=\dfrac{1}{\sqrt{1+\frac1t}+1}\to\dfrac12\)。</p>
+    <div class="err"><b>易错：</b>(ii) 忘了周期性平移会得到 \(+\frac32\)；(iii) 左右极限并列写，别默认「有界×无穷小」能救右边（右边是多项式，直接代入）；(iv) 直接用平方根时会掉进 \(\infty-\infty\) 陷阱，<b>有理化或倒代换 t=−x 都是标准解法</b>。</div>
+  </div>
+  </div></details>
+</div>
+
+<div class="qcard final" id="q14" data-key="P::2022期末 Q8" data-label="2022期末 Q8" data-topic="t2" data-tname="T2 · 极限求值" data-kp="1^∞ 型 黎曼和 ∞^0 型 泰勒/Young 积分渐近">
+  <div class="qhead"><span class="qno">2022期末 Q8</span><span class="qmeta">极限 ×4 · 16 分 · 期末进阶</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+  <div class="qbody">
+    <div class="ver en">
+      <p class="stem stem-en">[16] Evaluate the following limits, or explain why they do not exist.</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> \(\displaystyle\lim_{x\to0^+}\left(1+\sin(4x)\right)^{\cot x}\)</div>
+        <div class="op"><b>(ii)</b> \(\displaystyle\lim_{n\to\infty}\left(\frac{n}{n^2+1^2}+\frac{n}{n^2+2^2}+\cdots+\frac{n}{n^2+(n-1)^2}+\frac{n}{n^2+n^2}\right)\)</div>
+        <div class="op"><b>(iii)</b> \(\displaystyle\lim_{x\to\infty}\left(\frac{a^x-1}{(a-1)x}\right)^{\frac1x}\), where \(a\in(0,1)\) is a constant.</div>
+        <div class="op"><b>(iv)</b> \(\displaystyle\lim_{x\to0}\frac{x-\int_0^x e^{t^2}\,dt}{x^2\sin(2x)}\)</div>
+      </div>
+    </div>
+    <div class="ver zh">
+      <p class="stem">[16] 求下列极限，或说明其不存在。</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> \(\displaystyle\lim_{x\to0^+}\left(1+\sin(4x)\right)^{\cot x}\)</div>
+        <div class="op"><b>(ii)</b> \(\displaystyle\lim_{n\to\infty}\left(\frac{n}{n^2+1^2}+\frac{n}{n^2+2^2}+\cdots+\frac{n}{n^2+(n-1)^2}+\frac{n}{n^2+n^2}\right)\)</div>
+        <div class="op"><b>(iii)</b> \(\displaystyle\lim_{x\to\infty}\left(\frac{a^x-1}{(a-1)x}\right)^{\frac1x}\)，其中常数 \(a\in(0,1)\)。</div>
+        <div class="op"><b>(iv)</b> \(\displaystyle\lim_{x\to0}\frac{x-\int_0^x e^{t^2}\,dt}{x^2\sin(2x)}\)</div>
+      </div>
+    </div>
+  </div>
+  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> (i) \(e^4\)　(ii) \(\frac{\pi}{4}\)　(iii) \(1\)　(iv) \(-\frac16\).</div></div>
+    <div class="aver zh">
+    <div class="ans-line"><b>答案：(i) \(e^4\)　(ii) \(\dfrac\pi4\)　(iii) \(1\)　(iv) \(-\dfrac16\)</b><span class="tag b">AI 解析</span></div>
+    <p><b>(i)</b> \(1^\infty\) 型，取对数。设 \(L\) 为极限，<br>
+    \(\ln L=\lim\dfrac{\cos x\,\ln(1+\sin4x)}{\sin x}=\lim\dfrac{\cos x}{1}\cdot\dfrac{\ln(1+\sin4x)}{x}\cdot\dfrac{x}{\sin x}\)。<br>
+    第二项：\(\dfrac{\ln(1+\sin4x)}{\sin4x}\to1\) 且 \(\dfrac{\sin4x}{x}\to4\)，故整体 \(\to1\cdot4\cdot1=4\)，\(L=e^4\)。<br>
+    <b>(ii)</b> 提 \(\frac1n\)：\(\dfrac{n}{n^2+k^2}=\dfrac1n\cdot\dfrac{1}{1+(k/n)^2}\)，和式 \(=\sum_{k=1}^n\dfrac1n\cdot\dfrac{1}{1+(k/n)^2}\) 是 \(f(x)=\dfrac1{1+x^2}\) 在 \([0,1]\) 上的右黎曼和，极限 \(=\displaystyle\int_0^1\frac{dx}{1+x^2}=\arctan1=\dfrac\pi4\)。<br>
+    <b>(iii)</b> 因 \(0&lt;a&lt;1\)，\(a^x\to0\)，底数 \(=\dfrac{1-a^x}{(1-a)x}\to0^+\)。取对数：<br>
+    \(\frac1x\left[\ln(1-a^x)-\ln(1-a)-\ln x\right]\to0\)（第一项分子有界、第二项常数、第三项 \(\frac{\ln x}{x}\to0\)），故 \(L=e^0=1\)。<br>
+    <b>(iv)</b> 由 \(e^{t^2}=1+t^2+O(t^4)\) 得 \(\int_0^x e^{t^2}dt=x+\dfrac{x^3}{3}+O(x^5)\)，故分子 \(=-\dfrac{x^3}{3}+O(x^5)\)；分母 \(x^2\sin2x=2x^3+O(x^5)\)。比值为 \(-\dfrac{1}{6}\)。<br>
+    <span class="small">（想绕开泰勒：把分子写成 \(-\int_0^x\frac{e^{t^2}-1}{t^2}\,t^2dt\)，用积分中值定理得它 \(\sim-\frac{x^3}{3}\)，同样得到 \(-\frac16\)。）</span></p>
+    <div class="err"><b>易错：</b>(i) 直接把 \(\sin4x\) 看成 0 得出 \(1^\infty=1\) 是错的；(iii) 底数趋于 0、指数趋于 0，属于 \(0^0\) 边上的类型，<b>必须取对数</b>才能定出 1；(iv) 分子少算一项就会得到 \(-\frac13\)。</div>
+  </div>
+  </div></details>
+</div>
+
+</section>
+
+<!-- ==================== T3 ==================== -->
+<section class="topic anchor" id="t3">
+<h2>T3 · 求导：定义、隐/反函数与边际成本 <span class="freq">4 题</span></h2>
+
+<div class="card analysis" id="kp3" data-key="K::T3 · 求导法则" data-label="T3 · 求导法则" data-topic="t3" data-tname="T3 · 求导法则" data-kp="幂/积/商/链式 隐函数求导 二阶隐导数 反函数导数 导数定义 可导必连续 平均成本 边际成本">
+  <h4 style="margin-top:0">专题分析<button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这个专题的知识点">☆</button></h4>
+  <table>
+    <tr><th class="k">考什么</th><td>四则 + 链式组合的一把梭；隐函数求一阶/二阶；反函数求导 \((f^{-1})'(y)=1/f'(x)\)；用定义判断是否可导；导数在经济学中的解释（平均成本 / 边际成本）</td></tr>
+    <tr><th class="k">怎么识别</th><td>① 题目给了难以解出的 \(y\) 方程 → 隐函数，两边对 \(x\) 求导后解 \(y'\)；② 求二阶隐导数时 <b>不要再解出 \(y'\)</b>，直接对一阶等式两边求导；③ 要求「先用单调性证反函数存在」→ 看 \(f'\) 是否恒 \(\ge0\)</td></tr>
+    <tr><th class="k">易错</th><td>① 分段函数先用<b>连续性</b>筛（不连续必不可导）；② 隐求导时 \(y\) 是 \(x\) 的函数，每一项都要乘 \(y'\)；③ 二阶隐导数里 \(y'\) 要代回已有的表达式；④ 反函数求导要<b>先解出对应的 \(x\)</b> 而不是随便代 suffer</td></tr>
+  </table>
+  <details class="en"><summary class="dsum">Key points (EN)</summary><div class="dbody">
+    <ul>
+      <li>Differentiable ⇒ continuous: check continuity first for piecewise functions — it kills most "find \(f'(c)\)" traps in one line.</li>
+      <li>Implicit differentiation: differentiate both sides treating \(y\) as \(y(x)\); collect \(y'\) terms and solve.</li>
+      <li>Second implicit derivative: differentiate the first-derivative relation again and <b>substitute the known \(y'\)</b> — do not try to solve for \(y\) explicitly.</li>
+      <li>Inverse function: \((f^{-1})'(b)=1/f'(a)\) where \(f(a)=b\); \(f^{-1}\) exists if \(f\) is one-to-one (e.g. \(f'\ge0\) and not identically zero on any subinterval).</li>
+      <li>Economics: average cost \(a=C/x\), marginal cost \(m=C'\); at the minimum of \(a\), \(a=m\).</li>
+    </ul>
+  </div></details>
+</div>
+
+<div class="qcard past" id="q15" data-key="P::2024期中 Q6" data-label="2024期中 Q6" data-topic="t3" data-tname="T3 · 求导法则" data-kp="和差法则 乘积法则 商法则 链式法则 隐函数求导">
+  <div class="qhead"><span class="qno">2024期中 Q6</span><span class="qmeta">求导 ×2 · 12 分</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+  <div class="qbody">
+    <div class="ver en">
+      <p class="stem stem-en">[12] Compute the derivative of each of the following functions.</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> \(f(x)=5\pi^2+2x\cos(2x)+\dfrac{3\tan x}{\sqrt{1+x^2}}\)</div>
+        <div class="op"><b>(ii)</b> \(y^4-4y^2=x^4-9x^2\); find \(\dfrac{dy}{dx}\) at \((x,y)=(3,2)\).</div>
+      </div>
+    </div>
+    <div class="ver zh">
+      <p class="stem">[12] 求下列函数的导数。</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> \(f(x)=5\pi^2+2x\cos(2x)+\dfrac{3\tan x}{\sqrt{1+x^2}}\)</div>
+        <div class="op"><b>(ii)</b> \(y^4-4y^2=x^4-9x^2\)，求 \((x,y)=(3,2)\) 处的 \(\dfrac{dy}{dx}\)。</div>
+      </div>
+    </div>
+  </div>
+  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> (i) \(2\cos2x-4x\sin2x+\dfrac{3\sec^2x}{\sqrt{1+x^2}}-\dfrac{3x\tan x}{(1+x^2)^{3/2}}\)　(ii) \(\dfrac{27}{8}\).</div></div>
+    <div class="aver zh">
+    <div class="ans-line"><b>答案：(i) \(2\cos2x-4x\sin2x+\dfrac{3\sec^2x}{\sqrt{1+x^2}}-\dfrac{3x\tan x}{(1+x^2)^{3/2}}\)　(ii) \(\dfrac{27}{8}\)</b><span class="tag b">AI 解析</span></div>
+    <p><b>(i)</b> 三项分别处理：<br>
+    \((5\pi^2)'=0\)（\(\pi\) 是常数，别对它求导）；<br>
+    \((2x\cos2x)'=2\cos2x+2x(-\sin2x)\cdot2=2\cos2x-4x\sin2x\)；<br>
+    \(\left(\dfrac{3\tan x}{\sqrt{1+x^2}}\right)'=3\left(\dfrac{\sec^2x}{\sqrt{1+x^2}}-\dfrac{x\tan x}{(1+x^2)^{3/2}}\right)\)（商法则 + 幂链式）。<br>
+    <b>(ii)</b> 两边对 \(x\) 求导：\(4y^3y'-8yy'=4x^3-18x\)，即 \(y'(4y^3-8y)=4x^3-18x\)。<br>
+    代 \((3,2)\)：\(y'=\dfrac{4\cdot27-18\cdot3}{4\cdot8-8\cdot2}=\dfrac{108-54}{32-16}=\dfrac{54}{16}=\dfrac{27}{8}\)。<br>
+    <span class="small">（先验证 \((3,2)\) 在曲线上：左 \(16-16=0\)，右 \(81-81=0\) ✓）</span></p>
+    <p class="pt"><b>易错：</b>(i) 最后一项的负号来自 \(\left((1+x^2)^{-1/2}\right)'=-\dfrac{x}{(1+x^2)^{3/2}}\)；(ii) 只对含 \(y\) 的项乘 \(y'\)，别忘了右侧也要对 \(x\) 求导。</p>
+  </div>
+  </div></details>
+</div>
+
+<div class="qcard past" id="q16" data-key="P::2025期中 Q3" data-label="2025期中 Q3" data-topic="t3" data-tname="T3 · 求导法则" data-kp="导数定义 分段函数连续性 乘积链式 隐函数求导 二阶隐导数">
+  <div class="qhead"><span class="qno">2025期中 Q3</span><span class="qmeta">求导 ×4 · 24 分</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+  <div class="qbody">
+    <div class="ver en">
+      <p class="stem stem-en">(24 points) Find the derivatives of the following functions or explain why the derivative does not exist.</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> \(f(x)=\begin{cases}(x-1)^2\sin\frac{1}{x-1}, &amp; x\neq1;\\[2pt] 1, &amp; x=1.\end{cases}\) Find \(f'(1)\).</div>
+        <div class="op"><b>(ii)</b> Find \(f'(2)\), where \(f\) is defined in (i).</div>
+        <div class="op"><b>(iii)</b> Let \(y^2-2x=1-2y\). Find \(\dfrac{dy}{dx}\) (in terms of \(x\) and \(y\)).</div>
+        <div class="op"><b>(iv)</b> Find \(\dfrac{d^2y}{dx^2}\), where \(y\) is defined implicitly in (iii) (in terms of \(x\) and \(y\)).</div>
+      </div>
+    </div>
+    <div class="ver zh">
+      <p class="stem">(24 分) 求下列函数的导数，或说明导数为何不存在。</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> \(f(x)=\begin{cases}(x-1)^2\sin\frac{1}{x-1}, &amp; x\neq1;\\[2pt] 1, &amp; x=1.\end{cases}\) 求 \(f'(1)\)。</div>
+        <div class="op"><b>(ii)</b> 承 (i)，求 \(f'(2)\)。</div>
+        <div class="op"><b>(iii)</b> 设 \(y^2-2x=1-2y\)，求 \(\dfrac{dy}{dx}\)（用 \(x,y\) 表示）。</div>
+        <div class="op"><b>(iv)</b> 承 (iii)，求 \(\dfrac{d^2y}{dx^2}\)（用 \(x,y\) 表示）。</div>
+      </div>
+    </div>
+  </div>
+  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> (i) does not exist (f is not continuous at 1)　(ii) \(2\sin1-\cos1\)　(iii) \(\dfrac{1}{y+1}\)　(iv) \(-\dfrac{1}{(y+1)^3}\).</div></div>
+    <div class="aver zh">
+    <div class="ans-line"><b>答案：(i) 不存在　(ii) \(2\sin1-\cos1\)　(iii) \(\dfrac{1}{y+1}\)　(iv) \(-\dfrac{1}{(y+1)^3}\)</b><span class="tag b">AI 解析</span></div>
+    <p><b>(i)</b> 先看连续性：\(\lim_{x\to1}(x-1)^2\sin\frac1{x-1}=0\)（有界×无穷小），但 \(f(1)=1\neq0\)，所以 \(f\) 在 1 处<b>不连续</b> → 不可导，\(f'(1)\) <b>不存在</b>。<br>
+    也可以写成差商：\(\dfrac{f(1+h)-f(1)}{h}=\dfrac{h^2\sin(1/h)-1}{h}=h\sin\frac1h-\dfrac1h\)，后一项发散。<br>
+    <b>(ii)</b> \(x=2\neq1\)，直接用公式：\(f'(x)=2(x-1)\sin\frac1{x-1}+(x-1)^2\cos\frac1{x-1}\cdot\left(-\dfrac{1}{(x-1)^2}\right)=2(x-1)\sin\frac1{x-1}-\cos\frac1{x-1}\)。<br>
+    代 \(x=2\)：\(f'(2)=2\sin1-\cos1\)。<br>
+    <b>(iii)</b> 两边求导：\(2yy'-2=-2y'\) → \(2y'(y+1)=2\) → \(y'=\dfrac{1}{y+1}\)。<br>
+    <b>(iv)</b> 对 \(y'=(y+1)^{-1}\) 再求导：\(y''=-(y+1)^{-2}\cdot y'=-\dfrac{1}{(y+1)^2}\cdot\dfrac{1}{y+1}=-\dfrac{1}{(y+1)^3}\)。</p>
+    <div class="err"><b>易错：</b>(i) 有相当多人看到 \((x-1)^2\sin\frac1{x-1}\) 就联想到「可导的振荡函数」直接套公式——<b>这里 \(f(1)\) 被故意设成 1 而不是 0</b>，连续性先崩了；(i) 与 (ii) 构成经典对比：<b>同一函数在断点不可导、在别处照常可导</b>。</div>
+  </div>
+  </div></details>
+</div>
+
+<div class="qcard final" id="q17" data-key="P::2022期末 Q6" data-label="2022期末 Q6" data-topic="t3" data-tname="T3 · 求导法则" data-kp="反函数 单射 单调性 反函数求导">
+  <div class="qhead"><span class="qno">2022期末 Q6</span><span class="qmeta">3+3 分 · 期末进阶</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+  <div class="qbody">
+    <div class="ver en">
+      <p class="stem stem-en">[6] Consider \(f(x)=2x^3-3x^2+4\) defined on \(D=[1,\infty)\).<br><b>(i)</b> Prove that \(f^{-1}\) exists by showing that \(f\) is injective.<br><b>(ii)</b> Find \((f^{-1})'(4)\).</p>
+    </div>
+    <div class="ver zh">
+      <p class="stem">[6] 考虑定义在 \(D=[1,\infty)\) 上的 \(f(x)=2x^3-3x^2+4\)。<br><b>(i)</b> 通过证明 \(f\) 单射来说明 \(f^{-1}\) 存在。<br><b>(ii)</b> 求 \((f^{-1})'(4)\)。</p>
+    </div>
+  </div>
+  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> (i) \(f'=6x(x-1)\ge0\) on \([1,\infty)\) and \(&gt;0\) for \(x&gt;1\) ⇒ strictly increasing ⇒ injective. (ii) \(\frac29\).</div></div>
+    <div class="aver zh">
+    <div class="ans-line"><b>答案：(i) 见证明　(ii) \(\dfrac29\)</b><span class="tag b">AI 解析</span></div>
+    <p><b>(i)</b> \(f'(x)=6x^2-6x=6x(x-1)\)。在 \([1,\infty)\) 上 \(x\ge1\Rightarrow f'(x)\ge0\)，且在 \((1,\infty)\) 上 \(f'(x)&gt;0\)，所以 \(f\) 在 \([1,\infty)\) <b>严格递增</b>（端点的 \(f'(1)=0\) 不影响严格单调）→ \(f\) 单射 → \(f^{-1}\) 存在。<br>
+    <b>(ii)</b> 先找到满足 \(f(x_0)=4\) 的点：\(2x^3-3x^2+4=4\Rightarrow x^2(2x-3)=0\Rightarrow x=0\)（不在定义域）或 \(x=\dfrac32\)。<br>
+    \(f'\left(\dfrac32\right)=6\cdot\dfrac32\cdot\left(\dfrac32-1\right)=9\cdot\dfrac12=\dfrac92\)。<br>
+    由反函数求导公式 \((f^{-1})'(4)=\dfrac{1}{f'(3/2)}=\dfrac{2}{9}\)。</p>
+    <p class="pt"><b>易错：</b>解方程得到的两个根要<b>回到定义域筛选</b>——这里 \(x=0\) 必须舍掉，否则会算成 \(1/f'(0)\)，而 \(f'(0)=0\) 甚至无法取值。</p>
+  </div>
+  </div></details>
+</div>
+
+<div class="qcard past" id="q18" data-key="P::2025期中 Q5" data-label="2025期中 Q5" data-topic="t3" data-tname="T3 · 求导法则" data-kp="平均成本 边际成本 最优化 导数经济意义">
+  <div class="qhead"><span class="qno">2025期中 Q5</span><span class="qmeta">成本模型 · 20 分</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+  <div class="qbody">
+    <div class="ver en">
+      <p class="stem stem-en">(20 points) The cost function for producing \(x\) TVs is \(C(x)=20000+150x+0.5x^2\), \(x&gt;0\).</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> Write down the average cost function \(a(x)=C(x)/x\) and the marginal cost function \(m(x)\).</div>
+        <div class="op"><b>(ii)</b> Find \(x\) that minimizes the average cost.</div>
+        <div class="op"><b>(iii)</b> Find the intersection point of the average cost curve and the marginal cost curve.</div>
+        <div class="op"><b>(iv)</b> Prove that for a general differentiable cost function, when the average cost reaches its minimum, the average cost must equal the marginal cost.</div>
+      </div>
+    </div>
+    <div class="ver zh">
+      <p class="stem">(20 分) 生产 \(x\) 台电视的成本函数为 \(C(x)=20000+150x+0.5x^2\)（\(x&gt;0\)）。</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> 写出平均成本函数 \(a(x)=C(x)/x\) 与边际成本函数 \(m(x)\)。</div>
+        <div class="op"><b>(ii)</b> 求使平均成本最小的 \(x\)。</div>
+        <div class="op"><b>(iii)</b> 求平均成本曲线与边际成本曲线的交点。</div>
+        <div class="op"><b>(iv)</b> 证明：对一般的可导成本函数，当平均成本取最小值时，平均成本必等于边际成本。</div>
+      </div>
+    </div>
+  </div>
+  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> (i) \(a(x)=\frac{20000}{x}+150+0.5x,\ m(x)=150+x\). (ii) \(x=200\). (iii) \((200,\ 350)\). (iv) \(a'(x)=\frac{xC'-C}{x^2}=0\Rightarrow C'=C/x\Rightarrow m=a\).</div></div>
+    <div class="aver zh">
+    <div class="ans-line"><b>答案：(i) \(a(x)=\dfrac{20000}{x}+150+0.5x\)，\(m(x)=150+x\)　(ii) \(x=200\)　(iii) \((200,\,350)\)　(iv) 见证明</b><span class="tag b">AI 解析</span></div>
+    <p><b>(i)</b> \(a(x)=\dfrac{C(x)}{x}=\dfrac{20000}{x}+150+0.5x\)；\(m(x)=C'(x)=150+x\)。<br>
+    <b>(ii)</b> \(a'(x)=-\dfrac{20000}{x^2}+0.5=0\Rightarrow x^2=40000\Rightarrow x=200\)（\(x&gt;0\)）。<br>
+    检验：\(a''(x)=\dfrac{40000}{x^3}&gt;0\) → 确为极小值，且 \(x\to0^+\) 与 \(x\to\infty\) 时 \(a\to\infty\)，故为全局最小。<br>
+    <b>(iii)</b> 令 \(a(x)=m(x)\)：\(\dfrac{20000}{x}+150+0.5x=150+x\Rightarrow \dfrac{20000}{x}=0.5x\Rightarrow x=200\)。<br>
+    此时公共值 \(=150+200=350\)（也是 \(a(200)=100+150+100=350\) ✓）。交点 <b>\((200,\,350)\)</b>。<br>
+    <b>(iv)</b> 一般情形：\(a(x)=\dfrac{C(x)}{x}\)，则 \(a'(x)=\dfrac{xC'(x)-C(x)}{x^2}\)。<br>
+    若 \(x^*&gt;0\) 是极小点（内点），由 Fermat 定理 \(a'(x^*)=0\)，即 \(x^*C'(x^*)=C(x^*)\)。<br>
+    两边除以 \(x^*\)：\(C'(x^*)=\dfrac{C(x^*)}{x^*}\)，左边正是边际成本 \(m(x^*)\)，右边正是平均成本 \(a(x^*)\)，故 <b>\(m(x^*)=a(x^*)\)</b>。</p>
+    <p class="pt"><b>结论要背：</b>边际成本曲线穿过平均成本曲线的<b>最低点</b>。(ii) 与 (iii) 算出同一个 \(x=200\) 不是巧合，正是 (iv) 的推论。</p>
+  </div>
+  </div></details>
+</div>
+
+</section>
+
+<!-- ==================== T4 ==================== -->
+<section class="topic anchor" id="t4">
+<h2>T4 · 微分 · 线性化 · 牛顿法 <span class="freq">3 题</span></h2>
+
+<div class="card analysis" id="kp4" data-key="K::T4 · 微分线性化牛顿法" data-label="T4 · 微分线性化牛顿法" data-topic="t4" data-tname="T4 · 微分线性化牛顿法" data-kp="微分估计 ΔV≈dV 线性化近似 牛顿法迭代 IVT 保证根存在">
+  <h4 style="margin-top:0">专题分析<button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这个专题的知识点">☆</button></h4>
+  <table>
+    <tr><th class="k">考什么</th><td>用微分 \(dy=f'(x)\,dx\) 估计尺寸变化引起的量变化；用 \(L(x)=f(a)+f'(a)(x-a)\) 做近似；牛顿法迭代 \(x_{n+1}=x_n-\dfrac{f(x_n)}{f'(x_n)}\)</td></tr>
+    <tr><th class="k">怎么识别</th><td>① 提到 thickness / estimate / differential → 找 \(dx\) 并把结果写成 \(dV,dA,dS\)；② 提到 approximate + three decimal places → 线性化；③ Newton's method + 指定 \(x_0\) → 手动算一步或两步</td></tr>
+    <tr><th class="k">易错</th><td>① 刷漆题：边长增加的是 <b>2×厚度</b>（两面各自外扩）；② 线性化中心点的 \(f'\) 别忘了 \(\arctan'x=\frac{1}{1+x^2}\)；③ 牛顿法分子是 \(f(x_0)\)、分母是 \(f'(x_0)\)，且要<b>用上一步的结果继续代入</b>算 \(x_2\)</td></tr>
+  </table>
+  <details class="en"><summary class="dsum">Key points (EN)</summary><div class="dbody">
+    <ul>
+      <li>Paint-on-a-cube: each edge grows by \(2t\) (both faces), so \(dx=2t\), \(dV=3x^2dx\).</li>
+      <li>Linearization: \(L(x)=f(a)+f'(a)(x-a)\); round only at the very end.</li>
+      <li>Newton: \(x_{n+1}=x_n-f(x_n)/f'(x_n)\). Iterate <b>with the previous result</b>, never with the original \(x_0\).</li>
+      <li>Existence of a root before applying Newton: IVT with two sample values straddling zero.</li>
+    </ul>
+  </div></details>
+</div>
+
+<div class="qcard past" id="q19" data-key="P::2022期中 Q3" data-label="2022期中 Q3" data-topic="t4" data-tname="T4 · 微分线性化牛顿法" data-kp="IVT 存在性 牛顿法迭代">
+  <div class="qhead"><span class="qno">2022期中 Q3</span><span class="qmeta">4+4 分</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+  <div class="qbody">
+    <div class="ver en">
+      <p class="stem stem-en">[8] Consider the equation \(x^3+3x+1=0\).</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> Prove that the equation has a solution \(x=c\) with \(|c|&lt;1\).</div>
+        <div class="op"><b>(ii)</b> Consider Newton's method for estimating the solution. Starting with \(x_0=0\), find \(x_1\) and \(x_2\). Express your answers in the form \(n/m\) where \(n,m\) are integers.</div>
+      </div>
+    </div>
+    <div class="ver zh">
+      <p class="stem">[8] 考虑方程 \(x^3+3x+1=0\)。</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> 证明方程存在满足 \(|c|&lt;1\) 的解 \(x=c\)。</div>
+        <div class="op"><b>(ii)</b> 用牛顿法估计该解，取初值 \(x_0=0\)，求 \(x_1\) 与 \(x_2\)，答案写成整数比 \(n/m\)。</div>
+      </div>
+    </div>
+  </div>
+  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> (i) IVT on \([-1,0]\): \(g(-1)=-3&lt;0&lt;g(0)=1\). (ii) \(x_1=-\frac13,\ x_2=-\frac{29}{90}\).</div></div>
+    <div class="aver zh">
+    <div class="ans-line"><b>答案：(i) 见证明　(ii) \(x_1=-\dfrac13\)，\(x_2=-\dfrac{29}{90}\)</b><span class="tag g">官方答案卷</span></div>
+    <p><b>(i)</b> 设 \(g(x)=x^3+3x+1\)，多项式处处连续。\(g(-1)=-1-3+1=-3&lt;0\)，\(g(0)=1&gt;0\)。由介值定理，\((-1,0)\) 内至少有一个根 \(c\)，于是 \(|c|&lt;1\)。<br>
+    <b>(ii)</b> \(g'(x)=3x^2+3\)。牛顿迭代：\(x_{n+1}=x_n-\dfrac{g(x_n)}{g'(x_n)}\)。<br>
+    \(x_1=0-\dfrac{g(0)}{g'(0)}=0-\dfrac{1}{3}=-\dfrac13\)。<br>
+    \(g\left(-\dfrac13\right)=-\dfrac1{27}-1+1=-\dfrac1{27}\)；\(g'\left(-\dfrac13\right)=3\cdot\dfrac19+3=\dfrac{10}{3}\)。<br>
+    \(x_2=-\dfrac13-\dfrac{-\frac1{27}}{\frac{10}{3}}=-\dfrac13+\dfrac{1}{27}\cdot\dfrac{3}{10}=-\dfrac13+\dfrac{1}{90}=-\dfrac{30}{90}+\dfrac{1}{90}=-\dfrac{29}{90}\)。</p>
+    <p class="pt"><b>检验：</b>\(-\frac{29}{90}\approx-0.3222\)，真根约为 \(-0.3222\)（\(g(-0.3222)\approx0\)），两步就收敛到 4 位小数，说明初值选得不错。</p>
+  </div>
+  </div></details>
+</div>
+
+<div class="qcard past" id="q20" data-key="P::2024期中 Q8" data-label="2024期中 Q8" data-topic="t4" data-tname="T4 · 微分线性化牛顿法" data-kp="微分估计 dV 幂函数 边长双倍增长">
+  <div class="qhead"><span class="qno">2024期中 Q8</span><span class="qmeta">6 分</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+  <div class="qbody">
+    <div class="ver en">
+      <p class="stem stem-en">[6] A coat of paint of thickness \(0.01\) cm is applied to the faces of a cube whose edge is \(10\) cm, thereby producing a slightly larger cube. <b>Use a differential</b> to estimate the number of cubic centimetres of paint used.</p>
+    </div>
+    <div class="ver zh">
+      <p class="stem">[6] 给一块棱长 10 cm 的正方体各面刷上厚 0.01 cm 的漆，形成一个略大的正方体。<b>用微分</b>估算用掉多少立方厘米的漆。</p>
+    </div>
+  </div>
+  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> \(\Delta V\approx dV=3s^2\,ds=3\cdot100\cdot0.02=\mathbf{6\ \text{cm}^3}\). Exact value \(10.02^3-10^3=6.012\).</div></div>
+    <div class="aver zh">
+    <div class="ans-line"><b>答案：约 \(6\ \text{cm}^3\)</b><span class="tag b">AI 解析</span></div>
+    <p>设边长 \(s=10\)，体积 \(V=s^3\)，\(dV=3s^2\,ds\)。<br>
+    <b>关键是 \(ds\)：</b>漆刷在<b>每一个面</b>上，两个相对的面各自向外推进 0.01 cm，所以总边长增加 \(ds=2\times0.01=0.02\) cm（新棱长为 10.02）。<br>
+    \(dV=3\cdot10^2\cdot0.02=3\cdot100\cdot0.02=6\) cm³。<br>
+    精确值为 \(10.02^3-10^3=1006.012008-1000=6.012008\) cm³，与微分估计相差仅 0.012 —— 符合「略大」的假设。</p>
+    <div class="err"><b>易错：</b>最常见的错误是把 \(ds\) 取成 0.01（得 3 cm³）。记住：<b>相对的两个面都要算</b>，\((1+2t)^3\approx1+6t\) 的一阶项对应的就是 \(3s^2\cdot 2t\)。</div>
+  </div>
+  </div></details>
+</div>
+
+<div class="qcard final" id="q21" data-key="P::2022期末 Q4" data-label="2022期末 Q4" data-topic="t4" data-tname="T4 · 微分线性化牛顿法" data-kp="线性化近似 arctan 导数 三位小数">
+  <div class="qhead"><span class="qno">2022期末 Q4</span><span class="qmeta">4 分 · 期末进阶</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+  <div class="qbody">
+    <div class="ver en">
+      <p class="stem stem-en">[4] Find an approximated value for \(\arctan(1.01)\) by using the standard linear approximation centred at \(x=1\). State your final answer in three decimal places.</p>
+    </div>
+    <div class="ver zh">
+      <p class="stem">[4] 用在 \(x=1\) 处的标准线性逼近求 \(\arctan(1.01)\) 的近似值，结果保留三位小数。</p>
+    </div>
+  </div>
+  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> \(\arctan(1.01)\approx\frac{\pi}{4}+\frac12(0.01)=0.7854+0.005\approx\mathbf{0.790}\).</div></div>
+    <div class="aver zh">
+    <div class="ans-line"><b>答案：\(0.790\)</b><span class="tag b">AI 解析</span></div>
+    <p>设 \(f(x)=\arctan x\)，中心点 \(a=1\)（离 1.01 最近）：<br>
+    \(f(1)=\dfrac\pi4\approx0.785398\)，\(f'(x)=\dfrac{1}{1+x^2}\Rightarrow f'(1)=\dfrac12\)。<br>
+    线性化：\(L(x)=f(1)+f'(1)(x-1)=\dfrac\pi4+\dfrac12(x-1)\)。<br>
+    代 \(x=1.01\)：\(L(1.01)=\dfrac\pi4+\dfrac12\cdot0.01=0.785398+0.005=0.790398\approx\mathbf{0.790}\)。<br>
+    <span class="small">（真实值 \(\arctan1.01\approx0.79036\)，误差约 \(4\times10^{-5}\)。）</span></p>
+    <p class="pt"><b>要点：</b>只在<b>最后一步</b>四舍五入；中间用 \(\pi/4\approx0.7854\) 参与计算也能得到 0.790，但更早取近似会引入额外误差。</p>
+  </div>
+  </div></details>
+</div>
+
+</section>
+
+<!-- ==================== T5 ==================== -->
+<section class="topic anchor" id="t5">
+<h2>T5 · 中值定理与函数性态分析 <span class="freq">6 题</span></h2>
+
+<div class="card analysis" id="kp5" data-key="K::T5 · 中值定理与函数性态" data-label="T5 · 中值定理与函数性态" data-topic="t5" data-tname="T5 · 中值定理与函数性态" data-kp="MVT 一阶导数判别法 二阶导数凹性 拐点定义 驻点 端点极值 分段函数临界点 尖点">
+  <h4 style="margin-top:0">专题分析<button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这个专题的知识点">☆</button></h4>
+  <table>
+    <tr><th class="k">考什么</th><td>用 MVT 给函数值/变化量的上界；单调区间 + 临界点分类；凹性与拐点；完整作图（极值、拐点、截距、全局最值）</td></tr>
+    <tr><th class="k">怎么识别</th><td>① 「largest possible value of \(f(b)\)」+「prove your claim using a theorem」→ MVT：\(f(b)-f(a)=f'(c)(b-a)\)；② 要求 increasing/decreasing → 解 \(f'\) 的不等式；③ 提到 sketch + 所有特征 → 列清单逐项算</td></tr>
+    <tr><th class="k">易错</th><td>① 临界点 = \(f'=0\) <b>或 \(f'\) 不存在</b>（尖点、竖直切线、分段连接点都算）；② 凹性改变才是拐点，\(f''=0\) 只是必要条件；③ 闭区间端点要单独<b>代入比较</b>求全局最值；④ 分段函数在连接点先查连续性再谈可导性</td></tr>
+  </table>
+  <details class="en"><summary class="dsum">Key points (EN)</summary><div class="dbody">
+    <ul>
+      <li>MVT bound: \(f(b)=f(a)+f'(c)(b-a)\); if \(f'\le M\) then \(f(b)\le f(a)+M(b-a)\), and equality is attained by a linear function.</li>
+      <li>Critical points include points where \(f'\) fails to exist (cusps, vertical tangents, piecewise joins).</li>
+      <li>Inflection requires an actual <b>change of concavity</b> — check the sign of \(f''\) on both sides, not just \(f''=0\).</li>
+      <li>Global extrema on a closed interval: evaluate \(f\) at all critical points <b>and endpoints</b>.</li>
+    </ul>
+  </div></details>
+</div>
+
+<div class="qcard past" id="q22" data-key="P::2022期中 Q8" data-label="2022期中 Q8" data-topic="t5" data-tname="T5 · 中值定理与函数性态" data-kp="MVT 函数值上界 构造极端例子">
+  <div class="qhead"><span class="qno">2022期中 Q8</span><span class="qmeta">4+3 分</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+  <div class="qbody">
+    <div class="ver en">
+      <p class="stem stem-en">[7] Suppose \(f\) is differentiable everywhere, with \(f(-6)=4\) and \(f'(x)\le3\) for all \(x\).</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> What is the largest possible value for \(f(0)\)? Prove your claim using a theorem in Chapter 4.</div>
+        <div class="op"><b>(ii)</b> Find an example of such \(f\) that gives the largest value of \(f(0)\).</div>
+      </div>
+    </div>
+    <div class="ver zh">
+      <p class="stem">[7] 设 \(f\) 处处可导，\(f(-6)=4\)，且对一切 \(x\) 有 \(f'(x)\le3\)。</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> \(f(0)\) 的最大可能值是多少？用第 4 章的定理证明你的结论。</div>
+        <div class="op"><b>(ii)</b> 举出一个达到该最大值的 \(f\) 的例子。</div>
+      </div>
+    </div>
+  </div>
+  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> (i) <b>22</b>, by MVT on \([-6,0]\). (ii) \(f(x)=3x+22\) (equivalently \(f(x)=4+3(x+6)\)).</div></div>
+    <div class="aver zh">
+    <div class="ans-line"><b>答案：(i) 22　(ii) \(f(x)=3x+22\)</b><span class="tag g">官方答案卷</span></div>
+    <p><b>(i)</b> 由拉格朗日中值定理，存在 \(c\in(-6,0)\) 使 \(f(0)-f(-6)=f'(c)\bigl(0-(-6)\bigr)=6f'(c)\)。<br>
+    因为 \(f'(c)\le3\)，得 \(f(0)-4\le18\)，即 \(f(0)\le22\)。所以最大可能值为 <b>22</b>。<br>
+    <b>(ii)</b> 取斜率恒等于上界的直线：\(f(x)=4+3(x+6)=3x+22\)。<br>
+    检验：\(f(-6)=-18+22=4\) ✓；\(f'(x)=3\le3\) ✓；\(f(0)=22\) ✓，恰好取到上界。</p>
+    <p class="pt"><b>知识点：</b>MVT 把「导数的界」转成「函数值的界」；取等号的例子通常是<b>斜率处处等于该界的直线</b>。</p>
+  </div>
+  </div></details>
+</div>
+
+<div class="qcard past" id="q23" data-key="P::2022期中 Q9" data-label="2022期中 Q9" data-topic="t5" data-tname="T5 · 中值定理与函数性态" data-kp="单调性 一阶导数判别法 临界点 局部极值">
+  <div class="qhead"><span class="qno">2022期中 Q9</span><span class="qmeta">4+3+3 分</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+  <div class="qbody">
+    <div class="ver en">
+      <p class="stem stem-en">[10] Let \(f(x)=\cos^2 x-2\sin x\) with domain \(D=[0,2\pi]\).</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> Find the closed interval(s) where \(f\) is strictly increasing, then those where it is strictly decreasing.</div>
+        <div class="op"><b>(ii)</b> Find all the critical points of \(f\) in the interior of \(D\).</div>
+        <div class="op"><b>(iii)</b> Identify the \(x\)-positions of all the local maxima and local minima of \(f\) in \(D\) (state whether each gives a local min or max).</div>
+      </div>
+    </div>
+    <div class="ver zh">
+      <p class="stem">[10] 设 \(f(x)=\cos^2x-2\sin x\)，定义域 \(D=[0,2\pi]\)。</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> 求 \(f\) 严格递增 / 严格递减的闭区间。</div>
+        <div class="op"><b>(ii)</b> 求 \(D\) <b>内部</b>的所有临界点。</div>
+        <div class="op"><b>(iii)</b> 指出 \(D\) 内所有局部极大值、局部极小值所在的 \(x\)（并说明是极大还是极小）。</div>
+      </div>
+    </div>
+  </div>
+  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> (i) decreasing on \([0,\frac{\pi}{2}]\) and \([\frac{3\pi}{2},2\pi]\); increasing on \([\frac{\pi}{2},\frac{3\pi}{2}]\). (ii) \(x=\frac{\pi}{2},\ \frac{3\pi}{2}\). (iii) local min at \(x=\frac{\pi}{2}\), local max at \(x=\frac{3\pi}{2}\).</div></div>
+    <div class="aver zh">
+    <div class="ans-line"><b>答案：(i) 递减 \([0,\frac\pi2]\)、\([\frac{3\pi}2,2\pi]\)；递增 \([\frac\pi2,\frac{3\pi}2]\)　(ii) \(x=\frac\pi2,\ \frac{3\pi}2\)　(iii) \(\frac\pi2\) 局部极小、\(\frac{3\pi}2\) 局部极大</b><span class="tag g">官方答案卷</span></div>
+    <p>\(f'(x)=2\cos x(-\sin x)-2\cos x=-2\cos x(\sin x+1)\)。<br>
+    在 \([0,2\pi]\) 上有 \(\sin x+1\ge0\)（只在 \(x=\frac{3\pi}2\) 取 0），所以 \(f'\) 的符号完全由 \(-\cos x\) 决定：</p>
+    <table>
+      <tr><th>区间</th><td>\((0,\frac\pi2)\)</td><td>\((\frac\pi2,\frac{3\pi}2)\)</td><td>\((\frac{3\pi}2,2\pi)\)</td></tr>
+      <tr><th>\(\cos x\)</th><td>\(+\)</td><td>\(-\)</td><td>\(+\)</td></tr>
+      <tr><th>\(f'\)</th><td>\(-\)</td><td>\(+\)</td><td>\(-\)</td></tr>
+      <tr><th>\(f\)</th><td>↘ 递减</td><td>↗ 递增</td><td>↘ 递减</td></tr>
+    </table>
+    <p><b>(ii)</b> 内部临界点（\(f'=0\)）：\(\cos x=0\Rightarrow x=\frac\pi2,\frac{3\pi}2\)；\(\sin x+1=0\Rightarrow x=\frac{3\pi}2\)（已包含）。<br>
+    <b>(iii)</b> \(f\left(\frac\pi2\right)=0-2=-2\)，\(f'\) 由负变正 → <b>局部极小</b>；\(f\left(\frac{3\pi}2\right)=0+2=2\)，\(f'\) 由正变负 → <b>局部极大</b>。<br>
+    <span class="small">补充：若把闭区间端点也算（单侧极值），\(x=0\) 与 \(x=2\pi\) 处 \(f=1\)，其中 \(x=0\) 是单侧局部极大、\(x=2\pi\) 是单侧局部极小；本题问的是 \(D\) 内的局部极值，标准答案是 \(\frac\pi2\)（小）与 \(\frac{3\pi}2\)（大）。</span></p>
+    <div class="err"><b>易错：</b>\(x=\frac{3\pi}2\) 是 \(f'\) 的<b>二重零点</b>（两个因子同时为零），但它<b>仍然是局部极大点</b>——因为 \(f'\) 在它两侧符号确实变了（+ → −）。别因为「二重根不变号」的直觉把它划掉，那套直觉对的是 \(f\) 的零点，不是 \(f'\) 的零点。</div>
+  </div>
+  </div></details>
+</div>
+
+<div class="qcard past" id="q24" data-key="P::2022期中 Q10" data-label="2022期中 Q10" data-topic="t5" data-tname="T5 · 中值定理与函数性态" data-kp="凹性 二阶导数 拐点 作图 全局最值 零点">
+  <div class="qhead"><span class="qno">2022期中 Q10</span><span class="qmeta">4+2+6 分</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+  <div class="qbody">
+    <div class="ver en">
+      <p class="stem stem-en">[12] Consider \(f(x)=x^3-6x^2+6x\) on \([0,\infty)\).</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> Find all interval(s) where \(f\) is concave up, then those where it is concave down (you may include endpoints).</div>
+        <div class="op"><b>(ii)</b> Find all inflection points (state their \(x\)-coordinates).</div>
+        <div class="op"><b>(iii)</b> Sketch the graph \(y=f(x)\). Indicate: concavity, the \(x\)-positions of all local and global extrema, and the \(x\)-intercepts. For each extremum, indicate its type.</div>
+      </div>
+    </div>
+    <div class="ver zh">
+      <p class="stem">[12] 考虑 \([0,\infty)\) 上的 \(f(x)=x^3-6x^2+6x\)。</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> 求凹向上 / 凹向下的区间（端点可含）。</div>
+        <div class="op"><b>(ii)</b> 求所有拐点（指出 \(x\) 坐标）。</div>
+        <div class="op"><b>(iii)</b> 作 \(y=f(x)\) 草图，标出：凹凸性、所有局部/全局极值所在的 \(x\)、\(x\) 轴截距，并注明每个极值的类型。</div>
+      </div>
+    </div>
+  </div>
+  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> (i) concave down on \([0,2]\), up on \([2,\infty)\). (ii) \(x=2\). (iii) local max at \(x=2-\sqrt2\); local <b>and global</b> min at \(x=2+\sqrt2\); no global max; \(x\)-intercepts at \(0,\ 3\pm\sqrt3\).</div></div>
+    <div class="aver zh">
+    <div class="ans-line"><b>答案：(i) 凹向下 \([0,2]\)，凹向上 \([2,\infty)\)　(ii) \(x=2\)　(iii) 局部极大 \(x=2-\sqrt2\)；局部且全局极小 \(x=2+\sqrt2\)；无全局极大；\(x\) 截距 \(0,\,3\pm\sqrt3\)</b><span class="tag g">官方答案卷</span></div>
+    <p>\(f'(x)=3x^2-12x+6=3(x^2-4x+2)\Rightarrow\) 驻点 \(x=2\pm\sqrt2\)。<br>
+    \(f''(x)=6x-12=6(x-2)\)。<br>
+    <b>(i)</b> \(f''&lt;0\) 于 \([0,2)\)（凹向下），\(f''&gt;0\) 于 \((2,\infty)\)（凹向上）。<br>
+    <b>(ii)</b> 在 \(x=2\) 处凹性改变且函数连续 → 拐点，坐标为 \((2,\,f(2))=(2,\,-4)\)。<br>
+    <b>(iii)</b> 由一阶导符号：\([0,2-\sqrt2]\) 递增、\([2-\sqrt2,2+\sqrt2]\) 递减、\([2+\sqrt2,\infty)\) 递增。</p>
+    <table>
+      <tr><th>项目</th><th>结果</th></tr>
+      <tr><td class="k">局部极大</td><td>\(x=2-\sqrt2\approx0.586\)，值 \(f=-4+4\sqrt2\approx1.657\)（非全局，因 \(f\to\infty\)）</td></tr>
+      <tr><td class="k">局部极小</td><td>\(x=2+\sqrt2\approx3.414\)，值 \(f=-4-4\sqrt2\approx-9.657\)，<b>也是全局极小</b></td></tr>
+      <tr><td class="k">全局极大</td><td><b>不存在</b>（\(x\to\infty\) 时 \(f\to\infty\)）</td></tr>
+      <tr><td class="k">\(x\) 截距</td><td>\(x(x^2-6x+6)=0\Rightarrow x=0,\ 3\pm\sqrt3\approx0,\ 1.268,\ 4.732\)</td></tr>
+      <tr><td class="k">拐点</td><td>\((2,-4)\)</td></tr>
+    </table>
+    <p class="pt"><b>草图要点：</b>从 \((0,0)\) 上升→局部极大→下降穿过 \(x=1.268\)→继续降到全局最低点→上升穿过 \(x=4.732\)→趋于 \(\infty\)；在 \(x=2\) 附近由凹向下转为凹向上。</p>
+  </div>
+  </div></details>
+</div>
+
+<div class="qcard past" id="q25" data-key="P::2024期中 Q9" data-label="2024期中 Q9" data-topic="t5" data-tname="T5 · 中值定理与函数性态" data-kp="分段函数 临界点 竖直切线 拐点 凹性变化">
+  <div class="qhead"><span class="qno">2024期中 Q9</span><span class="qmeta">12 分 · 分段函数</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+  <div class="qbody">
+    <div class="ver en">
+      <p class="stem stem-en">[12] Consider the function \(f(x)=\begin{cases}x^6-3x^4, &amp; x&lt;1;\\[2pt] -\bigl(\sqrt{x-1}+2\bigr), &amp; x\ge1.\end{cases}\)</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> Find all critical points of \(f\).</div>
+        <div class="op"><b>(ii)</b> Find all inflection points of \(f\).</div>
+      </div>
+    </div>
+    <div class="ver zh">
+      <p class="stem">[12] 考虑 \(f(x)=\begin{cases}x^6-3x^4, &amp; x&lt;1;\\[2pt] -\bigl(\sqrt{x-1}+2\bigr), &amp; x\ge1.\end{cases}\)</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> 求 \(f\) 的全部临界点。</div>
+        <div class="op"><b>(ii)</b> 求 \(f\) 的全部拐点。</div>
+      </div>
+    </div>
+  </div>
+  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> (i) \(x=-\sqrt2,\ 0,\ 1\) (note \(x=\sqrt2\) is outside the branch). (ii) \(x=-\sqrt{\frac65}\) and \(x=1\).</div></div>
+    <div class="aver zh">
+    <div class="ans-line"><b>答案：(i) \(x=-\sqrt2,\ 0,\ 1\)　(ii) \(x=-\sqrt{\dfrac65}\) 与 \(x=1\)</b><span class="tag b">AI 解析</span></div>
+    <p><b>左支 (\(x&lt;1\))：</b>\(f=x^6-3x^4\)，\(f'=6x^5-12x^3=6x^3(x^2-2)\)，\(f''=30x^4-36x^2=6x^2(5x^2-6)\)。<br>
+    <b>右支 (\(x&gt;1\))：</b>\(f=-(x-1)^{1/2}-2\)，\(f'=-\tfrac12(x-1)^{-1/2}&lt;0\)，\(f''=\tfrac14(x-1)^{-3/2}&gt;0\)。<br>
+    <b>连接点：</b>\(f(1^-)=1-3=-2\)，\(f(1^+)=-(0+2)=-2\)，相等 → <b>在 \(x=1\) 连续</b>；但 \(f'(1^-)=6(1-2)=-6\)，而 \(f'(1^+)=-\infty\) → \(x=1\) <b>不可导</b>（右侧竖直切线）。</p>
+    <p><b>(i) 临界点：</b>左支 \(f'=0\Rightarrow x=0,\ \pm\sqrt2\)，其中 \(\sqrt2&gt;1\) <b>不属于该支，必须舍去</b>；右支无零点；连接点 \(x=1\) 因不可导而成为临界点。故 <b>\(x=-\sqrt2,\ 0,\ 1\)</b>。<br>
+    <b>(ii) 拐点：</b>左支 \(f''=0\Rightarrow x=0,\ \pm\sqrt{6/5}\)。<br>
+    　· \(x=0\)：两侧 \(f''=6x^2(5x^2-6)&lt;0\)（同号，\(x^2\ge0\) 且 \(5x^2-6&lt;0\)）→ <b>不是拐点</b>；<br>
+    　· \(x=+\sqrt{6/5}\approx1.095&gt;1\) 不在该支，舍去；<br>
+    　· \(x=-\sqrt{6/5}\)：左侧 \(f''&gt;0\)、右侧 \(f''&lt;0\) → <b>是拐点</b>，坐标 \(\left(-\sqrt{\frac65},\,-\frac{324}{125}\right)\)；<br>
+    　· \(x=1\)：左侧凹向下、右侧凹向上，且该点连续、有切线（竖直切线）→ 按 Thomas 教材定义<b>是拐点</b>，坐标 \((1,-2)\)。</p>
+    <div class="err"><b>易错三连：</b>① 别忘了 \(\sqrt2\) 要按<b>所属分支的定义域</b>筛选；② \(x=0\) 处 \(f''=0\) 但凹性不变号，<b>不是</b>拐点（这是最常见的送分项）；③ \(x=1\) 两侧凹性确实反了，可按教材判为拐点，理由要写明「该点连续且存在（竖直）切线」。</div>
+  </div>
+  </div></details>
+</div>
+
+<div class="qcard past" id="q26" data-key="P::2025期中 Q7" data-label="2025期中 Q7" data-topic="t5" data-tname="T5 · 中值定理与函数性态" data-kp="分数次幂 尖点 临界点 单调性 全局最值 凹性 拐点判别">
+  <div class="qhead"><span class="qno">2025期中 Q7</span><span class="qmeta">25 分 · 大综合</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+  <div class="qbody">
+    <div class="ver en">
+      <p class="stem stem-en">(25 points) Let \(f(x)=(x-2)^{2/3}-(x-2)\) on \([0,4]\).</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> Find all critical points in \([0,4]\).　<b>(ii)</b> Determine the intervals of increase/decrease.</div>
+        <div class="op"><b>(iii)</b> Determine all locations (\(x\)-coordinates) of local maxima (possibly including endpoints).</div>
+        <div class="op"><b>(iv)</b> Compute the global/absolute maximum value of \(f\) on \([0,4]\) and where it occurs.　<b>(v)</b> Find the intervals of concavity.</div>
+        <div class="op"><b>(vi)</b> Does \(f(x)\) have an inflection point?</div>
+      </div>
+    </div>
+    <div class="ver zh">
+      <p class="stem">(25 分) 设 \(f(x)=(x-2)^{2/3}-(x-2)\) 定义在 \([0,4]\) 上。</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> 求 \([0,4]\) 内所有临界点。　<b>(ii)</b> 求增减区间。</div>
+        <div class="op"><b>(iii)</b> 求所有局部极大值所在位置（可含端点）。</div>
+        <div class="op"><b>(iv)</b> 求 \([0,4]\) 上的全局最大值及取得位置。　<b>(v)</b> 求凹凸区间。</div>
+        <div class="op"><b>(vi)</b> \(f(x)\) 是否有拐点？</div>
+      </div>
+    </div>
+  </div>
+  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> (i) \(x=2,\ \frac{62}{27}\). (ii) decreasing on \([0,2]\) and \([\frac{62}{27},4]\), increasing on \([2,\frac{62}{27}]\). (iii) \(x=0\) and \(x=\frac{62}{27}\). (iv) \(2+2^{2/3}\) at \(x=0\). (v) concave down everywhere; (vi) <b>no</b> inflection point.</div></div>
+    <div class="aver zh">
+    <div class="ans-line"><b>答案：(i) \(x=2,\ \frac{62}{27}\)　(ii) 递减 \([0,2]\)、\([\frac{62}{27},4]\)；递增 \([2,\frac{62}{27}]\)　(iii) \(x=0,\ \frac{62}{27}\)　(iv) 最大值 \(2+2^{2/3}\)，在 \(x=0\) 处　(v) 处处凹向下　(vi) 无拐点</b><span class="tag b">AI 解析</span></div>
+    <p>\(f'(x)=\dfrac23(x-2)^{-1/3}-1\)（\(x\neq2\)）；\(f''(x)=\dfrac23\cdot\left(-\dfrac13\right)(x-2)^{-4/3}=-\dfrac{2}{9}(x-2)^{-4/3}\)（\(x\neq2\)）。<br>
+    <b>(i)</b> \(f'=0\)：\(\dfrac23(x-2)^{-1/3}=1\Rightarrow (x-2)^{1/3}=\dfrac23\Rightarrow x-2=\dfrac{8}{27}\Rightarrow x=\dfrac{62}{27}\approx2.296\)。<br>
+    另外 \(x=2\) 处 \(f'\) 不存在（左 \(\to-\infty\)，右 \(\to+\infty\)，尖点/竖直切线且函数连续）→ 也是临界点。故 <b>\(x=2,\ \frac{62}{27}\)</b>。<br>
+    <b>(ii)</b> \(0\le x&lt;2\) 时 \((x-2)^{-1/3}&lt;0\Rightarrow f'&lt;0\)（递减）；\(2&lt;x&lt;\frac{62}{27}\) 时 \((x-2)^{-1/3}&gt;\frac32\Rightarrow f'&gt;0\)（递增）；\(x&gt;\frac{62}{27}\) 时 \(f'&lt;0\)（递减）。<br>
+    <b>(iii)</b> \(x=2\)：先减后增 → 局部<b>极</b>小；\(x=\frac{62}{27}\)：先增后减 → 局部极<b>大</b>；端点 \(x=0\)：邻域内最大 → 单侧局部极大。故局部极大的位置是 <b>\(x=0\) 与 \(x=\frac{62}{27}\)</b>。<br>
+    <b>(iv)</b> 候选值：\(f(0)=2^{2/3}+2\approx3.587\)；\(f(2)=0\)；\(f\!\left(\frac{62}{27}\right)=\left(\frac89\right)^{...}\)——直接算：\((x-2)^{2/3}=\left(\frac{8}{27}\right)^{2/3}=\left(\frac23\right)^2=\frac49\)，故 \(f=\frac49-\frac{8}{27}=\frac{4}{27}\approx0.148\)；\(f(4)=2^{2/3}-2\approx-0.413\)。<br>
+    最大值为 <b>\(2+2^{2/3}\approx3.587\)</b>，在 <b>\(x=0\)</b> 处取得。<br>
+    <b>(v)</b> \((x-2)^{-4/3}=\dfrac{1}{(x-2)^{4/3}}&gt;0\)，所以 \(f''=-\dfrac29(x-2)^{-4/3}&lt;0\) 在 \(x\neq2\) 处恒成立 → 在 \([0,2)\) 与 \((2,4]\) 上<b>均凹向下</b>。<br>
+    <b>(vi)</b> 凹性在 \(x=2\) 两侧同为「向下」，<b>没有改变</b> → <b>无拐点</b>。</p>
+    <div class="err"><b>易错：</b>① 把 \((x-2)^{1/3}=\frac23\) 两边立方时别漏掉「奇数次根保号」这一步；② \(f'(x)\) 在 \(x=2\) <b>不存在</b>，是必答的临界点；③ 全局最大出现在<b>端点</b>，一定要把 4 个候选值都算出来比较，别只看驻点。</div>
+  </div>
+  </div></details>
+</div>
+
+<div class="qcard past" id="q27" data-key="P::2025期中 Q8" data-label="2025期中 Q8" data-topic="t5" data-tname="T5 · 中值定理与函数性态" data-kp="MVT 不等式 sin x &lt; x tan x &gt; x">
+  <div class="qhead"><span class="qno">2025期中 Q8</span><span class="qmeta">证明 · 8 分</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+  <div class="qbody">
+    <div class="ver en">
+      <p class="stem stem-en">(8 points) Use the Mean Value Theorem to prove that for \(x\in(0,\frac\pi2)\), we have \(\sin x&lt;x\) and \(\tan x&gt;x\).</p>
+    </div>
+    <div class="ver zh">
+      <p class="stem">(8 分) 用中值定理证明：当 \(x\in\left(0,\dfrac\pi2\right)\) 时，\(\sin x&lt;x\) 且 \(\tan x&gt;x\)。</p>
+    </div>
+  </div>
+  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> MVT on \([0,x]\) for \(\sin\): \(\frac{\sin x}{x}=\cos c&lt;1\). MVT on \([0,x]\) for \(\tan\): \(\frac{\tan x}{x}=\sec^2 c&gt;1\).</div></div>
+    <div class="aver zh">
+    <div class="ans-line"><b>答案：见下方证明</b><span class="tag b">AI 解析</span></div>
+    <p><b>证 \(\sin x&lt;x\)：</b>取 \(f(t)=\sin t\) 在 \([0,x]\) 上（\(0&lt;x&lt;\frac\pi2\)）。由 MVT，存在 \(c\in(0,x)\) 使<br>
+    \(\dfrac{\sin x-\sin 0}{x-0}=\cos c\)，即 \(\dfrac{\sin x}{x}=\cos c\)。<br>
+    因为 \(c\in(0,x)\subset\left(0,\frac\pi2\right)\)，有 \(0&lt;\cos c&lt;1\)，故 \(\dfrac{\sin x}{x}&lt;1\Rightarrow \sin x&lt;x\)（\(x&gt;0\)）。<br>
+    <b>证 \(\tan x&gt;x\)：</b>取 \(g(t)=\tan t\) 在 \([0,x]\) 上。由 MVT，存在 \(d\in(0,x)\) 使<br>
+    \(\dfrac{\tan x-\tan 0}{x-0}=\sec^2 d\)，即 \(\dfrac{\tan x}{x}=\sec^2 d\)。<br>
+    因为 \(d\in\left(0,\frac\pi2\right)\)，有 \(\sec^2 d=1+\tan^2 d&gt;1\)，故 \(\dfrac{\tan x}{x}&gt;1\Rightarrow \tan x&gt;x\)。</p>
+    <p class="pt"><b>写法要点：</b>必须写明「存在 \(c\in(0,x)\)」并且说明 \(\cos c&lt;1\) / \(\sec^2d&gt;1\) 的<b>区间依据</b>；只写「画图可知」不给分。</p>
+  </div>
+  </div></details>
+</div>
+
+</section>
+
+<!-- ==================== T6 ==================== -->
+<section class="topic anchor" id="t6">
+<h2>T6 · 相关变化率与最优化建模 <span class="freq">8 题</span></h2>
+
+<div class="card analysis" id="kp6" data-key="K::T6 · 相关变化率与最优化" data-label="T6 · 相关变化率与最优化" data-topic="t6" data-tname="T6 · 相关变化率与最优化" data-kp="相似三角形 圆锥相似 乘积法则相关率 椭球隐相关率 闭区间求最值 端点比较 圆柱锥面优化">
+  <h4 style="margin-top:0">专题分析<button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这个专题的知识点">☆</button></h4>
+  <table>
+    <tr><th class="k">考什么</th><td>几何体/运动场景下的相关变化率（相似三角形、圆锥、球、椭圆轨迹）与单变量最优化（矩形、圆柱、路径规划）</td></tr>
+    <tr><th class="k">怎么识别</th><td>① 出现 rate / how fast / at what rate → 相关变化率；② 出现 largest / minimize / least time / maximized → 优化。都要<b>先建变量关系</b>，再对 \(t\)（或自变量）求导</td></tr>
+    <tr><th class="k">通用模板</th><td>① 画图 + 给变量命名；② 写几何关系（相似比 / 勾股 / 体积公式）；③ 若变量太多，用关系<b>先代入消元</b>再求导（否则会出现两个未知变化率）；④ 代入指定时刻的<b>瞬时数值</b>；⑤ 带单位作答</td></tr>
+    <tr><th class="k">易错</th><td>① 圆锥题里 \(r\) 与 \(h\) 成比例，<b>先消元</b>再求导；② 优化题必须找定义域端点并比较；③ 「走动速度」的方向：向灯塔走近时 \(dx/dt&lt;0\)；④ 时间最短题的 walking/rowing 速度不同，别当成直线捷径</td></tr>
+  </table>
+  <details class="en"><summary class="dsum">Key points (EN)</summary><div class="dbody">
+    <ul>
+      <li>Related rates: write the geometric relation, <b>eliminate extra variables first</b>, then differentiate in \(t\).</li>
+      <li>Optimization: objective → single variable using the constraint → differentiate → check critical points <b>against the endpoints</b>.</li>
+      <li>Sign matters: approaching means the distance variable decreases (negative derivative).</li>
+      <li>Least-time problems: total time = row distance / row speed + walk distance / walk speed.</li>
+    </ul>
+  </div></details>
+</div>
+
+<div class="qcard past" id="q28" data-key="P::2022期中 Q5" data-label="2022期中 Q5" data-topic="t6" data-tname="T6 · 相关变化率与最优化" data-kp="乘积法则 相关变化率 生物量模型">
+  <div class="qhead"><span class="qno">2022期中 Q5</span><span class="qmeta">4+4 分</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+  <div class="qbody">
+    <div class="ver en">
+      <p class="stem stem-en">[8] The biomass \(B(t)\) of a fish population is the total mass of the members at time \(t\). Let \(N(t)\) be the number of individuals and \(M(t)\) the average mass of a fish.</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> Express \(B(t)\) and \(B'(t)\) using the information above.</div>
+        <div class="op"><b>(ii)</b> For black moor goldfish, at \(t=4\) weeks the population is 820 fish and growing at 50 fish/week; the average mass is 1.2 g and increasing at 0.1 g/week. At what rate is the biomass increasing when \(t=4\)?</div>
+      </div>
+    </div>
+    <div class="ver zh">
+      <p class="stem">[8] 鱼群生物量 \(B(t)\) 是某时刻全体个体的总质量。设 \(N(t)\) 为个体数，\(M(t)\) 为平均质量。</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> 用上述记号表示 \(B(t)\) 与 \(B'(t)\)。</div>
+        <div class="op"><b>(ii)</b> 某金鱼种群在 \(t=4\) 周时有 820 条、每周增加 50 条；平均质量 1.2 g、每周增加 0.1 g。求 \(t=4\) 时生物量的增长率。</div>
+      </div>
+    </div>
+  </div>
+  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> (i) \(B=NM\), \(B'=N'M+NM'\). (ii) \(50(1.2)+820(0.1)=\mathbf{142\ \text{g/week}}\).</div></div>
+    <div class="aver zh">
+    <div class="ans-line"><b>答案：(i) \(B(t)=N(t)M(t)\)，\(B'(t)=N'(t)M(t)+N(t)M'(t)\)　(ii) 142 g/周</b><span class="tag g">官方答案卷</span></div>
+    <p><b>(i)</b> 总质量 = 个体数 × 平均质量：\(B(t)=N(t)M(t)\)。两边对 \(t\) 求导（乘积法则）：\(B'(t)=N'(t)M(t)+N(t)M'(t)\)。<br>
+    <b>(ii)</b> 代 \(t=4\)：\(B'(4)=50\times1.2+820\times0.1=60+82=142\) g/week。<br>
+    <span class="small">两条腿：60 g/周来自「鱼变多了」，82 g/周来自「鱼变重了」，加起来才是总增长。</span></p>
+    <p class="pt"><b>知识点：</b>凡是「总量 = 两个随时间变化的量相乘」的题型都用乘积法则展开；单位写成 g/week（质量/时间）。</p>
+  </div>
+  </div></details>
+</div>
+
+<div class="qcard past" id="q29" data-key="P::2022期中 Q6" data-label="2022期中 Q6" data-topic="t6" data-tname="T6 · 相关变化率与最优化" data-kp="圆锥相似 相关变化率 消元">
+  <div class="qhead"><span class="qno">2022期中 Q6</span><span class="qmeta">6 分</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+  <div class="qbody">
+    <div class="ver en">
+      <p class="stem stem-en">[6] A conical tank stands pointing up, base radius \(R=6\) m and height \(H=4\) m. Water runs in at \(0.5\ \text{m}^3/\text{min}\). How fast is the water level rising when the water level is half the height of the tank (2 m)?</p>
+    </div>
+    <div class="ver zh">
+      <p class="stem">[6] 一个尖朝下的圆锥形水池（顶点在下、口在上），底半径 \(R=6\) m、高 \(H=4\) m。以 \(0.5\ \text{m}^3/\text{min}\) 注水。当水深为池高的一半（2 m）时，水位上升多快？</p>
+    </div>
+  </div>
+  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> \(\dfrac{dh}{dt}=\dfrac{0.5}{9\pi}=\mathbf{\dfrac{1}{18\pi}\ \text{m/min}}\approx0.0177\).</div></div>
+    <div class="aver zh">
+    <div class="ans-line"><b>答案：\(\dfrac{1}{18\pi}\ \text{m/min}\approx0.0177\ \text{m/min}\)</b><span class="tag g">官方答案卷</span></div>
+    <p>设水面半径 \(r\)、水深 \(h\)。由相似三角形：\(\dfrac{r}{h}=\dfrac{R}{H}=\dfrac64=\dfrac32\Rightarrow r=\dfrac32h\)。<br>
+    水的体积 \(V=\dfrac13\pi r^2h=\dfrac13\pi\left(\dfrac32h\right)^2h=\dfrac{3\pi}{4}h^3\)。<br>
+    两边对 \(t\) 求导：\(\dfrac{dV}{dt}=\dfrac{9\pi}{4}h^2\dfrac{dh}{dt}\)。<br>
+    代 \(h=2\)、\(\dfrac{dV}{dt}=0.5\)：\(0.5=\dfrac{9\pi}{4}\cdot4\cdot\dfrac{dh}{dt}=9\pi\dfrac{dh}{dt}\) → \(\dfrac{dh}{dt}=\dfrac{0.5}{9\pi}=\dfrac{1}{18\pi}\) m/min。</p>
+    <div class="err"><b>易错：</b>先要用相似消去 \(r\)，否则会得到含 \(\frac{dr}{dt}\) 的方程而做不下去；另外 \(\frac{dV}{dt}\) 是<b>注水速率</b>（正），别和 outflow 搞混。</div>
+  </div>
+  </div></details>
+</div>
+
+<div class="qcard past" id="q30" data-key="P::2022期中 Q7" data-label="2022期中 Q7" data-topic="t6" data-tname="T6 · 相关变化率与最优化" data-kp="椭圆轨迹 隐相关率 符号判断">
+  <div class="qhead"><span class="qno">2022期中 Q7</span><span class="qmeta">6 分</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+  <div class="qbody">
+    <div class="ver en">
+      <p class="stem stem-en">[6] A particle travels on the orbit \(\dfrac{x^2}{4}+\dfrac{y^2}{9}=1\). If \(\dfrac{dx}{dt}=6\) m/s when \(x=1\) m and \(y&gt;0\), find \(\dfrac{dy}{dt}\).</p>
+    </div>
+    <div class="ver zh">
+      <p class="stem">[6] 质点在椭圆轨道 \(\dfrac{x^2}{4}+\dfrac{y^2}{9}=1\) 上运动。当 \(x=1\) m 且 \(y&gt;0\) 时 \(\dfrac{dx}{dt}=6\) m/s，求此时 \(\dfrac{dy}{dt}\)。</p>
+    </div>
+  </div>
+  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> \(\dfrac{dy}{dt}=\mathbf{-3\sqrt3\ \text{m/s}}\approx-5.20\).</div></div>
+    <div class="aver zh">
+    <div class="ans-line"><b>答案：\(-3\sqrt3\ \text{m/s}\approx-5.20\ \text{m/s}\)</b><span class="tag g">官方答案卷</span></div>
+    <p>两边对 \(t\) 求导：\(\dfrac{2x}{4}\dfrac{dx}{dt}+\dfrac{2y}{9}\dfrac{dy}{dt}=0\)，即 \(\dfrac{x}{2}\cdot\dfrac{dx}{dt}+\dfrac{2y}{9}\cdot\dfrac{dy}{dt}=0\)。<br>
+    解出：\(\dfrac{dy}{dt}=-\dfrac{9x}{4y}\cdot\dfrac{dx}{dt}=-\dfrac{9x}{4y}\cdot6=-\dfrac{27x}{2y}\)。<br>
+    先定 \(y\)：\(x=1\) 代入椭圆，\(\dfrac14+\dfrac{y^2}{9}=1\Rightarrow \dfrac{y^2}{9}=\dfrac34\Rightarrow y=\dfrac{3\sqrt3}{2}\)（取 \(y&gt;0\)）。<br>
+    于是 \(\dfrac{dy}{dt}=-\dfrac{27\cdot1}{2\cdot\frac{3\sqrt3}{2}}=-\dfrac{27}{3\sqrt3}=-\dfrac{9}{\sqrt3}=-3\sqrt3\) m/s。</p>
+    <p class="pt"><b>检查：</b>负号表示质点此刻正在<b>向下</b>（\(y\) 减小）运动，与第一象限向右运动时沿椭圆右上→右下的走向一致。</p>
+  </div>
+  </div></details>
+</div>
+
+<div class="qcard past" id="q31" data-key="P::2024期中 Q7" data-label="2024期中 Q7" data-topic="t6" data-tname="T6 · 相关变化率与最优化" data-kp="相似三角形 影子尖端 方向符号">
+  <div class="qhead"><span class="qno">2024期中 Q7</span><span class="qmeta">8 分 · 含图</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+  <div class="qbody">
+    <div class="ver en">
+      <p class="stem stem-en">[8] A boy 1.5 m tall walks towards a 6 m lamppost at 2 m/s. How fast is the <b>tip of his shadow</b> moving?</p>
+      <div class="imgbox"><pre>B ─ lamp (6 m tall)          E ─ boy (1.5 m tall)          shadow tip grows to the far side
+|<---- x ---->|<------ s ------>|</pre><span class="small">图：人与灯柱之间的水平距离为 \(x\)，影长为 \(s\)，影子尖端距灯柱 \(u=x+s\)</span></div>
+    </div>
+    <div class="ver zh">
+      <p class="stem">[8] 身高 1.5 m 的男孩以 2 m/s 走向 6 m 高的灯柱。求他<b>影子尖端</b>移动的速度。</p>
+      <div class="imgbox"><pre>B ─ 灯柱 (6 m)          E ─ 男孩 (1.5 m)          影子尖端在男孩另一侧
+|<---- x ---->|<------ s ------>|</pre><span class="small">图中：人与灯柱的水平距离为 \(x\)，影长 \(s\)，尖端距柱 \(u=x+s\)</span></div>
+    </div>
+  </div>
+  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> Tip moves at \(\mathbf{\frac83\ \text{m/s}}\) toward the lamppost.</div></div>
+    <div class="aver zh">
+    <div class="ans-line"><b>答案：\(\dfrac83\ \text{m/s}\approx2.67\ \text{m/s}\)，方向朝灯柱</b><span class="tag b">AI 解析</span></div>
+    <p>设男孩距灯柱底部 \(x\)，影长 \(s\)，尖端距柱 \(u=x+s\)。相似三角形（大三角 6/(x+s)，小三角 1.5/s）：<br>
+    \(\dfrac{6}{x+s}=\dfrac{1.5}{s}\Rightarrow 6s=1.5x+1.5s\Rightarrow 4.5s=1.5x\Rightarrow s=\dfrac{x}{3}\)。<br>
+    所以 \(u=x+s=\dfrac43x\)，\(\dfrac{du}{dt}=\dfrac43\dfrac{dx}{dt}\)。<br>
+    男孩走向灯柱 → \(x\) 减小 → \(\dfrac{dx}{dt}=-2\) m/s，故 \(\dfrac{du}{dt}=\dfrac43(-2)=-\dfrac83\) m/s。<br>
+    即<b>影子尖端以 \(\frac83\) m/s 向灯柱方向移动</b>（尖端也在「缩短」距离，但速度比人快 1/3 —— 人可以追不上自己的影子）。</p>
+    <div class="err"><b>易错：</b>① 问的是<b>尖端</b>（\(x+s\)）不是<b>影长</b>（\(s\)，其速率为 \(\frac23\) m/s）；② 忘记方向符号导致答案少了负号，至少要写清「toward the post」。</div>
+  </div>
+  </div></details>
+</div>
+
+<div class="qcard past" id="q32" data-key="P::2024期中 Q10" data-label="2024期中 Q10" data-topic="t6" data-tname="T6 · 相关变化率与最优化" data-kp="矩形对角约束 面积最大 平方技巧">
+  <div class="qhead"><span class="qno">2024期中 Q10</span><span class="qmeta">8 分</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+  <div class="qbody">
+    <div class="ver en">
+      <p class="stem stem-en">[8] Find the largest area for a rectangle whose diagonal has length \(\sqrt2\).</p>
+    </div>
+    <div class="ver zh">
+      <p class="stem">[8] 求对角线长为 \(\sqrt2\) 的矩形的最大面积。</p>
+    </div>
+  </div>
+  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> Max area \(=\mathbf{1}\), attained by the unit square (\(1\times1\)).</div></div>
+    <div class="aver zh">
+    <div class="ans-line"><b>答案：最大面积 \(1\)，取到于边长 \(1\times1\) 的正方形</b><span class="tag b">AI 解析</span></div>
+    <p>设边长 \(a,b&gt;0\)，约束 \(a^2+b^2=2\)，目标 \(A=ab\)。<br>
+    由约束消去 \(b=\sqrt{2-a^2}\)，得 \(A(a)=a\sqrt{2-a^2}\)，\(0&lt;a&lt;\sqrt2\)。<br>
+    <b>技巧：最大化 \(A^2\)</b>（去掉根号）：\(A^2=a^2(2-a^2)\)。令 \(u=a^2\)，则 \(A^2=u(2-u)=-u^2+2u\)，抛物线顶点在 \(u=1\)，此时 \(A^2=1\)。<br>
+    故 \(a=1,\ b=\sqrt{2-1}=1\)，最大面积 \(A=1\)。<br>
+    <span class="small">（也可对 \(A\) 直接求导：\(A'=\frac{2-2a^2}{\sqrt{2-a^2}}=0\Rightarrow a=1\)。）</span></p>
+    <p class="pt"><b>结论：</b>周长/对角线固定时矩形面积在<b>正方形</b>处最大 —— 记住这个结论可以秒答同类题。</p>
+  </div>
+  </div></details>
+</div>
+
+<div class="qcard past" id="q33" data-key="P::2025期中 Q6" data-label="2025期中 Q6" data-topic="t6" data-tname="T6 · 相关变化率与最优化" data-kp="球体积 相关变化率">
+  <div class="qhead"><span class="qno">2025期中 Q6</span><span class="qmeta">8 分</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+  <div class="qbody">
+    <div class="ver en">
+      <p class="stem stem-en">(8 points) A spherical balloon is inflated with gas at the rate \(20\pi\ \text{m}^3/\text{min}\). How fast is the balloon's radius increasing at the moment when the radius is 1 m? (\(V=\frac43\pi r^3\))</p>
+    </div>
+    <div class="ver zh">
+      <p class="stem">(8 分) 球形气球以 \(20\pi\ \text{m}^3/\text{min}\) 充气。当半径为 1 m 时，半径增大得多快？（\(V=\frac43\pi r^3\)）</p>
+    </div>
+  </div>
+  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> \(\dfrac{dr}{dt}=\mathbf{5\ \text{m/min}}\).</div></div>
+    <div class="aver zh">
+    <div class="ans-line"><b>答案：\(5\ \text{m/min}\)</b><span class="tag b">AI 解析</span></div>
+    <p>\(V=\dfrac43\pi r^3\Rightarrow \dfrac{dV}{dt}=4\pi r^2\dfrac{dr}{dt}\)。<br>
+    代 \(\dfrac{dV}{dt}=20\pi\)、\(r=1\)：\(20\pi=4\pi\cdot1\cdot\dfrac{dr}{dt}\Rightarrow\dfrac{dr}{dt}=5\) m/min。</p>
+    <p class="pt"><b>提示：</b>这是「链式法则 + 幂函数」最直接的一题，\(\pi\) 会自动约掉；注意题目不要误写成求表面积变化率。</p>
+  </div>
+  </div></details>
+</div>
+
+<div class="qcard past" id="q34" data-key="P::2025期中 Q9" data-label="2025期中 Q9" data-topic="t6" data-tname="T6 · 相关变化率与最优化" data-kp="最短时间 划船步行 分段建模 端点比较">
+  <div class="qhead"><span class="qno">2025期中 Q9</span><span class="qmeta">8 分 · 最短时间</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+  <div class="qbody">
+    <div class="ver en">
+      <p class="stem stem-en">(8 points) John is 3 km offshore in a boat and wishes to reach Yantian Port, 5 km down a straight shoreline from the point nearest the boat. He can row 3 km/h and walk 6 km/h. Where should he land his boat to reach the port in the least amount of time?</p>
+    </div>
+    <div class="ver zh">
+      <p class="stem">(8 分) John 乘船在离岸 3 km 处，要去海岸线上距最近点 5 km 远的盐田港。划船速度 3 km/h，步行 6 km/h。他应在何处登岸才能最快到达？</p>
+    </div>
+  </div>
+  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> Land \(\mathbf{\sqrt3\approx1.73\ \text{km}}\) down the shore from the nearest point (then walk \(5-\sqrt3\approx3.27\) km).</div></div>
+    <div class="aver zh">
+    <div class="ans-line"><b>答案：在距最近点 \(\sqrt3\approx1.73\) km 处登岸（再沿岸步行 \(5-\sqrt3\approx3.27\) km）</b><span class="tag b">AI 解析</span></div>
+    <p>设离船最近的岸点为 \(O\)，登岸点 \(L\) 距 \(O\) 为 \(x\) km（\(0\le x\le5\)）。<br>
+    划船距离 \(\sqrt{3^2+x^2}=\sqrt{9+x^2}\) km，耗时 \(\dfrac{\sqrt{9+x^2}}{3}\)；步行距离 \(5-x\) km，耗时 \(\dfrac{5-x}{6}\)。<br>
+    总时间：<b>\(T(x)=\dfrac{\sqrt{9+x^2}}{3}+\dfrac{5-x}{6}\)</b>，\(0\le x\le5\)。<br>
+    \(T'(x)=\dfrac{x}{3\sqrt{9+x^2}}-\dfrac16=0\Rightarrow \dfrac{x}{3\sqrt{9+x^2}}=\dfrac16\Rightarrow 2x=\sqrt{9+x^2}\Rightarrow 4x^2=9+x^2\Rightarrow x=\sqrt3\)。<br>
+    比较端点：\(T(0)=1+\dfrac56=1.8333\) h；\(T(5)=\dfrac{\sqrt{34}}{3}=1.9437\) h；\(T(\sqrt3)=\dfrac{\sqrt{12}}{3}+\dfrac{5-\sqrt3}{6}=\dfrac{2\sqrt3}{3}+\dfrac{5-\sqrt3}{6}\approx1.6994\) h。<br>
+    最小者为 \(x=\sqrt3\)，故最优策略是<b>先划到距最近点 1.73 km 处登岸，再步行 3.27 km</b>。</p>
+    <p class="pt"><b>为什么不是直奔港口：</b>步行（6 km/h）比划船（3 km/h）快一倍，所以值得少划一段水路、多在岸上走 —— 最优角满足 \(\cos\)（此模型的「速度比」倒数）：这里算出的正是 \(2x=\sqrt{9+x^2}\) 对应的角度。</p>
+  </div>
+  </div></details>
+</div>
+
+<div class="qcard final" id="q35" data-key="P::2022期末 Q11" data-label="2022期末 Q11" data-topic="t6" data-tname="T6 · 相关变化率与最优化" data-kp="圆柱表面积约束 体积最大 h=2r">
+  <div class="qhead"><span class="qno">2022期末 Q11</span><span class="qmeta">6 分 · 期末进阶</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+  <div class="qbody">
+    <div class="ver en">
+      <p class="stem stem-en">[6] You have a certain area \(A\) of material to make a cylindrical can of radius \(r\) and height \(h\). The area \(A\) includes the top, the bottom and the side. Find \(r\) and \(h\) so that the volume is maximized.</p>
+    </div>
+    <div class="ver zh">
+      <p class="stem">[6] 用面积为 \(A\) 的材料做圆柱形罐（含上下底与侧面）。求使体积最大的 \(r\) 与 \(h\)。</p>
+    </div>
+  </div>
+  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> \(r=\sqrt{\dfrac{A}{6\pi}}\), \(h=2\sqrt{\dfrac{A}{6\pi}}=2r\) (height equals the diameter).</div></div>
+    <div class="aver zh">
+    <div class="ans-line"><b>答案：\(r=\sqrt{\dfrac{A}{6\pi}}\)，\(h=2r=2\sqrt{\dfrac{A}{6\pi}}\)</b><span class="tag b">AI 解析</span></div>
+    <p>约束（表面积）：\(A=2\pi r^2+2\pi rh\Rightarrow h=\dfrac{A-2\pi r^2}{2\pi r}\)。<br>
+    体积：\(V=\pi r^2h=\pi r^2\cdot\dfrac{A-2\pi r^2}{2\pi r}=\dfrac{Ar}{2}-\pi r^3\)。<br>
+    求导：\(V'(r)=\dfrac{A}{2}-3\pi r^2=0\Rightarrow r^2=\dfrac{A}{6\pi}\Rightarrow r=\sqrt{\dfrac{A}{6\pi}}\)。<br>
+    代回约束：\(2\pi r^2=2\pi\cdot\dfrac{A}{6\pi}=\dfrac{A}{3}\)，故 \(2\pi rh=A-\dfrac{A}{3}=\dfrac{2A}{3}\Rightarrow h=\dfrac{A}{3\pi r}=\dfrac{6\pi r^2}{3\pi r}=2r\)。<br>
+    二阶验证：\(V''(r)=-6\pi r&lt;0\) → 确为最大值。</p>
+    <p class="pt"><b>结论：</b>固定表面积的圆柱，体积最大时<b>高等于底面直径</b>（\(h=2r\)）—— 侧面视图是一个正方形，这是罐头行业的常识结论。</p>
+  </div>
+  </div></details>
+</div>
+
+</section>
+
+<!-- ==================== T7 ==================== -->
+<section class="topic anchor" id="t7">
+<h2>T7 · 运动学与定积分应用 <span class="freq">8 题</span></h2>
+
+<div class="card analysis" id="kp7" data-key="K::T7 · 运动学与积分应用" data-label="T7 · 运动学与积分应用" data-topic="t7" data-tname="T7 · 运动学与积分应用" data-kp="自由落体 s→v→a 平均-瞬时速度 总路程 ∮|v| 面积差 弧长 旋转体体积 液体压力 函数平均值">
+  <h4 style="margin-top:0">专题分析<button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这个专题的知识点">☆</button></h4>
+  <table>
+    <tr><th class="k">考什么</th><td>位置/速度/加速度三层求导换算；总路程 \(\int|v|\) 与位移 \(\int v\) 的区别；平均值 \(\frac1{b-a}\int_a^b f\)；两曲线围成面积；弧长；旋转体体积；液体静压力</td></tr>
+    <tr><th class="k">怎么识别</th><td>① 给了 \(a(t)\) → 积分两次并用两个初值定常数；② 问 total distance → 积分的是 \(|v|\)，<b>先找 v=0 的分界点</b>；③ 平均值题 → 除以区间长度；④ 液体压力 → \(F=w\int(\text{宽})(\text{深})\)</td></tr>
+    <tr><th class="k">易错</th><td>① 位移 ≠ 路程，同一份 μ 积分要带绝对值时会差很多；② 平均值别忘了除以 \((b-a)\)；③ 弧长公式 \(\int\sqrt{1+(y')^2}\) 中的根号化简常用 \(\sqrt{1+\cos2x}=\sqrt2|\cos x|\)；④ 压力题的深度是「水面到该层的距离」，不是 \(y\)</td></tr>
+  </table>
+  <details class="en"><summary class="dsum">Key points (EN)</summary><div class="dbody">
+    <ul>
+      <li>Kinematics ladder: \(s\to v=s'\to a=v'\); go down by differentiating, up by integrating (each step needs one initial condition).</li>
+      <li>Total distance = \(\int|v|\,dt\) — split at the zeros of \(v\); displacement = \(\int v\,dt\).</li>
+      <li>Average value of \(f\) on \([a,b]\) = \(\frac{1}{b-a}\int_a^b f\). Areas of circular segments can be read off as sector ± triangle.</li>
+      <li>Arc length \(=\int\sqrt{1+(y')^2}\,dx\); volume by disks about the \(y\)-axis \(=\int\pi x^2\,dy\).</li>
+      <li>Hydrostatic force \(=w\int(\text{width})(\text{depth})\,dy\).</li>
+    </ul>
+  </div></details>
+</div>
+
+<div class="qcard past" id="q36" data-key="P::2024期中 Q5" data-label="2024期中 Q5" data-topic="t7" data-tname="T7 · 运动学与积分应用" data-kp="自由落体 位置函数 速度 速率 加速度 落地时间">
+  <div class="qhead"><span class="qno">2024期中 Q5</span><span class="qmeta">15 分</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+  <div class="qbody">
+    <div class="ver en">
+      <p class="stem stem-en">[15] Had Galileo dropped a cannonball from the Tower of Pisa, 98 m above the ground, the ball's height \(t\) seconds into the fall would have been \(s(t)=98-4.9t^2\) meters.</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> What would have been the ball's velocity, speed, and acceleration at time \(t\)? (Write down the unit.)</div>
+        <div class="op"><b>(ii)</b> About how long would it have taken the ball to hit the ground?</div>
+        <div class="op"><b>(iii)</b> What would have been the ball's velocity at the moment of impact?</div>
+      </div>
+    </div>
+    <div class="ver zh">
+      <p class="stem">[15] 若伽利略从 98 m 高的比萨斜塔上扔下炮弹，其 \(t\) 秒后的高度为 \(s(t)=98-4.9t^2\)（米）。</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> 求 \(t\) 时刻的速度、速率与加速度（带单位）。</div>
+        <div class="op"><b>(ii)</b> 大约多久落地？</div>
+        <div class="op"><b>(iii)</b> 落地瞬间的速度是多少？</div>
+      </div>
+    </div>
+  </div>
+  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> (i) \(v=-9.8t\) m/s, speed \(=9.8t\) m/s, \(a=-9.8\) m/s². (ii) \(t=2\sqrt5\approx4.47\) s. (iii) \(-19.6\sqrt5\approx-43.8\) m/s.</div></div>
+    <div class="aver zh">
+    <div class="ans-line"><b>答案：(i) \(v=-9.8t\) m/s，速率 \(9.8t\) m/s，\(a=-9.8\) m/s²　(ii) \(2\sqrt5\approx4.47\) s　(iii) \(-19.6\sqrt5\approx-43.8\) m/s</b><span class="tag b">AI 解析</span></div>
+    <p><b>(i)</b> \(v(t)=s'(t)=-9.8t\) m/s；<b>速率</b>是速度的绝对值 \(|v|=9.8t\) m/s（\(t\ge0\)）；\(a(t)=v'(t)=-9.8\) m/s²。<br>
+    <b>(ii)</b> 落地时 \(s=0\)：\(98-4.9t^2=0\Rightarrow t^2=\dfrac{98}{4.9}=20\Rightarrow t=2\sqrt5\approx4.472\) s。<br>
+    <b>(iii)</b> 代落地时刻：\(v(2\sqrt5)=-9.8\cdot2\sqrt5=-19.6\sqrt5\approx-43.83\) m/s（负号表示向下）。<br>
+    <span class="small">（也可用 \(v=\sqrt{2gh}=\sqrt{2\cdot9.8\cdot98}=\sqrt{1920.8}\approx43.8\) m/s 校验大小。）</span></p>
+    <p class="pt"><b>要点：</b>velocity 是<b>矢量</b>（带负号），speed 是标量（取绝对值）——题目分开问就一定分开答。</p>
+  </div>
+  </div></details>
+</div>
+
+<div class="qcard past" id="q37" data-key="P::2024期中 Q12" data-label="2024期中 Q12" data-topic="t7" data-tname="T7 · 运动学与积分应用" data-kp="函数平均值 圆扇形+三角形面积 三角换元">
+  <div class="qhead"><span class="qno">2024期中 Q12</span><span class="qmeta">8 分</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+  <div class="qbody">
+    <div class="ver en">
+      <p class="stem stem-en">[8] Using known methods for computing areas, find the <b>mean value (average value)</b> of \(f(x)=\sqrt{a^2-x^2}\) over \(-\frac a2\le x\le\frac a2\) (where \(a&gt;0\)).</p>
+    </div>
+    <div class="ver zh">
+      <p class="stem">[8] 用已知的<b>面积</b>方法，求 \(f(x)=\sqrt{a^2-x^2}\) 在 \(-\frac a2\le x\le\frac a2\) 上的<b>平均值</b>（\(a&gt;0\)）。</p>
+    </div>
+  </div>
+  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> Average \(=a\left(\dfrac{\pi}{6}+\dfrac{\sqrt3}{4}\right)\approx0.957\,a\).</div></div>
+    <div class="aver zh">
+    <div class="ans-line"><b>答案：\(a\left(\dfrac\pi6+\dfrac{\sqrt3}{4}\right)\approx0.957\,a\)</b><span class="tag b">AI 解析</span></div>
+    <p>区间长度 \(=\dfrac a2-\left(-\dfrac a2\right)=a\)，故平均值 \(=\dfrac1a\displaystyle\int_{-a/2}^{a/2}\sqrt{a^2-x^2}\,dx\)。<br>
+    积分就是半径为 \(a\) 的上半圆在 \(x\in\left[-\frac a2,\frac a2\right]\) 下方的面积，用「扇形 + 两个直角三角形」读图：<br>
+    该区域对应圆心角 \(2\cdot30^\circ=60^\circ=\dfrac\pi3\)，扇形面积 \(=\dfrac12a^2\cdot\dfrac\pi3=\dfrac{\pi a^2}{6}\)；<br>
+    两侧直角三角形直角边分别为 \(\dfrac a2\) 与 \(\dfrac{\sqrt3a}{2}\)，单个面积 \(=\dfrac12\cdot\dfrac a2\cdot\dfrac{\sqrt3a}{2}=\dfrac{\sqrt3a^2}{8}\)，两个共 \(\dfrac{\sqrt3a^2}{4}\)。<br>
+    面积合计 \(=\dfrac{\pi a^2}{6}+\dfrac{\sqrt3a^2}{4}\)，平均值 \(=\dfrac1a\cdot\)（面积）\(=a\left(\dfrac\pi6+\dfrac{\sqrt3}{4}\right)\approx0.9566a\)。<br>
+    <span class="small">（换元校验：令 \(x=a\sin\theta\)，积分化为 \(a^2\int_{-\pi/6}^{\pi/6}\cos^2\theta\,d\theta=a^2\left[\frac\theta2+\frac{\sin2\theta}{4}\right]_{-\pi/6}^{\pi/6}=a^2\left(\frac\pi6+\frac{\sqrt3}{4}\right)\) ✓）</span></p>
+    <div class="err"><b>易错：</b>求「平均值」时除以的是<b>区间长度 \(a\)</b>，不是直径 \(2a\)；另外别把整个半圆面积 \(\frac{\pi a^2}{2}\) 直接用上——只取中间一段。</div>
+  </div>
+  </div></details>
+</div>
+
+<div class="qcard past" id="q38" data-key="P::2024期中 Q13" data-label="2024期中 Q13" data-topic="t7" data-tname="T7 · 运动学与积分应用" data-kp="抛物线速度 位移 vs 路程 积分上界估计">
+  <div class="qhead"><span class="qno">2024期中 Q13</span><span class="qmeta">8 分</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+  <div class="qbody">
+    <div class="ver en">
+      <p class="stem stem-en">[8] A particle travels along the \(x\)-axis with velocity \(v(t)=t(1-t)\) m/s, \(t\ge0\). Show that over \(0\le t\le1\), the distance it covers is not more than \(0.25\) m.</p>
+    </div>
+    <div class="ver zh">
+      <p class="stem">[8] 质点沿 \(x\) 轴运动，速度 \(v(t)=t(1-t)\) m/s（\(t\ge0\)）。证明在 \(0\le t\le1\) 内它走过的距离不超过 0.25 m。</p>
+    </div>
+  </div>
+  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> Distance \(=\int_0^1 t(1-t)\,dt=\frac16\approx0.167&lt;0.25\). (Crude bound: \(v\le\frac14\) on length 1.)</div></div>
+    <div class="aver zh">
+    <div class="ans-line"><b>答案：路程 \(=\dfrac16\approx0.167\) m \(&lt;0.25\) m</b><span class="tag b">AI 解析</span></div>
+    <p>在 \([0,1]\) 上 \(t\ge0\) 且 \(1-t\ge0\)，故 \(v(t)\ge0\) —— 没有反向运动，路程 = 位移：<br>
+    \(d=\displaystyle\int_0^1 t(1-t)\,dt=\int_0^1(t-t^2)dt=\left[\dfrac{t^2}{2}-\dfrac{t^3}{3}\right]_0^1=\dfrac12-\dfrac13=\dfrac16\approx0.1667\) m。<br>
+    显然 \(\dfrac16&lt;\dfrac14=0.25\)，证毕。<br>
+    <b>不积分也能证：</b>\(v(t)=t-t^2\) 在 \([0,1]\) 上的最大值出现在 \(t=\frac12\)，为 \(v_{\max}=\frac14\)。因此路程 \(=\int_0^1 v\le \int_0^1\frac14\,dt=\frac14=0.25\) m —— 这正是题目「不超过 0.25」这个数字的来历，实际值比它小得多。</p>
+    <p class="pt"><b>知识点：</b>「路程 ≤ 最大速度 × 时长」是一个随时可用的估计；若题目给的常数比精确值大，往往就是在提示你<b>不用算积分</b>。</p>
+  </div>
+  </div></details>
+</div>
+
+<div class="qcard past" id="q39" data-key="P::2025期中 Q4" data-label="2025期中 Q4" data-topic="t7" data-tname="T7 · 运动学与积分应用" data-kp="加速度积分两次 初值条件 总路程 绝对值分段积分">
+  <div class="qhead"><span class="qno">2025期中 Q4</span><span class="qmeta">12 分</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+  <div class="qbody">
+    <div class="ver en">
+      <p class="stem stem-en">(12 points) A particle moves on the \(s\)-axis with acceleration \(a(t)=\cos t\), \(t\ge0\), initial velocity \(v(0)=\frac12\) and initial position \(s(0)=2\).</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> Find the position function \(s(t)\).</div>
+        <div class="op"><b>(ii)</b> Find the total distance travelled from \(t=0\) to \(t=2\pi\).</div>
+      </div>
+    </div>
+    <div class="ver zh">
+      <p class="stem">(12 分) 质点在 \(s\) 轴上运动，加速度 \(a(t)=\cos t\)（\(t\ge0\)），初速度 \(v(0)=\frac12\)、初始位置 \(s(0)=2\)。</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> 求位置函数 \(s(t)\)。</div>
+        <div class="op"><b>(ii)</b> 求从 \(t=0\) 到 \(t=2\pi\) 走过的<b>总路程</b>。</div>
+      </div>
+    </div>
+  </div>
+  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> (i) \(s(t)=-\cos t+\frac t2+3\). (ii) \(2\sqrt3+\dfrac{\pi}{3}\approx4.511\) m.</div></div>
+    <div class="aver zh">
+    <div class="ans-line"><b>答案：(i) \(s(t)=-\cos t+\dfrac t2+3\)　(ii) \(2\sqrt3+\dfrac\pi3\approx4.511\) m</b><span class="tag b">AI 解析</span></div>
+    <p><b>(i)</b> 积分一次：\(v(t)=\int\cos t\,dt=\sin t+C\)。由 \(v(0)=\frac12\) 得 \(C=\frac12\)，故 \(v(t)=\sin t+\frac12\)。<br>
+    再积分：\(s(t)=\int\left(\sin t+\frac12\right)dt=-\cos t+\dfrac t2+D\)。由 \(s(0)=2\)：\(-1+D=2\Rightarrow D=3\)。<br>
+    所以 <b>\(s(t)=-\cos t+\dfrac t2+3\)</b>。<br>
+    <b>(ii)</b> 总路程积分 \(|v|\)。先找 \(v=0\) 的时刻：\(\sin t=-\dfrac12\Rightarrow t=\dfrac{7\pi}{6},\ \dfrac{11\pi}{6}\)（在 \([0,2\pi]\) 内）。<br>
+    符号：\([0,\frac{7\pi}6)\) 正，\((\frac{7\pi}6,\frac{11\pi}6)\) 负，\((\frac{11\pi}6,2\pi]\) 正。<br>
+    用原函数 \(F(t)=-\cos t+\dfrac t2\) 分段积分并取绝对值：<br>
+    \(\int_0^{7\pi/6}=F\left(\frac{7\pi}6\right)-F(0)=\left(\frac{\sqrt3}{2}+\frac{7\pi}{12}\right)-(-1)=1+\frac{\sqrt3}{2}+\frac{7\pi}{12}\);<br>
+    \(\int_{7\pi/6}^{11\pi/6}=F\left(\frac{11\pi}6\right)-F\left(\frac{7\pi}6\right)=\left(-\frac{\sqrt3}2+\frac{11\pi}{12}\right)-\left(\frac{\sqrt3}2+\frac{7\pi}{12}\right)=-\sqrt3+\frac{\pi}{3}\)（负值）；<br>
+    \(\int_{11\pi/6}^{2\pi}=F(2\pi)-F\left(\frac{11\pi}6\right)=(-1+\pi)-\left(-\frac{\sqrt3}{2}+\frac{11\pi}{12}\right)=-1+\frac{\sqrt3}{2}+\frac{\pi}{12}\)。<br>
+    总路程 \(=\left(1+\frac{\sqrt3}2+\frac{7\pi}{12}\right)+\left(\sqrt3-\frac\pi3\right)+\left(-1+\frac{\sqrt3}2+\frac{\pi}{12}\right)=2\sqrt3+\dfrac{\pi}{3}\approx4.5113\) m。<br>
+    <span class="small">（对比：位移 \(=s(2\pi)-s(0)=\pi\approx3.1416\) m —— 小于总路程，符合来回折返的直觉。）</span></p>
+    <div class="err"><b>易错：</b>把「总路程」当成位移直接算 \(s(2\pi)-s(0)=\pi\) 是最常见的失分；必须先解 \(\sin t=-\frac12\) 找零点、<b>分段变号</b>再求和。</div>
+  </div>
+  </div></details>
+</div>
+
+<div class="qcard final" id="q40" data-key="P::2022期末 Q7" data-label="2022期末 Q7" data-topic="t7" data-tname="T7 · 运动学与积分应用" data-kp="两曲线围成面积 交点 上减下">
+  <div class="qhead"><span class="qno">2022期末 Q7</span><span class="qmeta">6 分 · 期末进阶</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+  <div class="qbody">
+    <div class="ver en">
+      <p class="stem stem-en">[6] Find the area enclosed by the curves \(y=2x^2+x-9\) and \(y=x-1\).</p>
+    </div>
+    <div class="ver zh">
+      <p class="stem">[6] 求由曲线 \(y=2x^2+x-9\) 与 \(y=x-1\) 围成的图形面积。</p>
+    </div>
+  </div>
+  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> Intersections \(x=\pm2\); area \(=\int_{-2}^{2}(8-2x^2)dx=\mathbf{\frac{64}{3}}\).</div></div>
+    <div class="aver zh">
+    <div class="ans-line"><b>答案：\(\dfrac{64}{3}\approx21.33\)</b><span class="tag b">AI 解析</span></div>
+    <p>求交点：\(2x^2+x-9=x-1\Rightarrow 2x^2=8\Rightarrow x=\pm2\)。<br>
+    在 \([-2,2]\) 上直线在上（取 \(x=0\)：直线 \(-1\)，抛物线 \(-9\)），故面积<br>
+    \(A=\displaystyle\int_{-2}^{2}\bigl[(x-1)-(2x^2+x-9)\bigr]dx=\int_{-2}^{2}(8-2x^2)\,dx=\left[8x-\dfrac{2x^3}{3}\right]_{-2}^{2}\)。<br>
+    代入：\(\left(16-\dfrac{16}{3}\right)-\left(-16+\dfrac{16}{3}\right)=\dfrac{32}{3}+\dfrac{32}{3}=\dfrac{64}{3}\)。</p>
+    <p class="pt"><b>技巧：</b>被积函数化为偶函数 \(8-2x^2\) 后可用对称性 \(2\int_0^2(8-2x^2)dx\) 省一半计算；先判上下（取区间内一点代入）避免得出负值。</p>
+  </div>
+  </div></details>
+</div>
+
+<div class="qcard final" id="q41" data-key="P::2022期末 Q12" data-label="2022期末 Q12" data-topic="t7" data-tname="T7 · 运动学与积分应用" data-kp="弧长公式 变限积分求导 根式化简 cos2x">
+  <div class="qhead"><span class="qno">2022期末 Q12</span><span class="qmeta">6 分 · 期末进阶</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+  <div class="qbody">
+    <div class="ver en">
+      <p class="stem stem-en">[6] Find the length of the curve \(y=\displaystyle\int_0^x\sqrt{\cos(2t)}\,dt\), \(0\le x\le\dfrac\pi2\).</p>
+    </div>
+    <div class="ver zh">
+      <p class="stem">[6] 求曲线 \(y=\displaystyle\int_0^x\sqrt{\cos(2t)}\,dt\)（\(0\le x\le\dfrac\pi2\)）的弧长。</p>
+    </div>
+  </div>
+  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> \(L=\int_0^{\pi/2}\sqrt{1+\cos2x}\,dx=\sqrt2\int_0^{\pi/2}\cos x\,dx=\mathbf{\sqrt2}\).</div></div>
+    <div class="aver zh">
+    <div class="ans-line"><b>答案：\(\sqrt2\)</b><span class="tag b">AI 解析</span><span class="tag a">题目本身有瑕疵，见下方说明</span></div>
+    <p>由微积分基本定理：\(y'=\sqrt{\cos(2x)}\)。弧长公式：<br>
+    \(L=\displaystyle\int_0^{\pi/2}\sqrt{1+(y')^2}\,dx=\int_0^{\pi/2}\sqrt{1+\cos(2x)}\,dx\)。<br>
+    用半角恒等式 \(1+\cos2x=2\cos^2x\)：<br>
+    \(L=\displaystyle\int_0^{\pi/2}\sqrt{2\cos^2x}\,dx=\sqrt2\int_0^{\pi/2}|\cos x|\,dx=\sqrt2\int_0^{\pi/2}\cos x\,dx=\sqrt2\cdot1=\sqrt2\)。</p>
+    <div class="err"><b>必须知道的瑕疵：</b>原题给的 \(y=\int_0^x\sqrt{\cos2t}\,dt\) 在 \(x&gt;\frac\pi4\) 时被积函数 \(\cos2t&lt;0\)，根号内为负 —— 严格说这个 \(y\) 只在 \([0,\frac\pi4]\) 上有定义。两种写法请按课堂口径二选一：<br>
+    ① 按题目意图（形式推导）：\(L=\sqrt2\approx1.414\)；<br>
+    ② 若把定义域截断到 \([0,\frac\pi4]\)：\(L=\sqrt2\int_0^{\pi/4}\cos x\,dx=\sqrt2\cdot\frac{\sqrt2}{2}=1\)。<br>
+    <b>考试时建议先写 ①，并在旁边加一句备注</b>，避免与老师的口径冲突。</div>
+  </div>
+  </div></details>
+</div>
+
+<div class="qcard final" id="q42" data-key="P::2022期末 Q13" data-label="2022期末 Q13" data-topic="t7" data-tname="T7 · 运动学与积分应用" data-kp="旋转体体积 圆盘法 反常积累流量 反解时间">
+  <div class="qhead"><span class="qno">2022期末 Q13</span><span class="qmeta">6+5+4 分 · 期末进阶</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+  <div class="qbody">
+    <div class="ver en">
+      <p class="stem stem-en">[15] The curve \(y=\arcsin\frac xa\), \(0\le x\le a\), is revolved around the \(y\)-axis to form an open bowl. From \(t=0\) water is let in from the top at volume rate \(r(t)=Ae^{-t/k}\), \(t\ge0\) (\(A,a,k&gt;0\)).</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> Find the volume of the bowl.</div>
+        <div class="op"><b>(ii)</b> For given \(A,k\), find \(a\) so that the bowl becomes full (but not overflow) as \(t\to\infty\). Use this \(a\) in (iii).</div>
+        <div class="op"><b>(iii)</b> Find the time \(t_0\) when the water level is at \(y=\dfrac\pi4\).</div>
+      </div>
+    </div>
+    <div class="ver zh">
+      <p class="stem">[15] 曲线 \(y=\arcsin\frac xa\)（\(0\le x\le a\)）绕 \(y\) 轴旋转成一只开口碗。从 \(t=0\) 起以体积流量 \(r(t)=Ae^{-t/k}\)（\(t\ge0\)）从顶部注水（\(A,a,k&gt;0\)）。</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> 求碗的容积。</div>
+        <div class="op"><b>(ii)</b> 对给定的 \(A,k\)，求使碗在 \(t\to\infty\) 时恰好注满（不溢出）的 \(a\)；并在 (iii) 中使用该 \(a\)。</div>
+        <div class="op"><b>(iii)</b> 求水位到达 \(y=\dfrac\pi4\) 的时刻 \(t_0\)。</div>
+      </div>
+    </div>
+  </div>
+  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> (i) \(V=\frac{\pi^2a^2}{4}\). (ii) \(a=\frac{2}{\pi}\sqrt{Ak}\). (iii) \(t_0=k\ln\frac{2\pi}{\pi+2}\approx0.2006\,k\).</div></div>
+    <div class="aver zh">
+    <div class="ans-line"><b>答案：(i) \(\dfrac{\pi^2a^2}{4}\)　(ii) \(a=\dfrac2\pi\sqrt{Ak}\)　(iii) \(t_0=k\ln\dfrac{2\pi}{\pi+2}\approx0.2006\,k\)</b><span class="tag b">AI 解析</span></div>
+    <p><b>(i)</b> 反解：\(y=\arcsin\frac xa\Rightarrow x=a\sin y\)，\(y\in\left[0,\frac\pi2\right]\)。绕 \(y\) 轴旋转，用圆盘法（半径 = \(x=a\sin y\)）：<br>
+    \(V=\displaystyle\int_0^{\pi/2}\pi(a\sin y)^2dy=\pi a^2\int_0^{\pi/2}\sin^2y\,dy=\pi a^2\cdot\frac{\pi}{4}=\dfrac{\pi^2a^2}{4}\)。<br>
+    <b>(ii)</b> 总注水量 \(=\displaystyle\int_0^\infty Ae^{-t/k}dt=Ak\)。令其等于容积：<br>
+    \(\dfrac{\pi^2a^2}{4}=Ak\Rightarrow a^2=\dfrac{4Ak}{\pi^2}\Rightarrow a=\dfrac{2}{\pi}\sqrt{Ak}\)。<br>
+    <b>(iii)</b> 水位到 \(y\) 时的体积：\(V(y)=\displaystyle\int_0^{y}\pi a^2\sin^2u\,du=\pi a^2\left[\dfrac y2-\dfrac{\sin 2y}{4}\right]\)。<br>
+    代 \(y=\dfrac\pi4\)：\(V\left(\dfrac\pi4\right)=\pi a^2\left(\dfrac\pi8-\dfrac14\right)\)。<br>
+    已注水体积：\(\displaystyle\int_0^{t_0}Ae^{-t/k}dt=Ak\left(1-e^{-t_0/k}\right)\)。<br>
+    由 (ii) 有 \(Ak=\dfrac{\pi^2a^2}{4}\)，代入并令两边相等：<br>
+    \(\dfrac{\pi^2a^2}{4}\left(1-e^{-t_0/k}\right)=\pi a^2\left(\dfrac\pi8-\dfrac14\right)\Rightarrow \dfrac{\pi}{4}\left(1-e^{-t_0/k}\right)=\dfrac\pi8-\dfrac14\)<br>
+    \(\Rightarrow 1-e^{-t_0/k}=\dfrac12-\dfrac1\pi\Rightarrow e^{-t_0/k}=\dfrac12+\dfrac1\pi=\dfrac{\pi+2}{2\pi}\)。<br>
+    所以 <b>\(t_0=k\ln\dfrac{2\pi}{\pi+2}\approx0.2006\,k\)</b>。</p>
+    <p class="pt"><b>思路线：</b>先把几何体做成「随高度变化的体积函数 \(V(y)\)」，再把时间侧做成「累积流量函数」，联立两个横轴（\(y\) 与 \(t\)）即可。</p>
+  </div>
+  </div></details>
+</div>
+
+<div class="qcard final" id="q43" data-key="P::2022期末 Q14" data-label="2022期末 Q14" data-topic="t7" data-tname="T7 · 运动学与积分应用" data-kp="液体静压力 水平条带 深度 H-y 条件 ab=e">
+  <div class="qhead"><span class="qno">2022期末 Q14</span><span class="qmeta">2+5 分 · 期末进阶</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+  <div class="qbody">
+    <div class="ver en">
+      <p class="stem stem-en">[7] A plate is the region enclosed by \(y=\ln(bx)\) (\(b&gt;0\)), the vertical line \(x=a\) (\(a&gt;0\)) and the horizontal \(x\)-axis. It is immersed in water with depth \(H\) (water surface at \(y=H\)); water weight density is \(w\). Assume \(ab=e\).</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> Find the smallest value \(L\) of \(H\) so that the plate is totally immersed.</div>
+        <div class="op"><b>(ii)</b> Compute the force \(F\) exerted against one side of the plate when completely immersed with depth \(=L\).</div>
+      </div>
+    </div>
+    <div class="ver zh">
+      <p class="stem">[7] 一块薄板由 \(y=\ln(bx)\)（\(b&gt;0\)）、竖直线 \(x=a\)（\(a&gt;0\)）与 \(x\) 轴围成。浸入水中，水面在 \(y=H\)，水重度（单位重量）为 \(w\)。设 \(ab=e\)。</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> 求使薄板刚好完全浸没的最小深度 \(L=H\)。</div>
+        <div class="op"><b>(ii)</b> 当深度取上述最小值 \(L\) 时，求薄板一侧所受的水压力 \(F\)。</div>
+      </div>
+    </div>
+  </div>
+  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> (i) \(L=1\). (ii) \(F=wa\left(\dfrac2e-\dfrac12\right)=\dfrac{wa(4-e)}{2e}\approx0.2358\,wa\).</div></div>
+    <div class="aver zh">
+    <div class="ans-line"><b>答案：(i) \(L=1\)　(ii) \(F=wa\left(\dfrac2e-\dfrac12\right)=\dfrac{wa(4-e)}{2e}\approx0.2358\,wa\)</b><span class="tag b">AI 解析</span></div>
+    <p>先理清图形。由 \(ab=e\) 得 \(b=\dfrac ea\)。曲线过 \(x\) 轴的点：\(y=0\Rightarrow bx=1\Rightarrow x=\dfrac1b=\dfrac ae\)。直线 \(x=a\) 与曲线的交点：\(y=\ln(ba)=\ln e=1\)。故薄板为 \(0\le y\le1\) 之间、左右边界为 \(x=\dfrac{e^y}{b}=ae^{y-1}\) 与 \(x=a\) 的曲边梯形。<br>
+    <b>(i)</b> 板的最高点在 \(y=1\)，要完全浸没必须 \(H\ge1\)，所以 <b>\(L=1\)</b>。<br>
+    <b>(ii)</b> 取高度 \(y\) 处的水平条带，宽度 \(=a-ae^{y-1}=a\left(1-e^{y-1}\right)\)，深度 \(=L-y=1-y\)，面积元 \(dA=a\left(1-e^{y-1}\right)dy\)。<br>
+    \(F=w\displaystyle\int_0^1(1-y)\cdot a\left(1-e^{y-1}\right)dy=wa\left[\int_0^1(1-y)dy-\int_0^1(1-y)e^{y-1}dy\right]\)。<br>
+    第一项 \(=\dfrac12\)。第二项令 \(u=1-y\)：\(\displaystyle\int_0^1ue^{-u}du=\left[-(u+1)e^{-u}\right]_0^1=1-\dfrac2e\)。<br>
+    \(F=wa\left[\dfrac12-\left(1-\dfrac2e\right)\right]=wa\left(\dfrac2e-\dfrac12\right)=\dfrac{wa(4-e)}{2e}\approx0.2358\,wa\)。</p>
+    <div class="err"><b>易错：</b>① 忘记用 \(ab=e\) 化简上下限（不化简就无法把答案写成只含 \(a,w\)）；② 深度写成 \(y\) 而不是 \(H-y\)；③ 把宽度写成 \(a-e^{y-1}\) 却忘了乘上 \(1/b=a/e\) 的换算。</div>
+  </div>
+  </div></details>
+</div>
+
+</section>
+
+<!-- ==================== T8 ==================== -->
+<section class="topic anchor" id="t8">
+<h2>T8 · 积分计算 · 数值积分与反常积分 <span class="freq">3 题</span></h2>
+
+<div class="card analysis" id="kp8" data-key="K::T8 · 积分技巧" data-label="T8 · 积分技巧" data-topic="t8" data-tname="T8 · 积分技巧" data-kp="凑微分 三角换元 分部积分 配方+arctan 部分分式 tan^n 递推 梯形 Simpson 反常积分收敛判别">
+  <h4 style="margin-top:0">专题分析<button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这个专题的知识点">☆</button></h4>
+  <table>
+    <tr><th class="k">考什么</th><td>凑微分（凑出 \(du\)）、三角换元、分部积分、配方 + \(\arctan\)、\(\tan^n\) 递推、巧代换（\(u=x-\frac1x\)）、梯形/抛物线（Simpson）公式、反常积分敛散性</td></tr>
+    <tr><th class="k">怎么识别</th><td>① 被积函数含 \(\frac1{x^2}\) 与 \(e^{1/x}\) → 令 \(u=\frac1x\)；② 含 \(\sqrt{1-x^2}\) → \(x=\sin\theta\)；③ 分母不可约二次式 → 配方；④ 分子次数 = 分母次数 − 2 且分母是 \(1+x^4\) → 除以 \(x^2\) 看 \((x\mp\frac1x)\)</td></tr>
+    <tr><th class="k">易错</th><td>① 三角换元后 <b>上下限要换成 \(\theta\)</b>；② 分部积分别搞错 \(u,dv\)；③ Simpson 要求 \(n\) <b>为偶数</b>，系数模式 1,4,2,4,…,4,1；④ 梯形一定是凹向上函数的<b>高估</b>、凹向下函数的<b>低估</b>；⑤ 反常积分要先找<b>奇点</b>（无穷远或无界点）再比较</td></tr>
+  </table>
+  <details class="en"><summary class="dsum">Key points (EN)</summary><div class="dbody">
+    <ul>
+      <li>Substitute to create \(du\) exactly (e.g. \(u=1/x\) gives \(du=-dx/x^2\)).</li>
+      <li>Trig substitution: change the limits together with the variable.</li>
+      <li>Integration by parts: choose \(u\) from the "inverse/log/algebraic/trig/exponential" preference order.</li>
+      <li>Numerical: \(T=\frac{\Delta x}{2}[\cdots]\), \(S=\frac{\Delta x}{3}[\cdots]\) with pattern \(1,4,2,4,\dots,4,1\); trapezoid over-estimates concave-up graphs.</li>
+      <li>Improper: locate the singularity, then compare with a \(p\)-type or a known convergent majorant.</li>
+    </ul>
+  </div></details>
+</div>
+
+<div class="qcard final" id="q44" data-key="P::2022期末 Q5" data-label="2022期末 Q5" data-topic="t8" data-tname="T8 · 积分技巧" data-kp="梯形法则 Simpson 法则 误差方向">
+  <div class="qhead"><span class="qno">2022期末 Q5</span><span class="qmeta">6+3 分 · 期末进阶</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+  <div class="qbody">
+    <div class="ver en">
+      <p class="stem stem-en">[9] Consider \(\displaystyle\int_0^{1.2}e^{x^2}dx\); suppose we use the Trapezoidal Rule and Simpson's Rule with \(n=6\) intervals.</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> Write down the two approximations (\(T\) and \(S\)) in the form of sums. No simplification required.</div>
+        <div class="op"><b>(ii)</b> Will the Trapezoidal Rule over-estimate or under-estimate the true value? Briefly explain why.</div>
+      </div>
+    </div>
+    <div class="ver zh">
+      <p class="stem">[9] 考虑 \(\displaystyle\int_0^{1.2}e^{x^2}dx\)，用 \(n=6\) 等分的梯形法与 Simpson 法近似。</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> 写出两个近似值 \(T\) 与 \(S\) 的和式形式（不必化简求值）。</div>
+        <div class="op"><b>(ii)</b> 梯形法会高估还是低估真值？简要说明理由。</div>
+      </div>
+    </div>
+  </div>
+  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> \(T=\frac{\Delta x}{2}[f_0+2f_1+2f_2+2f_3+2f_4+2f_5+f_6]\), \(S=\frac{\Delta x}{3}[f_0+4f_1+2f_2+4f_3+2f_4+4f_5+f_6]\) with \(\Delta x=0.2\), \(f_i=e^{(0.2i)^2}\). Trapezoid <b>over-estimates</b> (\(f''&gt;0\), concave up).</div></div>
+    <div class="aver zh">
+    <div class="ans-line"><b>答案：(i) 见下和式　(ii) 高估（\(f\) 处处凹向上）</b><span class="tag b">AI 解析</span></div>
+    <p>\(\Delta x=\dfrac{1.2-0}{6}=0.2\)，节点 \(x_i=0.2i\)（\(i=0,\dots,6\)），记 \(f_i=e^{x_i^2}\)：<br>
+    \((x_0,\dots,x_6)=(0,\,0.2,\,0.4,\,0.6,\,0.8,\,1.0,\,1.2)\)。<br>
+    <b>梯形：</b>\(T=\dfrac{0.2}{2}\left[e^{0}+2e^{0.04}+2e^{0.16}+2e^{0.36}+2e^{0.64}+2e^{1.00}+e^{1.44}\right]\)<br>
+    　　\(=0.1\left[e^{0}+2e^{0.04}+2e^{0.16}+2e^{0.36}+2e^{0.64}+2e^{1}+e^{1.44}\right]\)。<br>
+    <b>Simpson：</b>\(S=\dfrac{0.2}{3}\left[e^{0}+4e^{0.04}+2e^{0.16}+4e^{0.36}+2e^{0.64}+4e^{1.00}+e^{1.44}\right]\)。<br>
+    <b>(ii)</b> \(f(x)=e^{x^2}\) 的二阶导数 \(f''(x)=(2+4x^2)e^{x^2}&gt;0\) 处处为正 → 图线<b>凹向上</b>，连接相邻节点的弦位于曲线<b>上方</b>，因此<b>梯形法高估</b>真值。<br>
+    <span class="small">（顺带：\(T\approx1.919\)，\(S\approx1.862\)，真值 \(\approx1.862\) 附近，可见 Simpson 精度高得多。）</span></p>
+    <p class="pt"><b>要点：</b>Simpson 的系数模式必须写成 \(1,4,2,4,2,4,\dots,2,4,1\)（首尾为 1，奇数下标 4、偶数下标 2），且 \(n\) 必须是偶数。</p>
+  </div>
+  </div></details>
+</div>
+
+<div class="qcard final" id="q45" data-key="P::2022期末 Q9" data-label="2022期末 Q9" data-topic="t8" data-tname="T8 · 积分技巧" data-kp="凑微分 三角换元 分部积分 配方 arctan tan^n 递推 巧代换 u=x-1/x">
+  <div class="qhead"><span class="qno">2022期末 Q9</span><span class="qmeta">24 分 · 六道积分</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+  <div class="qbody">
+    <div class="ver en">
+      <p class="stem stem-en">[24] Find the following integrals.</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> \(\displaystyle\int\frac{e^{1/x}}{x^2}\,dx\)</div>
+        <div class="op"><b>(ii)</b> \(\displaystyle\int_0^{1/2}\frac{x^2}{\sqrt{1-x^2}}\,dx\)</div>
+        <div class="op"><b>(iii)</b> \(\displaystyle\int_0^1\arccos x\,dx\)</div>
+        <div class="op"><b>(iv)</b> \(\displaystyle\int_{-3}^{1}\frac{x+8}{x^2+6x+13}\,dx\)</div>
+        <div class="op"><b>(v)</b> \(\displaystyle\int_0^{\pi/4}\tan^5x\,dx\)</div>
+        <div class="op"><b>(vi)</b> \(\displaystyle\int_0^{\infty}\frac{1+x^2}{1+x^4}\,dx\)　（hint: \(u=x-\frac1x\)）</div>
+      </div>
+    </div>
+    <div class="ver zh">
+      <p class="stem">[24] 求下列积分。</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> \(\displaystyle\int\frac{e^{1/x}}{x^2}\,dx\)</div>
+        <div class="op"><b>(ii)</b> \(\displaystyle\int_0^{1/2}\frac{x^2}{\sqrt{1-x^2}}\,dx\)</div>
+        <div class="op"><b>(iii)</b> \(\displaystyle\int_0^1\arccos x\,dx\)</div>
+        <div class="op"><b>(iv)</b> \(\displaystyle\int_{-3}^{1}\frac{x+8}{x^2+6x+13}\,dx\)</div>
+        <div class="op"><b>(v)</b> \(\displaystyle\int_0^{\pi/4}\tan^5x\,dx\)</div>
+        <div class="op"><b>(vi)</b> \(\displaystyle\int_0^{\infty}\frac{1+x^2}{1+x^4}\,dx\)　（提示：令 \(u=x-\frac1x\)）</div>
+      </div>
+    </div>
+  </div>
+  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> (i) \(-e^{1/x}+C\)　(ii) \(\frac\pi{12}-\frac{\sqrt3}{8}\)　(iii) \(1\)　(iv) \(\frac12\ln5+\frac52\arctan2\)　(v) \(\frac12\ln2-\frac14\)　(vi) \(\frac{\pi}{\sqrt2}\).</div></div>
+    <div class="aver zh">
+    <div class="ans-line"><b>答案：(i) \(-e^{1/x}+C\)　(ii) \(\dfrac\pi{12}-\dfrac{\sqrt3}{8}\)　(iii) \(1\)　(iv) \(\dfrac12\ln5+\dfrac52\arctan2\)　(v) \(\dfrac12\ln2-\dfrac14\)　(vi) \(\dfrac\pi{\sqrt2}\)</b><span class="tag b">AI 解析</span></div>
+    <p><b>(i)</b> 令 \(u=\dfrac1x\)，\(du=-\dfrac{dx}{x^2}\)，原式 \(=-\displaystyle\int e^u du=-e^{u}+C=-e^{1/x}+C\)。<br>
+    <b>(ii)</b> 令 \(x=\sin\theta\)，\(dx=\cos\theta\,d\theta\)，\(\sqrt{1-x^2}=\cos\theta\)；\(x=0\to\theta=0\)，\(x=\frac12\to\theta=\frac\pi6\)：<br>
+    \(\displaystyle\int_0^{\pi/6}\sin^2\theta\,d\theta=\int_0^{\pi/6}\frac{1-\cos2\theta}{2}d\theta=\left[\frac\theta2-\frac{\sin2\theta}{4}\right]_0^{\pi/6}=\frac\pi{12}-\frac{\sqrt3}{8}\)。<br>
+    <b>(iii)</b> 分部积分（\(u=\arccos x,\ dv=dx\)）：<br>
+    \(\displaystyle\int\arccos x\,dx=x\arccos x+\int\frac{x}{\sqrt{1-x^2}}dx=x\arccos x-\sqrt{1-x^2}\)。<br>
+    代入 \(0\to1\)：\((1\cdot0-0)-(0\cdot\frac\pi2-1)=1\)。<br>
+    <b>(iv)</b> 配方 \(x^2+6x+13=(x+3)^2+4\)，分子拆成 \((x+3)+5\)：<br>
+    \(\displaystyle\int\frac{x+3}{(x+3)^2+4}dx+5\int\frac{dx}{(x+3)^2+4}=\frac12\ln\left(x^2+6x+13\right)+\frac52\arctan\frac{x+3}{2}\)。<br>
+    代限：\(x=1\)：\(\frac12\ln20+\frac52\arctan2\)；\(x=-3\)：\(\frac12\ln4+\frac52\arctan0=\frac12\ln4\)。差为 \(\dfrac12\ln5+\dfrac52\arctan2\approx3.5726\)。<br>
+    <b>(v)</b> \(\tan^5=\tan^3(\sec^2-1)\)：<br>
+    \(\int\tan^5=\int\tan^3\sec^2-\int\tan^3=\dfrac{\tan^4x}{4}-\left(\dfrac{\tan^2x}{2}+\ln\cos x\right)\)（其中 \(\int\tan^3=\frac{\tan^2x}{2}+\ln\cos x\)）。<br>
+    代限 \(0\to\frac\pi4\)：\(\left(\frac14-\frac12-\ln\frac{\sqrt2}{2}\right)-0=-\dfrac14+\dfrac12\ln2\approx0.0966\)。<br>
+    <b>(vi)</b> 分子分母同除以 \(x^2\)：\(\dfrac{1+x^2}{1+x^4}dx=\dfrac{\left(1+\frac1{x^2}\right)dx}{x^2+\frac1{x^2}}\)。令 \(u=x-\dfrac1x\)，则 \(du=\left(1+\dfrac1{x^2}\right)dx\)，且 \(x^2+\dfrac1{x^2}=u^2+2\)。<br>
+    当 \(x\to0^+\) 时 \(u\to-\infty\)；\(x\to\infty\) 时 \(u\to+\infty\)（\(u\) 单调增）。<br>
+    原式 \(=\displaystyle\int_{-\infty}^{\infty}\frac{du}{u^2+2}=\frac1{\sqrt2}\left[\arctan\frac{u}{\sqrt2}\right]_{-\infty}^{\infty}=\frac1{\sqrt2}\cdot\pi=\frac{\pi}{\sqrt2}\)。</p>
+    <div class="err"><b>易错：</b>(ii) 忘记把积分限换成 \(\theta\) 的值；(iv) 分子必须<b>配成导数的一半</b>再拆，否则两部分都做不出来；(v) 递推到最后一步常把 \(\ln\cos x\) 的符号带错；(vi) 关键的「除以 \(x^2\)」一步把看似无从下手的四次式变成了 arctan 标准型。</div>
+  </div>
+  </div></details>
+</div>
+
+<div class="qcard final" id="q46" data-key="P::2022期末 Q15" data-label="2022期末 Q15" data-topic="t8" data-tname="T8 · 积分技巧" data-kp="反常积分 比较判别法 极限比较 p-积分">
+  <div class="qhead"><span class="qno">2022期末 Q15</span><span class="qmeta">12 分 · 期末进阶</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+  <div class="qbody">
+    <div class="ver en">
+      <p class="stem stem-en">[12] For each improper integral, determine whether it converges or diverges.</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> \(\displaystyle\int_2^{\infty}\frac{e^{-x}}{x}\,dx\)</div>
+        <div class="op"><b>(ii)</b> \(\displaystyle\int_1^{2}\frac{x}{x^3-1}\,dx\)</div>
+        <div class="op"><b>(iii)</b> \(\displaystyle\int_0^{\pi/2}\tan^2\theta\,d\theta\)</div>
+      </div>
+    </div>
+    <div class="ver zh">
+      <p class="stem">[12] 判断下列反常积分的敛散性。</p>
+      <div class="opts">
+        <div class="op"><b>(i)</b> \(\displaystyle\int_2^{\infty}\frac{e^{-x}}{x}\,dx\)</div>
+        <div class="op"><b>(ii)</b> \(\displaystyle\int_1^{2}\frac{x}{x^3-1}\,dx\)</div>
+        <div class="op"><b>(iii)</b> \(\displaystyle\int_0^{\pi/2}\tan^2\theta\,d\theta\)</div>
+      </div>
+    </div>
+  </div>
+  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> (i) <b>converges</b> (dominated by \(e^{-x}\)). (ii) <b>diverges</b> (like \(\frac1{3(x-1)}\) at \(x=1\)). (iii) <b>diverges</b> (\(\tan\theta\to\infty\) at \(\theta=\pi/2\)).</div></div>
+    <div class="aver zh">
+    <div class="ans-line"><b>答案：(i) 收敛　(ii) 发散　(iii) 发散</b><span class="tag b">AI 解析</span></div>
+    <p><b>(i)</b> 在 \(x\ge2\) 上 \(\dfrac{e^{-x}}{x}\le e^{-x}\)，而 \(\int_2^{\infty}e^{-x}dx=e^{-2}&lt;\infty\)，由比较判别法知原积分<b>收敛</b>。<br>
+    <b>(ii)</b> 奇点在 \(x=1\)（分母为 0）。\(x^3-1=(x-1)(x^2+x+1)\sim3(x-1)\)（\(x\to1\)），故被积函数 \(\sim\dfrac{1}{3(x-1)}\)。<br>
+    极限比较：\(\lim\limits_{x\to1^+}\dfrac{\frac{x}{x^3-1}}{\frac{1}{x-1}}=\lim\limits_{x\to1^+}\dfrac{x}{x^2+x+1}=\dfrac13\in(0,\infty)\)，而 \(\int_1^2\dfrac{dx}{x-1}\) 发散 → <b>发散</b>。<br>
+    <b>(iii)</b> \(\tan^2\theta=\sec^2\theta-1\)，原函数 \(=\tan\theta-\theta\)；当 \(\theta\to\left(\frac\pi2\right)^-\) 时 \(\tan\theta\to+\infty\) → <b>发散</b>。</p>
+    <p class="pt"><b>模板：</b>① 找出所有奇点（无穷远或无界点）；② 在奇点附近取「主部」找比较对象；③ 用极限比较判别法，比值的极限为非零常数即可同结论。</p>
+  </div>
+  </div></details>
+</div>
+
+</section>
+
+<!-- ==================== T9 ==================== -->
+<section class="topic anchor" id="t9">
+<h2>T9 · 微分方程与初值问题 <span class="freq">2 题</span></h2>
+
+<div class="card analysis" id="kp9" data-key="K::T9 · 微分方程" data-label="T9 · 微分方程" data-topic="t9" data-tname="T9 · 微分方程" data-kp="直接积分 一阶线性 ODE 积分因子 初值定常数">
+  <h4 style="margin-top:0">专题分析<button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这个专题的知识点">☆</button></h4>
+  <table>
+    <tr><th class="k">考什么</th><td>\(y'=f(x)\) 型直接积分；一阶线性 \(y'+P(x)y=Q(x)\) 型用积分因子；均由初值定常数</td></tr>
+    <tr><th class="k">怎么识别</th><td>① 右边只含 \(x\) → 直接积分；② 含 \(y\) 的一次项 → 化为标准线性形式后取积分因子 \(\mu=e^{\int P dx}\)</td></tr>
+    <tr><th class="k">易错</th><td>① 积分因子别漏负号：标准式是 \(y'+P(x)y=Q(x)\)，\(\mu=e^{\int P\,dx}\)；② 常数要在<b>通解</b>里定，别急着代入；③ 完成后<b>代回原方程验算</b>只要 20 秒</td></tr>
+  </table>
+  <details class="en"><summary class="dsum">Key points (EN)</summary><div class="dbody">
+    <ul>
+      <li>Direct integration: \(y'=f(x)\) ⇒ \(y=\int f\,dx + C\), fix \(C\) from the initial value.</li>
+      <li>Linear form: \(y'+P(x)y=Q(x)\); integrating factor \(\mu=e^{\int P\,dx}\); then \((\mu y)'=\mu Q\).</li>
+      <li>Always substitute the answer back into the original equation as a 20-second sanity check.</li>
+    </ul>
+  </div></details>
+</div>
+
+<div class="qcard past" id="q47" data-key="P::2024期中 Q11" data-label="2024期中 Q11" data-topic="t9" data-tname="T9 · 微分方程" data-kp="初值问题 直接积分">
+  <div class="qhead"><span class="qno">2024期中 Q11</span><span class="qmeta">6 分</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+  <div class="qbody">
+    <div class="ver en">
+      <p class="stem stem-en">[6] Solve the initial value problem \(\begin{cases}\dfrac{dy}{dx}=1-\cos x,\\[2pt] y(0)=1.\end{cases}\)</p>
+    </div>
+    <div class="ver zh">
+      <p class="stem">[6] 解初值问题 \(\begin{cases}\dfrac{dy}{dx}=1-\cos x,\\[2pt] y(0)=1.\end{cases}\)</p>
+    </div>
+  </div>
+  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> \(y=x-\sin x+1\).</div></div>
+    <div class="aver zh">
+    <div class="ans-line"><b>答案：\(y=x-\sin x+1\)</b><span class="tag b">AI 解析</span></div>
+    <p>右边只含 \(x\)，直接对 \(x\) 积分：<br>
+    \(y=\displaystyle\int(1-\cos x)dx=x-\sin x+C\)。<br>
+    由 \(y(0)=1\)：\(0-0+C=1\Rightarrow C=1\)。故 <b>\(y=x-\sin x+1\)</b>。<br>
+    验算：\(y'=1-\cos x\) ✓；\(y(0)=1\) ✓。</p>
+    <p class="pt"><b>知识点：</b>这类题就是「求原函数 + 定常数」两条动作的叠加，别被「微分方程」的名字吓到。</p>
+  </div>
+  </div></details>
+</div>
+
+<div class="qcard final" id="q48" data-key="P::2022期末 Q10" data-label="2022期末 Q10" data-topic="t9" data-tname="T9 · 微分方程" data-kp="一阶线性 ODE 积分因子 1/x">
+  <div class="qhead"><span class="qno">2022期末 Q10</span><span class="qmeta">6 分 · 期末进阶</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+  <div class="qbody">
+    <div class="ver en">
+      <p class="stem stem-en">[6] Find the solution to the initial value problem \(xy'=y+x^2\sin x,\ x&gt;0,\quad y(\pi)=0\).</p>
+    </div>
+    <div class="ver zh">
+      <p class="stem">[6] 解初值问题 \(xy'=y+x^2\sin x\)（\(x&gt;0\)），\(y(\pi)=0\)。</p>
+    </div>
+  </div>
+  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> \(y=-x(1+\cos x)\).</div></div>
+    <div class="aver zh">
+    <div class="ans-line"><b>答案：\(y=-x\,(1+\cos x)\)</b><span class="tag b">AI 解析</span></div>
+    <p>化为标准线性形式（两边除以 \(x\)，\(x&gt;0\) 合法）：\(y'-\dfrac1x\,y=x\sin x\)。<br>
+    这里 \(P(x)=-\dfrac1x\)，积分因子 \(\mu=e^{\int P dx}=e^{-\ln x}=\dfrac1x\)。<br>
+    两边乘 \(\mu\)：\(\dfrac1x y'-\dfrac1{x^2}y=\sin x\)，左边正好是 \(\left(\dfrac yx\right)'\)：<br>
+    \(\left(\dfrac yx\right)'=\sin x\Rightarrow \dfrac yx=-\cos x+C\Rightarrow y=Cx-x\cos x\)。<br>
+    由 \(y(\pi)=0\)：\(C\pi-\pi\cos\pi=C\pi+\pi=0\Rightarrow C=-1\)。<br>
+    所以 <b>\(y=-x-x\cos x=-x(1+\cos x)\)</b>。<br>
+    验算：\(y'=-1-\cos x+x\sin x\)，则 \(xy'=-x-x\cos x+x^2\sin x=y+x^2\sin x\) ✓。</p>
+    <p class="pt"><b>技巧：</b>若一眼看出 \(xy'-y=x^2\sin x\) 的左边是 \(x^2\left(\frac yx\right)'\)（商法则的变形），可以秒得同一步；规范化到积分因子更保险。</p>
+  </div>
+  </div></details>
+</div>
+
+</section>
+
+<!-- ==================== 附录 ==================== -->
+<h2 id="keys">附录 · 四套卷答案速查表</h2>
+<div class="card">
+  <p class="small">只看最后结果用这张表；要看<b>为什么</b>，回到上面专题里点开对应的绿色折叠条。<span class="tag g">官方答案卷</span> = 与 2022 期中手写答案 PDF 逐题核对过；<span class="tag b">AI 解析</span> = 无官方答案，由 AI 求解并逐步验算。</p>
+  <table>
+    <tr><th>题号</th><th>最终答案</th><th>可信度</th></tr>
+    <tr><td class="k">2022期中 Q1</td><td>(i) T　(ii) F　(iii) F　(iv) T　(v) F</td><td><span class="tag g">官方</span></td></tr>
+    <tr><td class="k">2022期中 Q2</td><td>(i) C　(ii) B　(iii) \(2x\sin^3 4x+12x^2\sin^2 4x\cos 4x\)　(iv) \(f''g+2f'g'+fg''\)　(v) \(\frac{w(u'+2vv')-(u+v^2)w'}{w^2}\)　(vi) \(-4\) cm/s，\(-4\sqrt3\) cm/s²　(vii) 向 \(-x\) 方向　(viii) \(-\frac1x+\frac{x^2}2-\frac12\)</td><td><span class="tag g">官方</span></td></tr>
+    <tr><td class="k">2022期中 Q3</td><td>\(x_1=-\frac13,\ x_2=-\frac{29}{90}\)</td><td><span class="tag g">官方</span></td></tr>
+    <tr><td class="k">2022期中 Q4</td><td>(i) 4　(ii) \(-\frac52\)　(iii) \(\frac16\)</td><td><span class="tag g">官方</span></td></tr>
+    <tr><td class="k">2022期中 Q5</td><td>\(B=NM\)，\(B'=N'M+NM'\)；\(B'(4)=142\) g/周</td><td><span class="tag g">官方</span></td></tr>
+    <tr><td class="k">2022期中 Q6</td><td>\(\frac{1}{18\pi}\) m/min</td><td><span class="tag g">官方</span></td></tr>
+    <tr><td class="k">2022期中 Q7</td><td>\(-3\sqrt3\) m/s</td><td><span class="tag g">官方</span></td></tr>
+    <tr><td class="k">2022期中 Q8</td><td>最大值 22；例 \(f(x)=3x+22\)</td><td><span class="tag g">官方</span></td></tr>
+    <tr><td class="k">2022期中 Q9</td><td>递减 \([0,\frac\pi2]\cup[\frac{3\pi}2,2\pi]\)，递增 \([\frac\pi2,\frac{3\pi}2]\)；极小 \(x=\frac\pi2\)，极大 \(x=\frac{3\pi}2\)</td><td><span class="tag g">官方</span></td></tr>
+    <tr><td class="k">2022期中 Q10</td><td>凹向下 \([0,2]\)、凹向上 \([2,\infty)\)；拐点 \(x=2\)；极大 \(x=2-\sqrt2\)，全局极小 \(x=2+\sqrt2\)；截距 \(0,\,3\pm\sqrt3\)</td><td><span class="tag g">官方</span></td></tr>
+    <tr><td class="k">2022期中 Q11</td><td>\(1\)</td><td><span class="tag g">官方</span></td></tr>
+    <tr><td class="k">2024期中 Q1</td><td>(i) F　(ii) T　(iii) T　(iv) T　(v) T</td><td><span class="tag b">AI</span></td></tr>
+    <tr><td class="k">2024期中 Q2</td><td>(i) 可去间断　(ii) \(x=\pm1\)　(iv) 20240　(v) B　(vi) D</td><td><span class="tag b">AI</span></td></tr>
+    <tr><td class="k">2024期中 Q3</td><td>\(1\)</td><td><span class="tag b">AI</span></td></tr>
+    <tr><td class="k">2024期中 Q4</td><td>左 \(a^2-1\)、右 0；极限存在 \(\Leftrightarrow a=\pm1\)；连续 \(\Leftrightarrow a=-1\)</td><td><span class="tag b">AI</span></td></tr>
+    <tr><td class="k">2024期中 Q5</td><td>\(v=-9.8t\)，速率 \(9.8t\)，\(a=-9.8\)；\(t=2\sqrt5\) s；\(-19.6\sqrt5\) m/s</td><td><span class="tag b">AI</span></td></tr>
+    <tr><td class="k">2024期中 Q6</td><td>(i) \(2\cos2x-4x\sin2x+\frac{3\sec^2x}{\sqrt{1+x^2}}-\frac{3x\tan x}{(1+x^2)^{3/2}}\)　(ii) \(\frac{27}8\)</td><td><span class="tag b">AI</span></td></tr>
+    <tr><td class="k">2024期中 Q7</td><td>\(\frac83\) m/s（朝灯柱）</td><td><span class="tag b">AI</span></td></tr>
+    <tr><td class="k">2024期中 Q8</td><td>\(6\) cm³</td><td><span class="tag b">AI</span></td></tr>
+    <tr><td class="k">2024期中 Q9</td><td>临界点 \(-\sqrt2,\,0,\,1\)；拐点 \(-\sqrt{6/5},\,1\)</td><td><span class="tag b">AI</span></td></tr>
+    <tr><td class="k">2024期中 Q10</td><td>面积 1（\(1\times1\) 正方形）</td><td><span class="tag b">AI</span></td></tr>
+    <tr><td class="k">2024期中 Q11</td><td>\(y=x-\sin x+1\)</td><td><span class="tag b">AI</span></td></tr>
+    <tr><td class="k">2024期中 Q12</td><td>\(a\left(\frac\pi6+\frac{\sqrt3}4\right)\)</td><td><span class="tag b">AI</span></td></tr>
+    <tr><td class="k">2024期中 Q13</td><td>路程 \(\frac16\) m \(&lt;0.25\) m</td><td><span class="tag b">AI</span></td></tr>
+    <tr><td class="k">2025期中 Q1</td><td>(i) a (ii) d (iii) \(x=1\)、\(y=x+1\) (iv) T (v) T (vi) \(y=x-\pi-9\) (vii) T (viii) d (ix) F (x) F (xi) d (xii) a (xiii) \(\frac12\) (xiv) \(\int_0^1\frac{dx}{1+x}\) (xv) \(x^2+\frac2x-\frac12\tan2x+C\)</td><td><span class="tag b">AI</span></td></tr>
+    <tr><td class="k">2025期中 Q2</td><td>(i) \(\frac32\)　(ii) \(-\frac32\)　(iii) 不存在　(iv) \(\frac12\)</td><td><span class="tag b">AI</span></td></tr>
+    <tr><td class="k">2025期中 Q3</td><td>(i) 不存在　(ii) \(2\sin1-\cos1\)　(iii) \(\frac1{y+1}\)　(iv) \(-\frac1{(y+1)^3}\)</td><td><span class="tag b">AI</span></td></tr>
+    <tr><td class="k">2025期中 Q4</td><td>\(s=-\cos t+\frac t2+3\)；总路程 \(2\sqrt3+\frac\pi3\)</td><td><span class="tag b">AI</span></td></tr>
+    <tr><td class="k">2025期中 Q5</td><td>\(a=\frac{20000}x+150+0.5x\)，\(m=150+x\)；\(x=200\)；交点 \((200,350)\)</td><td><span class="tag b">AI</span></td></tr>
+    <tr><td class="k">2025期中 Q6</td><td>\(5\) m/min</td><td><span class="tag b">AI</span></td></tr>
+    <tr><td class="k">2025期中 Q7</td><td>临界点 \(2,\frac{62}{27}\)；极大在 \(0,\frac{62}{27}\)；全局最大 \(2+2^{2/3}\)（\(x=0\)）；处处凹向下；无拐点</td><td><span class="tag b">AI</span></td></tr>
+    <tr><td class="k">2025期中 Q8</td><td>MVT：\(\frac{\sin x}x=\cos c&lt;1\)，\(\frac{\tan x}x=\sec^2 d&gt;1\)</td><td><span class="tag b">AI</span></td></tr>
+    <tr><td class="k">2025期中 Q9</td><td>距最近点 \(\sqrt3\) km 处登岸</td><td><span class="tag b">AI</span></td></tr>
+    <tr><td class="k">2022期末 Q1</td><td>(i) T　(ii) T　(iii) F　(iv) T　(v) T　(vi) T</td><td><span class="tag b">AI</span></td></tr>
+    <tr><td class="k">2022期末 Q2</td><td>(i) 0　(ii) \(-\frac1{1+x^2}\)　(iii) \(x^{\sqrt x}\frac{\ln x+2}{2\sqrt x}\)　(iv) \(\sin x|\sin x|\)　(v) \(-\frac1{x-1}-\frac1{(x-1)^2}+\frac1{x-2}\)</td><td><span class="tag b">AI</span></td></tr>
+    <tr><td class="k">2022期末 Q3</td><td>(1)→I　(2)→II　(3)→III　(4)→IV</td><td><span class="tag b">AI</span></td></tr>
+    <tr><td class="k">2022期末 Q4</td><td>\(0.790\)</td><td><span class="tag b">AI</span></td></tr>
+    <tr><td class="k">2022期末 Q5</td><td>和式见 T8 Q(i)；梯形<b>高估</b></td><td><span class="tag b">AI</span></td></tr>
+    <tr><td class="k">2022期末 Q6</td><td>\(f'\) 恒 \(\ge0\) → 单射；\((f^{-1})'(4)=\frac29\)</td><td><span class="tag b">AI</span></td></tr>
+    <tr><td class="k">2022期末 Q7</td><td>\(\frac{64}3\)</td><td><span class="tag b">AI</span></td></tr>
+    <tr><td class="k">2022期末 Q8</td><td>(i) \(e^4\)　(ii) \(\frac\pi4\)　(iii) 1　(iv) \(-\frac16\)</td><td><span class="tag b">AI</span></td></tr>
+    <tr><td class="k">2022期末 Q9</td><td>(i) \(-e^{1/x}+C\)　(ii) \(\frac\pi{12}-\frac{\sqrt3}8\)　(iii) 1　(iv) \(\frac12\ln5+\frac52\arctan2\)　(v) \(\frac12\ln2-\frac14\)　(vi) \(\frac\pi{\sqrt2}\)</td><td><span class="tag b">AI</span></td></tr>
+    <tr><td class="k">2022期末 Q10</td><td>\(y=-x(1+\cos x)\)</td><td><span class="tag b">AI</span></td></tr>
+    <tr><td class="k">2022期末 Q11</td><td>\(r=\sqrt{\frac A{6\pi}}\)，\(h=2r\)</td><td><span class="tag b">AI</span></td></tr>
+    <tr><td class="k">2022期末 Q12</td><td>\(\sqrt2\)（见题中瑕疵说明）</td><td><span class="tag b">AI</span></td></tr>
+    <tr><td class="k">2022期末 Q13</td><td>\(V=\frac{\pi^2a^2}4\)；\(a=\frac2\pi\sqrt{Ak}\)；\(t_0=k\ln\frac{2\pi}{\pi+2}\)</td><td><span class="tag b">AI</span></td></tr>
+    <tr><td class="k">2022期末 Q14</td><td>\(L=1\)；\(F=wa\left(\frac2e-\frac12\right)\)</td><td><span class="tag b">AI</span></td></tr>
+    <tr><td class="k">2022期末 Q15</td><td>(i) 收敛　(ii) 发散　(iii) 发散</td><td><span class="tag b">AI</span></td></tr>
+  </table>
+</div>
+
+<div class="footer">
+  <p><b>数据来源：</b>2022/2024/2025 三年 MAT1001 期中卷 + 2022 期末卷，共 48 道大题（含所有小问）。2022 期中的答案对照学校流出的手写答案 PDF 逐题核对；其余三套无官方答案，解析由 AI 求解并逐步验算，<b>如与课堂讲评不一致请以老师为准</b> —— 发现错漏欢迎直接改或提 issue。</p>
+  <p><b>使用提示：</b>收藏数据存在浏览器 localStorage，换设备或清缓存会丢失；Ctrl/⌘+P 打印时答案会自动全部展开、中英双版同时显示（适合打印成复习册）。</p>
+</div>
+
+</div><!-- /wrap -->
+
+<script>
+/* ============ 收藏 ============ */
+var FAV_KEY = 'mat1001mid_favs_v1';
+var ZH_KEY  = 'mat1001mid_zh_v1';
+var favs = {};
+try { favs = JSON.parse(localStorage.getItem(FAV_KEY) || '{}'); } catch (e) { favs = {}; }
+
+function saveFavs(){ try { localStorage.setItem(FAV_KEY, JSON.stringify(favs)); } catch(e){} }
+function favCount(){ return Object.keys(favs).length; }
+
+function updateBadge(){
+  var b = document.getElementById('favBadge');
+  if (b) b.textContent = favCount();
+}
+
+function paintCard(card, on){
+  card.classList.toggle('fav', on);
+}
+
+function toggleStar(ev, btn){
+  ev.stopPropagation();
+  var card = btn.closest ? btn.closest('.card') : null;
+  if (!card) return;
+  var key = card.id + '::' + (card.dataset.label || card.id);
+  if (favs[key]) { delete favs[key]; paintCard(card, false); }
+  else {
+    favs[key] = {
+      label: card.dataset.label || card.id,
+      topic: card.dataset.topic || '',
+      tname: card.dataset.tname || '',
+      kp: card.dataset.kp || ''
+    };
+    paintCard(card, true);
+  }
+  btn.classList.toggle('on', !!favs[key]);
+  btn.textContent = favs[key] ? '\u2605' : '\u2606';
+  saveFavs(); updateBadge();
+  if (document.body.classList.contains('favmode')) refreshFavView();
+}
+
+function restoreStars(){
+  Object.keys(favs).forEach(function(k){
+    var id = k.split('::')[0];
+    var card = document.getElementById(id);
+    if (!card) return;
+    paintCard(card, true);
+    var btn = card.querySelector('.star');
+    if (btn) { btn.classList.add('on'); btn.textContent = '\u2605'; }
+  });
+  updateBadge();
+}
+
+/* ============ 收藏模式筛选 ============ */
+var HIDE_SEL = '.hero, #toc-h, .toc, .wrap > .card.tint, .footer, #keys, #keys + .card';
+function refreshFavView(){
+  document.querySelectorAll('section.topic').forEach(function(sec){
+    var has = sec.querySelector('.card.fav');
+    sec.style.display = has ? '' : 'none';
+  });
+  document.querySelectorAll('.fav details').forEach(function(d){ d.open = true; });
+}
+
+function toggleFavMode(){
+  var on = document.body.classList.toggle('favmode');
+  document.querySelectorAll(HIDE_SEL).forEach(function(e){ e.style.display = on ? 'none' : ''; });
+  var hint = document.getElementById('barHint');
+  if (on) {
+    if (favCount() === 0 && hint) {
+      hint.innerHTML = '\u2605 <b>还没有收藏任何东西</b>：先退出（再点一次右上角按钮），回到题卡点右上角的 <b>\u2606</b>。';
+    }
+    refreshFavView();
+  } else {
+    document.querySelectorAll('section.topic').forEach(function(s){ s.style.display = ''; });
+    if (hint) hint.innerHTML = '每道题和每个专题右上角的 <b>\u2605</b> 点一下即收藏；点顶部<b>「\u2605 我的收藏」</b>页面就只剩你收藏的题（原题 + 答案 + 解析）。答案藏在绿色的「Answer &amp; Explanation」条里 —— 先自己做一遍再点开。';
+  }
+}
+
+/* ============ 展开 / 折叠 ============ */
+function setAll(open){
+  document.querySelectorAll('details.ans').forEach(function(d){ d.open = open; });
+}
+
+/* ============ 中英互译 ============ */
+function setCardLang(card, zh){
+  card.classList.toggle('zhmode', zh);
+  var b = card.querySelector('.trbtn');
+  if (b) { b.classList.toggle('on', zh); b.textContent = zh ? 'EN' : '\u8bd1'; }
+}
+function toggleTr(ev, btn){
+  ev.stopPropagation();
+  var card = btn.closest ? btn.closest('.qcard') : null;
+  if (!card) return;
+  setCardLang(card, !card.classList.contains('zhmode'));
+}
+function toggleAllTr(){
+  var cards = Array.prototype.slice.call(document.querySelectorAll('.qcard'));
+  if (!cards.length) return;
+  var target = cards.some(function(c){ return !c.classList.contains('zhmode'); });
+  cards.forEach(function(c){ setCardLang(c, target); });
+  var b = document.getElementById('trAllBtn');
+  if (b) { b.classList.toggle('on', target); b.textContent = target ? '全部切 English' : '全部切中文'; }
+  try { localStorage.setItem(ZH_KEY, target ? '1' : '0'); } catch(e){}
+}
+
+/* ============ 初始化 ============ */
+(function init(){
+  restoreStars();
+  try {
+    if (localStorage.getItem(ZH_KEY) === '1') {
+      document.querySelectorAll('.qcard').forEach(function(c){ setCardLang(c, true); });
+      var b = document.getElementById('trAllBtn');
+      if (b) { b.classList.add('on'); b.textContent = '全部切 English'; }
+    }
+  } catch(e){}
+})();
+</script>
+</body>
+</html>
