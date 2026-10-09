@@ -2063,7 +2063,7 @@ function paintCard(card, on){
 
 function toggleStar(ev, btn){
   ev.stopPropagation();
-  var card = btn.closest ? btn.closest('.card') : null;
+  var card = btn.closest ? btn.closest('.card, .qcard') : null;
   if (!card) return;
   var key = card.id + '::' + (card.dataset.label || card.id);
   if (favs[key]) { delete favs[key]; paintCard(card, false); }
@@ -2098,7 +2098,7 @@ function restoreStars(){
 var HIDE_SEL = '.hero, #toc-h, .toc, .wrap > .card.tint, .footer, #keys, #keys + .card';
 function refreshFavView(){
   document.querySelectorAll('section.topic').forEach(function(sec){
-    var has = sec.querySelector('.card.fav');
+    var has = sec.querySelector('.card.fav, .qcard.fav');
     sec.style.display = has ? '' : 'none';
   });
   document.querySelectorAll('.fav details').forEach(function(d){ d.open = true; });
