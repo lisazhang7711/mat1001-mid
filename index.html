@@ -6,8 +6,21 @@
 <title>MAT1001 期中 · 一体化复习包 · 原题+答案+解析+专题（2022 / 2024 / 2025 期中）</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\(',right:'\\)',display:false}],throwOnError:false});"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+  if(typeof renderMathInElement === 'function'){
+    renderMathInElement(document.body, {
+      delimiters:[
+        {left:'$$',right:'$$',display:true},
+        {left:'\\(',right:'\\)',display:false},
+        {left:'$',right:'$',display:false}
+      ],
+      throwOnError:false
+    });
+  }
+});
+</script>
 <style>
 :root{
   --bg:#f6f7f9; --panel:#ffffff; --ink:#1c2331; --ink2:#4a5568; --ink3:#718096;
@@ -215,11 +228,12 @@ section.module > section.topic{margin:16px 0}
 
 <div class="hero">
   <h1>MAT1001 期中 · 一体化复习包</h1>
-  <p>原题 + 答案 + 逐步解析 + 专题分析，按「模块 → 专题 → 知识板块」三级组织在一个页面里｜2022 / 2024 / 2025 三年期中真题</p>
+  <p>原题 + 答案 + 逐步解析 + 专题分析，按「模块 → 专题 → 知识板块」三级组织在一个页面里｜2022 / 2024 / 2025 三年期中真题｜<b>已按 2026 秋期中范围 TC §2.1–5.2（不含 §2.3）裁剪</b></p>
   <div class="chips">
-    <span class="chip">6 模块 · 10 专题 · 69 个知识板块</span>
-    <span class="chip">33 道大题（含全部小问）</span>
+    <span class="chip">5 模块 · 9 专题 · 50 个知识板块</span>
+    <span class="chip">30 道大题（含全部小问）</span>
     <span class="chip">3 套期中卷</span>
+    <span class="chip" style="background:var(--amber-soft);border-color:var(--amber-line);color:#8a5200">范围 TC §2.1–5.2（不含 §2.3）· 已删：定积分 / FTC / 积分应用 / 微分方程 / 反函数求导</span>
     <span class="chip">2022 期中附官方手写答案卷</span>
     <span class="chip">答案默认折叠</span>
     <span class="chip">每题中英双版 · 默认英文原题</span>
@@ -240,7 +254,8 @@ section.module > section.topic{margin:16px 0}
 <div class="card tint">
   <b>这份复习包怎么用</b>
   <ul>
-    <li><b>按专题聚合</b>：33 道题来自 2022/2024/2025 三年期中卷，先归入 6 个模块、再落到 10 个考点专题（比旧版的 9 个专题拆得更细：相关变化率／最优化、运动学／积分应用已分开）。每张题卡保留试卷原始题号（如 <span class="mono">2024期中 Q6</span>），想按整卷刷就顺着题号排序看。</li>
+    <li><b>按专题聚合</b>：30 道题来自 2022/2024/2025 三年期中卷，先归入 5 个模块、再落到 9 个考点专题（相关变化率／最优化、运动学已分开）。每张题卡保留试卷原始题号（如 <span class="mono">2024期中 Q6</span>），想按整卷刷就顺着题号排序看。</li>
+    <li><b>已按考试范围裁剪</b>：本次期中范围是 <b>TC §2.1–5.2</b>（不含 §2.3 的 ε–δ 定义）。因此把定积分本身、FTC、面积／体积／弧长／做功、微分方程、反函数与对数求导这几块整段移出；跨章大题（如 2025 期中 Q1）里落在范围外的小问也一并删掉，题卡上标了「超纲小问已删」。</li>
     <li><b>答案与解析在同卡折叠条里</b>：默认显示<b>英文原题</b>，点题卡右上角「<b>译</b>」整卡切中文（题干 + 答案解析一起换）。答案分「最终答案」+「逐步解析」+「易错点」。</li>
     <li><b>收藏（★）</b>：点题卡或专题分析右上角的 <span class="mono">★</span> 收藏，再点顶部「★ 我的收藏」只看收藏的题（答案自动展开）。收藏存本机浏览器 localStorage，<b>换浏览器 / 清缓存会丢</b>。</li>
     <li><b>答案可信度</b>：2022 期中题目标了 <span class="tag g">官方答案卷</span>（对照学校流出的手写答案 PDF 逐题核对）；其余三套标 <span class="tag b">AI 解析</span>，已逐步验算，但<b>没有官方答案兜底</b>，发现可疑请以老师讲评为准。</li>
@@ -253,23 +268,20 @@ section.module > section.topic{margin:16px 0}
 <a href="#t1"><span class="tno">T1</span>极限求值：夹逼 · 有理化 · 渐近 · 黎曼和<i>5 题 · 10 个知识板块</i></a>
 </div></div>
 <div class="tocmod"><a class="tocm" href="#m2"><span class="mn">M2</span><b class="mt">导数：定义与运算</b><span class="ms">3 题</span></a><div class="toct">
-<a href="#t2"><span class="tno">T2</span>求导：定义 · 隐/反函数 · 边际成本<i>3 题 · 10 个知识板块</i></a>
+<a href="#t2"><span class="tno">T2</span>求导：定义 · 隐函数 · 高阶导 · 边际成本<i>3 题 · 9 个知识板块</i></a>
 </div></div>
-<div class="tocmod"><a class="tocm" href="#m3"><span class="mn">M3</span><b class="mt">导数的应用</b><span class="ms">18 题</span></a><div class="toct">
+<div class="tocmod"><a class="tocm" href="#m3"><span class="mn">M3</span><b class="mt">导数的应用</b><span class="ms">17 题</span></a><div class="toct">
 <a href="#t3"><span class="tno">T3</span>微分 · 线性化 · 牛顿法<i>2 题 · 6 个知识板块</i></a>
 <a href="#t4"><span class="tno">T4</span>中值定理与函数性态分析<i>6 题 · 11 个知识板块</i></a>
 <a href="#t5"><span class="tno">T5</span>相关变化率<i>5 题 · 4 个知识板块</i></a>
 <a href="#t6"><span class="tno">T6</span>最优化建模<i>2 题 · 4 个知识板块</i></a>
-<a href="#t7"><span class="tno">T7</span>运动学：s → v → a<i>3 题 · 4 个知识板块</i></a>
+<a href="#t7"><span class="tno">T7</span>运动学：s → v → a<i>2 题 · 3 个知识板块</i></a>
 </div></div>
-<div class="tocmod"><a class="tocm" href="#m4"><span class="mn">M4</span><b class="mt">积分</b><span class="ms">1 题</span></a><div class="toct">
-<a href="#t8"><span class="tno">T8</span>定积分：定义 · FTC · 几何与物理应用<i>1 题 · 12 个知识板块</i></a>
+<div class="tocmod"><a class="tocm" href="#m4"><span class="mn">M4</span><b class="mt">积分初步</b><span class="ms">0 题</span></a><div class="toct">
+<a href="#t8"><span class="tno">T8</span>反导数 · 面积逼近与黎曼和<i>0 题 · 3 个知识板块</i></a>
 </div></div>
-<div class="tocmod"><a class="tocm" href="#m5"><span class="mn">M5</span><b class="mt">微分方程</b><span class="ms">1 题</span></a><div class="toct">
-<a href="#t9"><span class="tno">T9</span>微分方程与初值问题<i>1 题 · 8 个知识板块</i></a>
-</div></div>
-<div class="tocmod"><a class="tocm" href="#m6"><span class="mn">M6</span><b class="mt">综合自检：概念快答</b><span class="ms">5 题</span></a><div class="toct">
-<a href="#t10"><span class="tno">T10</span>快答：判断题与小题综合<i>5 题 · 5 个知识板块</i></a>
+<div class="tocmod"><a class="tocm" href="#m5"><span class="mn">M5</span><b class="mt">综合自检：概念快答</b><span class="ms">5 题</span></a><div class="toct">
+<a href="#t9"><span class="tno">T9</span>快答：判断题与小题综合<i>5 题 · 4 个知识板块</i></a>
 </div></div>
 </div>
 <p class="small" style="margin:8px 0 0">每个专题下面都有一组<b>知识板块</b>，全部从教授笔记里按页摘出来（标了 <span class="mono">笔记 §x · p.y</span> 与对应的 Thomas' Calculus 章节），先看板块再刷该专题的题。</p>
@@ -297,7 +309,7 @@ section.module > section.topic{margin:16px 0}
 <div class="kp"><div class="kph"><span class="kpt">渐近线：水平 / 竖直 / 斜</span><span class="kpr">笔记 §2.10 · p.17<i>TC §2.6</i></span></div><div class="kpf">\(A=\lim_{x\to\infty}\frac{f(x)}{x},\quad B=\lim_{x\to\infty}(f(x)-Ax),\quad \lim_{x\to\infty}(f(x)-Ax-B)=0\)</div><p class="kpb">lim₍x→∞₎f(x)=b 或 lim₍x→-∞₎f(x)=b 给出水平渐近线 y=b，一个函数可以有两条。x→ a⁻ 或 x→ a⁺ 的极限为 ±∞ 时，x=a 是竖直渐近线。斜渐近线 y=Ax+B 由 A=lim(f(x))/(x)、B=lim(f(x)-Ax) 两步求出。</p><p class="kpe"><b>考场</b>只算 A 不算 B 是典型漏步：y=x+√(x) 有 A=1，但 B=lim√(x)=∞，结论是没有斜渐近线。笔记另一例 y=(x²-3)/(2x-4) 算出 A=(1)/(2)、B=1，答案是 y=(x)/(2)+1。两个极限只要有一个不存在，就没有斜渐近线。</p><p class="kpen">Horizontal from limits at ±∞, vertical where a one-sided limit blows up, oblique from A = lim f/x and B = lim(f − Ax), both of which must exist.</p></div>
 <div class="kp"><div class="kph"><span class="kpt">连续性的判定与间断点分类</span><span class="kpr">笔记 §3 · p.20<i>TC §2.5</i></span></div><div class="kpf">\(\lim_{x\to c}f(x)=L\ne f(c)\Rightarrow \text{可去};\quad L_1=\lim_{x\to c^-}f,\ L_2=\lim_{x\to c^+}f,\ L_1\ne L_2\Rightarrow \text{跳跃}\)</div><p class="kpb">f 在 c 连续即 lim₍x→ c₎f(x)=f(c)，判定三条件是 f(c) 存在、极限存在、两者相等，区间端点换成对应的单侧极限。不连续点分三类：可去（极限是实数 L 但不等于 f(c)）、跳跃（左右极限为两个不同的实数）、本性（某个单侧极限不是实数）。把 f(c) 补定义成那个极限值 L，就得到连续延拓。</p><p class="kpe"><b>考场</b>先算左右极限再分类：两个有限且相等是可去，有限但不等是跳跃（lfloor xrfloor 在每个整数点），出现 ±∞ 或不存在是本性（1/x² 在 0）。求 lim g(f(x)) 时，只有外层 g 连续才能把 lim 移进函数里面（笔记 §3.3，p.23）。</p><p class="kpen">Continuous means the limit equals the value; discontinuities are removable, jump, or essential according to the one-sided limits.</p></div>
 <div class="kp"><div class="kph"><span class="kpt">介值定理 IVT</span><span class="kpr">笔记 §3.5 · p.25<i>TC §2.5</i></span></div><div class="kpf">\(f\ \text{continuous on}\ [a,b],\ f(a)&lt;0&lt;f(b)\Rightarrow \exists c\in(a,b): f(c)=0\)</div><p class="kpb">f 在 [a,b] 上连续且 f(a)≠ f(b)，则 f(a) 与 f(b) 之间的任何值 y₀ 都被取到，即存在 c∈(a,b) 使 f(c)=y₀。特例：f(a)&lt;0&lt;f(b) 时存在 c 使 f(c)=0，这就是「证明根存在」的标准依据。定理只保证存在性，不给出 c 的值，且这样的 c 可能不止一个。</p><p class="kpe"><b>考场</b>证根存在的三步：确认函数在闭区间上连续、挑两个端点使函数值异号、引用 IVT。跳掉连续性这一步论证就无效——笔记 p.26 专门给了 Warning。</p><p class="kpen">A continuous function on [a,b] hits every intermediate value; a sign change forces a root, but IVT never says where it is.</p></div>
-<div class="kp"><div class="kph"><span class="kpt">黎曼和形式的极限</span><span class="kpr">笔记 §6.2.3 · p.102<i>TC §4.7, 5.1, 5.2, 5.3</i></span></div><div class="kpfimg"><img src="kbimg/t8_riemann_def.png" alt="公式截图 · 摘自教授笔记" loading="lazy"></div><p class="kpb">n 项和 ∑ᵢ₌₁ⁿf(xᵢ⁽*⁾)Δ x 是 [a,b] 上的黎曼和，其中 Δ x=(b-a)/(n)、xᵢ=a+i(b-a)/(n)，样点 xᵢ⁽*⁾ 可取小区间内任一点。定积分定义为它的极限：∫ₐᵇ f(x)dx=lim₍n→∞₎∑ᵢ₌₁ⁿf(xᵢ⁽*⁾)Δ x，所以「求和的极限」可直接翻译成定积分来算。</p><p class="kpe"><b>考场</b>识别动作：把和式硬凑成 (1)/(n)∑ f(i/n) 或 (b-a)/(n)∑ f(a+i(b-a)/(n))，读出被积函数与上下限，剩下的就是算积分。常配三个求和公式（笔记 p.103）：∑ i=(n(n+1))/(2)、∑ i²=(n(n+1)(2n+1))/(6)、∑ i³=(n²(n+1)²)/(4)。</p><p class="kpen">A limit of Riemann sums is a definite integral: read off Δx and the sample points to recover the integrand and the interval.</p></div>
+<div class="kp"><div class="kph"><span class="kpt">黎曼和形式的极限</span><span class="kpr">笔记 §6.2.3 · p.102<i>TC §5.1, 5.2</i></span></div><div class="kpfimg"><img src="kbimg/t8_riemann_def.png" alt="公式截图 · 摘自教授笔记" loading="lazy"></div><p class="kpb">n 项和 ∑ᵢ₌₁ⁿf(xᵢ⁽*⁾)Δ x 是 [a,b] 上的黎曼和，其中 Δ x=(b-a)/(n)、xᵢ=a+i(b-a)/(n)，样点 xᵢ⁽*⁾ 可取小区间内任一点。定积分定义为它的极限：∫ₐᵇ f(x)dx=lim₍n→∞₎∑ᵢ₌₁ⁿf(xᵢ⁽*⁾)Δ x，所以「求和的极限」可直接翻译成定积分来算。</p><p class="kpe"><b>考场</b>识别动作：把和式硬凑成 (1)/(n)∑ f(i/n) 或 (b-a)/(n)∑ f(a+i(b-a)/(n))，读出被积函数与上下限，剩下的就是算积分。常配三个求和公式（笔记 p.103）：∑ i=(n(n+1))/(2)、∑ i²=(n(n+1)(2n+1))/(6)、∑ i³=(n²(n+1)²)/(4)。</p><p class="kpen">A limit of Riemann sums is a definite integral: read off Δx and the sample points to recover the integrand and the interval.</p></div>
 </div></details>
 </div>
 <div class="card analysis" id="kpn1" data-key="K::T1 · 极限求值" data-label="T1 · 极限求值" data-topic="t1" data-tname="T1 · 极限求值" data-kp="两个重要极限 有理化 无穷远泰勒 tan/ap 渐近 有界量乘无穷小 黎曼和极限 立方差有理化 ∞-∞ 型 1^∞ 型">
@@ -469,13 +481,13 @@ section.module > section.topic{margin:16px 0}
 <div class="modno">M2</div>
 <div class="modtxt">
 <h2 class="modtitle">导数：定义与运算 <span class="modq">3 题 · 1 专题</span></h2>
-<p class="modsub">笔记 §4.1–4.11、§9.1 · TC §3.1–3.8、§7.1</p>
-<p class="modwhy">只管「怎么把导数算出来」——定义、四则、链式、隐函数、反函数、高阶导；不涉及拿导数去做什么。</p>
+<p class="modsub">笔记 §4.1–4.11 · TC §3.1–3.7</p>
+<p class="modwhy">只管「怎么把导数算出来」——定义、四则、链式、隐函数、高阶导；不涉及拿导数去做什么。（反函数求导在笔记 §9.1 / TC §7.1，超出本次期中范围，已删）</p>
 </div></div>
 <section class="topic anchor" id="t2">
-<h2 class="th">T2 · 求导：定义 · 隐/反函数 · 边际成本 <span class="freq">3 题</span></h2>
+<h2 class="th">T2 · 求导：定义 · 隐函数 · 高阶导 · 边际成本 <span class="freq">3 题</span></h2>
 <div class="kpset">
-<details open><summary class="dsum">知识板块 · 全部摘自教授笔记，标了页码（10 个）</summary>
+<details open><summary class="dsum">知识板块 · 全部摘自教授笔记，标了页码（9 个）</summary>
 <div class="dbody">
 <div class="kp"><div class="kph"><span class="kpt">平均变化率与瞬时变化率 / Average &amp; Instantaneous Rates of Change</span><span class="kpr">笔记 §4.1–4.2 · p.27</span></div><div class="kpf">\(\frac{f(b)-f(a)}{b-a},\qquad \lim_{\Delta x\to 0}\frac{\Delta y}{\Delta x}=\lim_{\Delta x\to 0}\frac{f(x_0+\Delta x)-f(x_0)}{\Delta x}\)</div><p class="kpb">函数在区间 [a,b] 上的平均变化率 (f(b)-f(a))/(b-a) 就是割线斜率；令 Δ x→ 0 取极限得到 x₀ 处的瞬时变化率，几何上就是切线斜率。</p><p class="kpe"><b>考场</b>看题干给的是区间还是一点：给 [a,b] 用差商，给「at x=x₀／某一时刻」取极限。割线 Slope 与切线 Slope 不可混用。</p><p class="kpen">Average rate of change over [a,b] is the secant slope; its limit as the increment tends to 0 is the instantaneous rate, i.e. the tangent slope.</p></div>
 <div class="kp"><div class="kph"><span class="kpt">导数的极限定义 / Definition of the Derivative</span><span class="kpr">笔记 §4.3 · p.29</span></div><div class="kpf">\(f'(x_0)=\lim_{h\to 0}\frac{f(x_0+h)-f(x_0)}{h}=\lim_{x\to x_0}\frac{f(x)-f(x_0)}{x-x_0}\)</div><p class="kpb">导数是差商的极限，h→ 0 与 x→ x₀ 两种写法等价；常用记号 f'(x)、(dy)/(dx)、y'、(df)/(dx)、(d)/(dx)f(x)。也可类似定义单侧导数 f'₊(x₀)、f'₋(x₀)。</p><p class="kpe"><b>考场</b>分段函数在分界点、或 f(x)=x³sin(1/x) 这类题必须回到定义，并验证左右导数相等；直接套求导公式会算错。</p><p class="kpen">The derivative is the limit of a difference quotient; two equivalent forms, h→0 and x→x₀, plus one-sided versions.</p></div>
@@ -485,23 +497,21 @@ section.module > section.topic{margin:16px 0}
 <div class="kp"><div class="kph"><span class="kpt">链式法则 / The Chain Rule</span><span class="kpr">笔记 §4.10 · p.42<i>TC §3.6</i></span></div><div class="kpf">\((f\circ g)'(x)=f'(g(x))\cdot g'(x),\qquad \frac{dy}{dx}=\frac{dy}{du}\cdot\frac{du}{dx}\)</div><p class="kpb">若 y=f(u) 在 u=b=g(a) 可导、u=g(x) 在 x=a 可导，则复合函数可导，导数等于外层导数乘内层导数。可反复连用，如 y=sin(√(1+x²))、g(t)=tan(5-sin 2t)。</p><p class="kpe"><b>考场</b>由外向内逐层剥，每剥一层乘一次内层导数；最高频失分点是漏乘最内层因子的导数（如 sin 2t 里的 2）。外层导数要在 g(x) 处取值，不是直接在 x 处取值。</p><p class="kpen">Differentiate outside-in: (f∘g)′(x) = f′(g(x))·g′(x); repeat for nested compositions.</p></div>
 <div class="kp"><div class="kph"><span class="kpt">高阶导数与物理意义 / Higher Order Derivatives</span><span class="kpr">笔记 §4.6 · p.38</span></div><div class="kpf">\(v(t)=s'(t),\quad |v(t)|=\text{speed},\quad a(t)=v'(t)=s''(t),\quad j(t)=a'(t)=v''(t)=s'''(t),\quad \frac{d^{2}y}{dx^{2}}=\frac{d}{dx}\!\left(\frac{dy}{dx}\right)\)</div><p class="kpb">一阶导数再求导得二阶，记号 f''、y''、(d²y)/(dx²)；一般地 f⁽⁰⁾=f，f⁽ⁿ⁾=(f⁽ⁿ⁻¹⁾)'。物理上位置 s(t) 求导得速度 v=s'，再求导得加速度 a=s''，三阶导数 s''' 是 jerk。</p><p class="kpe"><b>考场</b>速度是 s'(t)，速率是 |v(t)|，两者不同——判断题常在这里设陷阱。问「何时静止／改变方向」解 v(t)=0，问加速度就再求一次。</p><p class="kpen">Second derivative is the derivative of the first; physically s → v = s′ → a = s″ → jerk = s‴.</p></div>
 <div class="kp"><div class="kph"><span class="kpt">隐函数求导与二阶隐导数 / Implicit Differentiation</span><span class="kpr">笔记 §4.11 · p.49<i>TC §3.7</i></span></div><div class="kpf">\(\frac{d}{dx}\big(y^{n}\big)=ny^{n-1}\frac{dy}{dx},\qquad \frac{d}{dx}\big(\cos y\big)=-\sin y\cdot\frac{dy}{dx},\qquad \frac{d}{dx}y'=\frac{d^{2}y}{dx^{2}}\)</div><p class="kpb">当方程（如 x³+y³-9xcos y=0）解不出 y=f(x) 时，把 y 当作 x 的函数，对等式两边同时关于 x 求导，凡遇到 y 就用链式法则补一个 (dy)/(dx)。求二阶：把一阶结果再对 x 求导一次，最后把 (dy)/(dx) 的表达式代回。</p><p class="kpe"><b>考场</b>每个 y 后面都要乘 (dy)/(dx)，漏乘是最大错误；二阶导算完必须把一阶的 y' 代进去。前提是该点附近曲线局部是 x 的函数且无竖直切线，例如 x³+y³=6xy 在 (0,0) 处不能用。</p><p class="kpen">Differentiate both sides w.r.t. x treating y as a function of x; multiply by dy/dx whenever you differentiate a term containing y.</p></div>
-<div class="kp"><div class="kph"><span class="kpt">反函数求导与单射性 / Inverse Functions and Their Derivatives</span><span class="kpr">笔记 §9.1 · p.142<i>TC §7.1</i></span></div><div class="kpf">\((f^{-1})'(b)=\frac{1}{f'(a)},\qquad b=f(a),\ f'(a)\neq 0\)</div><p class="kpb">先用水平线检验（图像与每条水平线至多交一次）或单调性确认 f 单射，才有反函数 f⁻¹（注意是反函数，不是 1/f）。若 f 在区间上连续单射、在 a 可导且 f'(a)≠ 0，则 f⁻¹ 在 b=f(a) 可导，导数等于 f'(a) 的倒数。</p><p class="kpe"><b>考场</b>代入点别弄反：b 是反函数的自变量，要通过 b=f(a) 反解出 a 再代 f'(a)。f'(a)=0 时公式失效，此时反函数在该点不可导。</p><p class="kpen">For one-to-one differentiable f with f′(a) ≠ 0, the inverse is differentiable at b = f(a) with (f⁻¹)′(b) = 1/f′(a).</p></div>
 <div class="kp"><div class="kph"><span class="kpt">平均成本与边际成本 / Average &amp; Marginal Cost</span><span class="kpr">笔记 §4.8 · p.39</span></div><div class="kpf">\(c(x)=0.001x^{2}+2x+1500\ \Rightarrow\ \bar c(x)=\frac{c(x)}{x}=0.001x+2+\frac{1500}{x},\quad c'(x)=0.002x+2,\quad c(0)=1500\)</div><p class="kpb">设生产 x 千件产品的成本为 c(x)（千美元）：固定成本是 c(0)；平均成本是 (c(x))/(x)；边际成本是 c'(x)，表示在产量 x 处再多生产一个单位所需增加的成本的近似值。</p><p class="kpe"><b>考场</b>平均成本要除以 x，边际成本是求导，两者概念不同别混用；固定成本是 c(0)，不是函数里的二次项系数。</p><p class="kpen">Average cost is c(x)/x; marginal cost is c′(x), the approximate extra cost of producing one more unit at level x.</p></div>
 </div></details>
 </div>
-<div class="card analysis" id="kpn2" data-key="K::T2 · 求导法则" data-label="T2 · 求导法则" data-topic="t2" data-tname="T2 · 求导法则" data-kp="幂/积/商/链式 隐函数求导 二阶隐导数 反函数导数 导数定义 可导必连续 平均成本 边际成本">
+<div class="card analysis" id="kpn2" data-key="K::T2 · 求导法则" data-label="T2 · 求导法则" data-topic="t2" data-tname="T2 · 求导法则" data-kp="幂/积/商/链式 隐函数求导 二阶隐导数 导数定义 可导必连续 平均成本 边际成本">
   <h4 style="margin-top:0">专题分析<button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这个专题的知识点">☆</button></h4>
   <table>
-    <tr><th class="k">考什么</th><td>四则 + 链式组合的一把梭；隐函数求一阶/二阶；反函数求导 \((f^{-1})'(y)=1/f'(x)\)；用定义判断是否可导；导数在经济学中的解释（平均成本 / 边际成本）</td></tr>
-    <tr><th class="k">怎么识别</th><td>① 题目给了难以解出的 \(y\) 方程 → 隐函数，两边对 \(x\) 求导后解 \(y'\)；② 求二阶隐导数时 <b>不要再解出 \(y'\)</b>，直接对一阶等式两边求导；③ 要求「先用单调性证反函数存在」→ 看 \(f'\) 是否恒 \(\ge0\)</td></tr>
-    <tr><th class="k">易错</th><td>① 分段函数先用<b>连续性</b>筛（不连续必不可导）；② 隐求导时 \(y\) 是 \(x\) 的函数，每一项都要乘 \(y'\)；③ 二阶隐导数里 \(y'\) 要代回已有的表达式；④ 反函数求导要<b>先解出对应的 \(x\)</b> 而不是随便代 suffer</td></tr>
+    <tr><th class="k">考什么</th><td>四则 + 链式组合的一把梭；隐函数求一阶/二阶；用定义判断是否可导；导数在经济学中的解释（平均成本 / 边际成本）</td></tr>
+    <tr><th class="k">怎么识别</th><td>① 题目给了难以解出的 \(y\) 方程 → 隐函数，两边对 \(x\) 求导后解 \(y'\)；② 求二阶隐导数时 <b>不要再解出 \(y'\)</b>，直接对一阶等式两边求导；③ 先用连续性筛：分段函数在分界点不连续就直接判不可导</td></tr>
+    <tr><th class="k">易错</th><td>① 分段函数先用<b>连续性</b>筛（不连续必不可导）；② 隐求导时 \(y\) 是 \(x\) 的函数，每一项都要乘 \(y'\)；③ 二阶隐导数里 \(y'\) 要代回已有的表达式；④ 隐函数二阶导里 \(y'\) 要代回已有表达式，别再解 \(y\)</td></tr>
   </table>
   <details class="en"><summary class="dsum">Key points (EN)</summary><div class="dbody">
     <ul>
       <li>Differentiable ⇒ continuous: check continuity first for piecewise functions — it kills most "find \(f'(c)\)" traps in one line.</li>
       <li>Implicit differentiation: differentiate both sides treating \(y\) as \(y(x)\); collect \(y'\) terms and solve.</li>
       <li>Second implicit derivative: differentiate the first-derivative relation again and <b>substitute the known \(y'\)</b> — do not try to solve for \(y\) explicitly.</li>
-      <li>Inverse function: \((f^{-1})'(b)=1/f'(a)\) where \(f(a)=b\); \(f^{-1}\) exists if \(f\) is one-to-one (e.g. \(f'\ge0\) and not identically zero on any subinterval).</li>
       <li>Economics: average cost \(a=C/x\), marginal cost \(m=C'\); at the minimum of \(a\), \(a=m\).</li>
     </ul>
   </div></details>
@@ -618,7 +628,7 @@ section.module > section.topic{margin:16px 0}
 <div class="modhead">
 <div class="modno">M3</div>
 <div class="modtxt">
-<h2 class="modtitle">导数的应用 <span class="modq">18 题 · 5 专题</span></h2>
+<h2 class="modtitle">导数的应用 <span class="modq">17 题 · 5 专题</span></h2>
 <p class="modsub">笔记 §4.6、§4.12–4.13、第 5 章 · TC §3.4、§3.9–§4.6</p>
 <p class="modwhy">导数算出来之后的全部用途：局部近似（微分 / 线性化 / 牛顿法）、函数性态（中值定理 / 单调 / 凹性 / 作图）、建模（相关变化率 / 最优化）、物理（运动学）。这是期中占比最大的一块。</p>
 </div></div>
@@ -1156,24 +1166,23 @@ section.module > section.topic{margin:16px 0}
   </div></details>
 </div></section>
 <section class="topic anchor" id="t7">
-<h2 class="th">T7 · 运动学：s → v → a <span class="freq">3 题</span></h2>
+<h2 class="th">T7 · 运动学：s → v → a <span class="freq">2 题</span></h2>
 <div class="kpset">
-<details open><summary class="dsum">知识板块 · 全部摘自教授笔记，标了页码（4 个）</summary>
+<details open><summary class="dsum">知识板块 · 全部摘自教授笔记，标了页码（3 个）</summary>
 <div class="dbody">
 <div class="kp"><div class="kph"><span class="kpt">平均变化率 vs 瞬时变化率（割线 vs 切线）</span><span class="kpr">笔记 §4.1–4.2 · p.27<i>TC §2.1</i></span></div><div class="kpf">\(\frac{\Delta y}{\Delta x}=\frac{f(b)-f(a)}{b-a},\qquad \lim_{\Delta x\to 0}\frac{\Delta y}{\Delta x}=f'(x_0)\)</div><p class="kpb">y=f(x) 在 [a,b] 上的平均变化率是 (f(b)−f(a))/(b−a)，几何上等于割线（连接曲线两点的直线）的斜率。固定 x0 后令 Δx→0，取 Δy/Δx 的极限就是 x0 处的瞬时变化率，几何上等于切线斜率。自由落体 y=f(t)=½gt²=4.9t²：“第1到第3秒的平均速度”用割线，“第2秒的瞬时速度”用切线。</p><p class="kpe"><b>考场</b>看到“平均速度 / 平均变化率 / 在某段时间内”就用 (f(b)−f(a))/(b−a)；看到“某一时刻的速度 / 第 k 秒的速度”就求导。两者混用是最常见的错。</p><p class="kpen">Average rate of change = slope of the secant over [a,b]; instantaneous rate of change = slope of the tangent = the derivative at x0.</p></div>
 <div class="kp"><div class="kph"><span class="kpt">s → v → a → j（高阶导数的物理意义）</span><span class="kpr">笔记 §4.6–4.7 · p.38<i>TC §3.4</i></span></div><div class="kpfimg"><img src="kbimg/t7_kinematics.png" alt="公式截图 · 摘自教授笔记" loading="lazy"></div><p class="kpb">记 f⁽0)=f，f⁽1)=f′，f⁽n)=(f⁽n−1))′。设 s(t) 是物体在坐标线上的位置：s′(t) 是位置的瞬时变化率即瞬时速度 v(t)；|v(t)| 是速率 speed；s″(t) 是速度的瞬时变化率即加速度 a(t)=v′(t)；s‴(t) 是加速度的变化率，称为 jerk j(t)。</p><p class="kpe"><b>考场</b>speed 是 |v|（非负），velocity 是带符号的 v，问“速率 / speed”时别忘了绝对值。求 v、a 就是对 s 连求一、二阶导，别把 a 写成 (s′)²。</p><p class="kpen">v=s' is velocity, |v| is speed, a=v'=s'' is acceleration, and j=a'=s''' is the jerk.</p></div>
 <div class="kp"><div class="kph"><span class="kpt">由 a(t) 反推 v(t) 与 s(t)</span><span class="kpr">笔记 §4.7 · p.39<i>TC §3.4</i></span></div><div class="kpf">v(t)=∫ a(t)dt+C₁,   s(t)=∫ v(t)dt+C₂</div><p class="kpb">因为 a=v′ 且 v=s′，从加速度出发要反向做两次积分：先积 a 得 v，再积 v 得 s（反向操作的依据是微积分基本定理，见笔记 §7 · p.110）。每积一次都会多出一个常数，所以每一步都需要一个初值条件来定它：用 v(0)=v0 定第一个常数，用 s(0)=s0 定第二个。</p><p class="kpe"><b>考场</b>两个常数必须各自用对应的初值定（v 的条件定 C1，s 的条件定 C2），条件用错或漏写 +C 都会全盘皆错。注意区分“从高度 h 落下”给出的是 s(0)=h 而不是位移。</p><p class="kpen">Integrate a(t) twice to recover s(t); each integration introduces a constant fixed by one initial condition (v(0)=v0, then s(0)=s0).</p></div>
-<div class="kp"><div class="kph"><span class="kpt">位移 ∫v dt vs 总路程 ∫|v| dt</span><span class="kpr">笔记 §7 · p.110<i>TC §5.3, 5.4, 5.5, 5.6</i></span></div><div class="kpf">∫ₐᵇ v(t)dt=s(b)-s(a),   ∫ₐᵇ|v(t)|dt=∑ₖ|∫₍tₖ₎⁽tₖ₊₁⁾v(t)dt|</div><p class="kpb">由微积分基本定理，∫ₐᵇ v(t)dt=s(b)−s(a) 是位移，即位置的净变化（带符号），来回折返会相互抵消；总路程要积速率，即 ∫ₐᵇ |v(t)|dt。算法：先解 v(t)=0 找出全部转向时刻，用这些点把 [a,b] 分段，每段内 v 符号固定，去掉绝对值后逐段积分再取绝对值相加。</p><p class="kpe"><b>考场</b>不先找 v=0 的分界点就直接积 v，算出来的是位移；物体折返时路程一定比位移大。分段后每段的积分要各自取绝对值再相加。</p><p class="kpen">∫v dt is displacement (net change); total distance is ∫|v| dt, computed by splitting at the times where v(t)=0.</p></div>
 </div></details>
 </div>
-<div class="card analysis" id="kpn7" data-key="K::T7 · 运动学" data-label="T7 · 运动学" data-topic="t7" data-tname="T7 · 运动学" data-kp="s v a 三层求导 高阶导物理意义 平均速度 瞬时速度 位移 vs 路程 积分两次">
+<div class="card analysis" id="kpn7" data-key="K::T7 · 运动学" data-label="T7 · 运动学" data-topic="t7" data-tname="T7 · 运动学" data-kp="s v a 三层求导 高阶导物理意义 平均速度 瞬时速度 由 a 反推 s">
   <h4 style="margin-top:0">专题分析<button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这个专题的知识点">☆</button></h4>
   <table>
-    <tr><th class="k">考什么</th><td>位置 \(s\)、速度 \(v\)、加速度 \(a\) 三层之间的求导 / 积分换算；平均速度 vs 瞬时速度；位移 vs 总路程；由 \(a(t)\) 积分两次配初值反求 \(s(t)\)</td></tr><tr><th class="k">怎么识别</th><td>给了 \(s(t)\) 求落地时间与落地速度；给了 \(a(t)\) 求 \(s(t)\)；问 total distance travelled</td></tr><tr><th class="k">易错</th><td>① <b>位移 \(\int v\,dt\)</b> 与 <b>路程 \(\int|v|\,dt\)</b> 不是一回事——求路程必须先解 \(v=0\) 找分界点、分段取绝对值；② 由 \(a\) 往上积分，每上一层要一个初值（\(v(0)\)、\(s(0)\)）；③ speed 是 \(|v|\)，velocity 带符号；④ 自由落体 \(s(t)=s_0-4.9t^2\) 的正方向约定要先看清</td></tr>
+    <tr><th class="k">考什么</th><td>位置 \(s\)、速度 \(v\)、加速度 \(a\) 三层之间的求导 / 反导数换算；平均速度 vs 瞬时速度；由 \(a(t)\) 连取两次反导数配初值反求 \(s(t)\)</td></tr><tr><th class="k">怎么识别</th><td>给了 \(s(t)\) 求落地时间与落地速度；给了 \(a(t)\) 求 \(s(t)\)（配两个初值）</td></tr><tr><th class="k">易错</th><td>① 由 \(a\) 往上取反导数，每上一层要一个初值（\(v(0)\)、\(s(0)\)），两个常数别写成一个；② speed 是 \(|v|\)（非负），velocity 带符号；③ 自由落体 \(s(t)=s_0-4.9t^2\) 的正方向约定要先看清；④ 求落地时间是解 \(s(t)=0\)，不是解 \(v(t)=0\)</td></tr>
   </table>
   <details class="en"><summary class="dsum">Key points (EN)</summary><div class="dbody">
     <ul>
-      <li>Ladder: \(s\to v=s'\to a=v'\); go up by integrating, one initial condition per step.</li><li>Displacement \(=\int v\,dt\); total distance \(=\int|v|\,dt\) — split at the zeros of \(v\).</li><li>Speed \(=|v|\) is non-negative; velocity is signed.</li><li>Average velocity \(=\frac{s(b)-s(a)}{b-a}\), not the average of the speeds.</li>
+      <li>Ladder: \(s\to v=s'\to a=v'\); go up by integrating, one initial condition per step.</li><li>Speed \(=|v|\) is non-negative; velocity is signed.</li><li>Average velocity \(=\frac{s(b)-s(a)}{b-a}\), not the average of the speeds.</li>
     </ul>
   </div></details>
 </div>
@@ -1209,62 +1218,32 @@ section.module > section.topic{margin:16px 0}
   </div>
   </div></details>
 </div>
-<div class="qcard past" id="q38" data-key="P::2024期中 Q13" data-label="2024期中 Q13" data-topic="t7" data-tname="T7 · 运动学" data-kp="抛物线速度 位移 vs 路程 积分上界估计">
-  <div class="qhead"><span class="qno">2024期中 Q13</span><span class="qmeta">8 分</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
-  <div class="qbody">
-    <div class="ver en">
-      <p class="stem stem-en">[8] A particle travels along the \(x\)-axis with velocity \(v(t)=t(1-t)\) m/s, \(t\ge0\). Show that over \(0\le t\le1\), the distance it covers is not more than \(0.25\) m.</p>
-    </div>
-    <div class="ver zh">
-      <p class="stem">[8] 质点沿 \(x\) 轴运动，速度 \(v(t)=t(1-t)\) m/s（\(t\ge0\)）。证明在 \(0\le t\le1\) 内它走过的距离不超过 0.25 m。</p>
-    </div>
-  </div>
-  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
-    <div class="aver en"><div class="enexp"><span class="entag">EN</span> Distance \(=\int_0^1 t(1-t)\,dt=\frac16\approx0.167&lt;0.25\). (Crude bound: \(v\le\frac14\) on length 1.)</div></div>
-    <div class="aver zh">
-    <div class="ans-line"><b>答案：路程 \(=\dfrac16\approx0.167\) m \(&lt;0.25\) m</b><span class="tag b">AI 解析</span></div>
-    <p>在 \([0,1]\) 上 \(t\ge0\) 且 \(1-t\ge0\)，故 \(v(t)\ge0\) —— 没有反向运动，路程 = 位移：<br>
-    \(d=\displaystyle\int_0^1 t(1-t)\,dt=\int_0^1(t-t^2)dt=\left[\dfrac{t^2}{2}-\dfrac{t^3}{3}\right]_0^1=\dfrac12-\dfrac13=\dfrac16\approx0.1667\) m。<br>
-    显然 \(\dfrac16&lt;\dfrac14=0.25\)，证毕。<br>
-    <b>不积分也能证：</b>\(v(t)=t-t^2\) 在 \([0,1]\) 上的最大值出现在 \(t=\frac12\)，为 \(v_{\max}=\frac14\)。因此路程 \(=\int_0^1 v\le \int_0^1\frac14\,dt=\frac14=0.25\) m —— 这正是题目「不超过 0.25」这个数字的来历，实际值比它小得多。</p>
-    <p class="pt"><b>知识点：</b>「路程 ≤ 最大速度 × 时长」是一个随时可用的估计；若题目给的常数比精确值大，往往就是在提示你<b>不用算积分</b>。</p>
-  </div>
-  </div></details>
-</div>
-<div class="qcard past" id="q39" data-key="P::2025期中 Q4" data-label="2025期中 Q4" data-topic="t7" data-tname="T7 · 运动学" data-kp="加速度积分两次 初值条件 总路程 绝对值分段积分">
-  <div class="qhead"><span class="qno">2025期中 Q4</span><span class="qmeta">12 分</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+
+<div class="qcard past" id="q39" data-key="P::2025期中 Q4" data-label="2025期中 Q4" data-topic="t7" data-tname="T7 · 运动学" data-kp="加速度两次取反导数 初值条件 运动学">
+  <div class="qhead"><span class="qno">2025期中 Q4</span><span class="qmeta">12 分 · 超纲小问已删</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
   <div class="qbody">
     <div class="ver en">
       <p class="stem stem-en">(12 points) A particle moves on the \(s\)-axis with acceleration \(a(t)=\cos t\), \(t\ge0\), initial velocity \(v(0)=\frac12\) and initial position \(s(0)=2\).</p>
       <div class="opts">
         <div class="op"><b>(i)</b> Find the position function \(s(t)\).</div>
-        <div class="op"><b>(ii)</b> Find the total distance travelled from \(t=0\) to \(t=2\pi\).</div>
       </div>
     </div>
     <div class="ver zh">
       <p class="stem">(12 分) 质点在 \(s\) 轴上运动，加速度 \(a(t)=\cos t\)（\(t\ge0\)），初速度 \(v(0)=\frac12\)、初始位置 \(s(0)=2\)。</p>
       <div class="opts">
         <div class="op"><b>(i)</b> 求位置函数 \(s(t)\)。</div>
-        <div class="op"><b>(ii)</b> 求从 \(t=0\) 到 \(t=2\pi\) 走过的<b>总路程</b>。</div>
       </div>
     </div>
   </div>
   <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
-    <div class="aver en"><div class="enexp"><span class="entag">EN</span> (i) \(s(t)=-\cos t+\frac t2+3\). (ii) \(2\sqrt3+\dfrac{\pi}{3}\approx4.511\) m.</div></div>
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> \(s(t)=-\cos t+\frac t2+3\).</div></div>
     <div class="aver zh">
-    <div class="ans-line"><b>答案：(i) \(s(t)=-\cos t+\dfrac t2+3\)　(ii) \(2\sqrt3+\dfrac\pi3\approx4.511\) m</b><span class="tag b">AI 解析</span></div>
-    <p><b>(i)</b> 积分一次：\(v(t)=\int\cos t\,dt=\sin t+C\)。由 \(v(0)=\frac12\) 得 \(C=\frac12\)，故 \(v(t)=\sin t+\frac12\)。<br>
-    再积分：\(s(t)=\int\left(\sin t+\frac12\right)dt=-\cos t+\dfrac t2+D\)。由 \(s(0)=2\)：\(-1+D=2\Rightarrow D=3\)。<br>
+    <div class="ans-line"><b>答案：\(s(t)=-\cos t+\dfrac t2+3\)</b><span class="tag b">AI 解析</span></div>
+    <p><b>(i)</b> 取一次反导数：\(v(t)=\int\cos t\,dt=\sin t+C\)。由 \(v(0)=\frac12\) 得 \(C=\frac12\)，故 \(v(t)=\sin t+\frac12\)。<br>
+    再取一次反导数：\(s(t)=\int\left(\sin t+\frac12\right)dt=-\cos t+\dfrac t2+D\)。由 \(s(0)=2\)：\(-1+D=2\Rightarrow D=3\)。<br>
     所以 <b>\(s(t)=-\cos t+\dfrac t2+3\)</b>。<br>
-    <b>(ii)</b> 总路程积分 \(|v|\)。先找 \(v=0\) 的时刻：\(\sin t=-\dfrac12\Rightarrow t=\dfrac{7\pi}{6},\ \dfrac{11\pi}{6}\)（在 \([0,2\pi]\) 内）。<br>
-    符号：\([0,\frac{7\pi}6)\) 正，\((\frac{7\pi}6,\frac{11\pi}6)\) 负，\((\frac{11\pi}6,2\pi]\) 正。<br>
-    用原函数 \(F(t)=-\cos t+\dfrac t2\) 分段积分并取绝对值：<br>
-    \(\int_0^{7\pi/6}=F\left(\frac{7\pi}6\right)-F(0)=\left(\frac{\sqrt3}{2}+\frac{7\pi}{12}\right)-(-1)=1+\frac{\sqrt3}{2}+\frac{7\pi}{12}\);<br>
-    \(\int_{7\pi/6}^{11\pi/6}=F\left(\frac{11\pi}6\right)-F\left(\frac{7\pi}6\right)=\left(-\frac{\sqrt3}2+\frac{11\pi}{12}\right)-\left(\frac{\sqrt3}2+\frac{7\pi}{12}\right)=-\sqrt3+\frac{\pi}{3}\)（负值）；<br>
-    \(\int_{11\pi/6}^{2\pi}=F(2\pi)-F\left(\frac{11\pi}6\right)=(-1+\pi)-\left(-\frac{\sqrt3}{2}+\frac{11\pi}{12}\right)=-1+\frac{\sqrt3}{2}+\frac{\pi}{12}\)。<br>
-    总路程 \(=\left(1+\frac{\sqrt3}2+\frac{7\pi}{12}\right)+\left(\sqrt3-\frac\pi3\right)+\left(-1+\frac{\sqrt3}2+\frac{\pi}{12}\right)=2\sqrt3+\dfrac{\pi}{3}\approx4.5113\) m。<br>
-    <span class="small">（对比：位移 \(=s(2\pi)-s(0)=\pi\approx3.1416\) m —— 小于总路程，符合来回折返的直觉。）</span></p>
-    <div class="err"><b>易错：</b>把「总路程」当成位移直接算 \(s(2\pi)-s(0)=\pi\) 是最常见的失分；必须先解 \(\sin t=-\frac12\) 找零点、<b>分段变号</b>再求和。</div>
+    <span class="small">（原题 (ii)「求 \(0\le t\le2\pi\) 的总路程」要用到 \(\int|v|dt\)，属 TC §5.3 之后，已按期中范围删去。）</span></p>
+    <div class="err"><b>易错：</b>由 \(a\) 往上取反导数，每上一层消耗一个初值（\(v(0)\)、\(s(0)\)），别把两个常数混成一个；算完把 \(s\) 求导两次验回 \(a\)。</div>
   </div>
   </div></details>
 </div></section>
@@ -1274,151 +1253,57 @@ section.module > section.topic{margin:16px 0}
 <div class="modhead">
 <div class="modno">M4</div>
 <div class="modtxt">
-<h2 class="modtitle">积分 <span class="modq">1 题 · 1 专题</span></h2>
-<p class="modsub">笔记第 6–8 章 · TC §5.1–6.5</p>
-<p class="modwhy">从「面积是矩形和的极限」这个定义出发，靠 FTC 把积分和导数接起来，再落到几何 / 物理应用。期中只考定义、FTC 与面积 / 体积 / 弧长 / 做功这些基础应用；分部积分、三角换元、反常积分属期末范围，已不在本包内。</p>
+<h2 class="modtitle">积分初步 <span class="modq">0 题 · 1 专题</span></h2>
+<p class="modsub">笔记 §6.1–6.2 · TC §4.7–5.2</p>
+<p class="modwhy">本次期中范围的最后一段：反导数 / 不定积分，加上「面积 = 矩形和的极限」这套 §5.1–5.2 的语言。定积分本身、FTC、面积 / 体积 / 弧长 / 做功都在 TC §5.3 之后，已整段移出本包；分部积分、三角换元、反常积分同样不在范围内。</p>
 </div></div>
 <section class="topic anchor" id="t8">
-<h2 class="th">T8 · 定积分：定义 · FTC · 几何与物理应用 <span class="freq">1 题</span></h2>
+<h2 class="th">T8 · 反导数 · 面积逼近与黎曼和 <span class="freq">0 题</span></h2>
+<p class="small">笔记 §6.1–6.2（TC §4.7–5.2），本次期中范围的最后一站。三年真题没有单独在这里出过大题，但 2025 期中 Q1 的两个小问（黎曼和写定积分、求不定积分）考的正是这两块；TC §5.3 之后的定积分、FTC 与全部积分应用已按范围移出。</p>
 <div class="kpset">
-<details open><summary class="dsum">知识板块 · 全部摘自教授笔记，标了页码（12 个）</summary>
+<details open><summary class="dsum">知识板块 · 全部摘自教授笔记，标了页码（3 个）</summary>
 <div class="dbody">
-<div class="kp"><div class="kph"><span class="kpt">反导数与不定积分</span><span class="kpr">笔记 §6.1 · p.94<i>TC §4.7, 5.1, 5.2, 5.3</i></span></div><div class="kpfimg"><img src="kbimg/t8_antideriv.png" alt="公式截图 · 摘自教授笔记" loading="lazy"></div><p class="kpb">若 F′(x)=f(x) 在区间 I 上处处成立，则 F 是 f 在 I 上的一个反导数；f 的全体反导数恰为 F(x)+C（C 为任意常数），这个集合叫不定积分，记作 ∫f(x)dx=F(x)+C。不定积分是线性的：∫(αf(x)+βg(x))dx=α∫f(x)dx+β∫g(x)dx。</p><p class="kpe"><b>考场</b>不定积分的答案是函数族，漏写 +C 直接扣分；反之定积分是一个数，不能带 C。算完求导回去验算一遍。</p><p class="kpen">F is an antiderivative of f on I when F'(x)=f(x); all antiderivatives form the family F(x)+C, written ∫f(x)dx=F(x)+C.</p></div>
-<div class="kp"><div class="kph"><span class="kpt">面积逼近、分割与黎曼和：定积分的定义</span><span class="kpr">笔记 §6.2.1 · p.95<i>TC §4.7, 5.1, 5.2, 5.3</i></span></div><div class="kpfimg"><img src="kbimg/t8_riemann_def.png" alt="公式截图 · 摘自教授笔记" loading="lazy"></div><p class="kpb">把 [a,b] 分成 n 个等长子区间，以子区间为底、端点函数值为高作矩形逼近曲边梯形面积，取左端点或右端点都行，n→∞ 时矩形总面积趋于真实面积。形式化：分割 P=x0,...,xn 满足 a=x0&lt;x1&lt;...&lt;xn=b，Δxi=xi−xi−1，取样本点 x*i∈[xi−1,xi]，黎曼和 Sp=Σf(x*i)Δxi；当 ‖P‖=max Δxi→0 时黎曼和恒趋于同一个数 J，则称 J 为 f 在 [a,b] 上的定积分（ε–δ 表述见 p.98）。计算步骤（p.102）：取 Δx=(b−a)/n、xi=a+iΔx、选 x*i（常取右端点 xi），写 Sn=Σf(x*i)Δx，再令 n→∞ 取极限。</p><p class="kpe"><b>考场</b>求和时必须代入 Σ1=n、Σi=n(n+1)/2、Σi²=n(n+1)(2n+1)/6、Σi³=n²(n+1)²/4（p.103）再取极限。默认等分并取右端点 x*i=xi 最省事；f≥0 时定积分才等于面积。</p><p class="kpen">Approximate the area with n rectangles (endpoint heights); as n→∞ the Riemann sums Σf(x*i)Δxi converge to the definite integral.</p></div>
-<div class="kp"><div class="kph"><span class="kpt">上和、下和与可积性条件</span><span class="kpr">笔记 §6.2.2 · p.99<i>TC §4.7, 5.1, 5.2, 5.3</i></span></div><div class="kpf">\(U_P(f)=\sum_{i=1}^{n}M_i\Delta x_i,\qquad L_P(f)=\sum_{i=1}^{n}m_i\Delta x_i\)</div><p class="kpb">设 Mi、mi 为 f 在 [xi−1,xi] 上的最大、最小值，上和 UP=ΣMiΔxi、下和 LP=ΣmiΔxi；分割加细时 UP 只减、LP 只增，两者间隙趋于 0 时所有黎曼和被夹逼到同一个极限，即 f 可积。充分条件：f 在 [a,b] 连续 ⇒ 可积；f 在 [a,b] 有界且只在有限个点不连续 ⇒ 可积。必要条件：f 在 [a,b] 无界 ⇒ 不可积（例如 f(x)=1/x 于 (0,1]、f(0)=0）。</p><p class="kpe"><b>考场</b>可积不等于连续：有限个跳跃间断点的有界函数可积；Dirichlet 函数（有理点取 1、无理点取 0）处处不连续且不可积。拿到题先查有界性，无界直接判不可积。</p><p class="kpen">Upper and lower sums squeeze all Riemann sums; f is integrable if it is continuous, or bounded with only finitely many discontinuities, but never if unbounded.</p></div>
-<div class="kp"><div class="kph"><span class="kpt">定积分的性质</span><span class="kpr">笔记 §6.3 · p.108<i>TC §4.7, 5.1, 5.2, 5.3</i></span></div><div class="kpfimg"><img src="kbimg/t8_props.png" alt="公式截图 · 摘自教授笔记" loading="lazy"></div><p class="kpb">上下限交换变号 ∫bᵃ f = −∫aᵇ f，且 ∫aᵃ f=0；常数可提、和差可拆；区间可加 ∫aᶜ f+∫cᵇ f=∫aᵇ f（c 不必在 [a,b] 内）。比较性质：f≥g 于 [a,b] ⇒ ∫aᵇ f ≥ ∫aᵇ g；若 m≤f≤M 则 (b−a)m ≤ ∫aᵇ f ≤ (b−a)M。另外，把 f 在有限个点上的值改掉，既不影响可积性也不改变积分值。</p><p class="kpe"><b>考场</b>估值时 m、M 必须是 f 在整段上的最小、最大值，不能顺手取端点值（先确认单调性或另求极值）。做分段积分时注意 ∫aᵃ f=0 与区间可加对 a&gt;b 的情形同样成立。</p><p class="kpen">Definite integrals reverse sign when limits swap, add over adjacent intervals, preserve inequalities, and are bounded by (b−a)m and (b−a)M.</p></div>
-<div class="kp"><div class="kph"><span class="kpt">函数平均值与积分中值定理</span><span class="kpr">笔记 §7.1 · p.110<i>TC §5.3, 5.4, 5.5, 5.6</i></span></div><div class="kpfimg"><img src="kbimg/t8_average.png" alt="公式截图 · 摘自教授笔记" loading="lazy"></div><p class="kpb">可积函数 f 在 [a,b] 上的平均值（mean）定义为 av(f)=(1/(b−a))∫aᵇ f(x)dx。积分中值定理：若 f 在 [a,b] 连续，则存在 c∈[a,b] 使 f(c)=av(f)，即 ∫aᵇ f(x)dx=(b−a)f(c)；连续性条件不能省。</p><p class="kpe"><b>考场</b>求平均值要先算定积分再除以区间长度 b−a，漏掉 1/(b−a) 是最常见失分点。积分中值定理只保证 c 存在，不给出求 c 的方法，也不能把 c 默认成中点。</p><p class="kpen">The average (mean) value of f on [a,b] is av(f)=(1/(b−a))∫aᵇ f; if f is continuous it is attained at some c in [a,b].</p></div>
-<div class="kp"><div class="kph"><span class="kpt">微积分基本定理（第一部分）：变限积分求导</span><span class="kpr">笔记 §7.2 · p.112<i>TC §5.3, 5.4, 5.5, 5.6</i></span></div><div class="kpfimg"><img src="kbimg/t8_ftc1.png" alt="公式截图 · 摘自教授笔记" loading="lazy"></div><p class="kpb">f 在 [a,b] 连续，令 F(x)=∫aˣ f(t)dt，则 F 在 [a,b] 连续、在 (a,b) 可导且 F′(x)=f(x)：先积分再求导回到原函数，故每个连续函数都有反导数。上限换成函数时用链式法则：d/dx ∫aᵍ⁽ˣ⁾ f(t)dt = f(g(x))g′(x)；下限是变量时先交换上下限变号，例如 d/dx ∫x⁵ 3t sin t dt = −3x sin x。</p><p class="kpe"><b>考场</b>先分清变量：积分变量是 t，x 只出现在上下限，所以套公式时代入上限即可；上限是 g(x) 时千万别漏乘 g′(x)。若被积函数里还含 x（如 ∫aˣ (x−t)dt），必须先变形再求导，不能直接套 f(x)。</p><p class="kpen">FTC Part I: for continuous f, F(x)=∫aˣ f(t)dt satisfies F'(x)=f(x); with a variable upper limit g(x) the chain rule gives f(g(x))g'(x).</p></div>
-<div class="kp"><div class="kph"><span class="kpt">微积分基本定理（第二部分）：牛顿-莱布尼茨公式</span><span class="kpr">笔记 §7.3 · p.115<i>TC §5.3, 5.4, 5.5, 5.6</i></span></div><div class="kpfimg"><img src="kbimg/t8_ftc2.png" alt="公式截图 · 摘自教授笔记" loading="lazy"></div><p class="kpb">f 在 [a,b] 连续、F 连续且 F′=f，则 ∫aᵇ f(x)dx=F(b)−F(a)，记作 [F(x)]aᵇ 或 F(x)|aᵇ，不必再算黎曼和的极限。常用不定积分：∫xⁿdx=xⁿ⁺¹/(n+1)+C（n≠−1）、∫sin kx dx=−cos kx/k+C、∫cos kx dx=sin kx/k+C、∫sec²x dx=tan x+C。定积分换元（p.121）时上下限要同步换成 u 值：∫aᵇ f(g(x))g′(x)dx=∫₍g(a)₎ᵍ⁽ᵇ⁾ f(u)du。</p><p class="kpe"><b>考场</b>F(b)−F(a) 用的是同一个反导数，不要上下限各写一个原函数。换元后要么把上下限换成 u 值，要么换回 x 再用原上下限，两条路不能混。</p><p class="kpen">FTC Part II (Newton–Leibniz): ∫aᵇ f(x)dx=F(b)−F(a) for any antiderivative F, so definite integrals need no Riemann-sum limits.</p></div>
-<div class="kp"><div class="kph"><span class="kpt">奇偶函数在对称区间的积分</span><span class="kpr">笔记 §7.6 · p.123<i>TC §5.3, 5.4, 5.5, 5.6</i></span></div><div class="kpfimg"><img src="kbimg/t8_evenodd.png" alt="公式截图 · 摘自教授笔记" loading="lazy"></div><p class="kpb">设 f:[−a,a]→R 可积。f 偶（f(−x)=f(x)）时 ∫₍−a₎ᵃ f(x)dx=2∫0ᵃ f(x)dx；f 奇（f(−x)=−f(x)）时 ∫₍−a₎ᵃ f(x)dx=0。多项式可逐项按次数判奇偶，例如 ∫₍−√2₎⁽√2⁾(15x⁴−4x³+6x²+7x)dx 中奇次项 −4x³、7x 直接消去。</p><p class="kpe"><b>考场</b>两个前提缺一不可：区间必须关于 0 对称、函数必须真正奇偶。像 ∫₍−1₎³(x+1)²(x−3)²dx 这种区间不对称的，要先平移（t=x−1）化成对称区间再判奇偶，不能直接套公式。</p><p class="kpen">On a symmetric interval [−a,a], an even integrand gives twice the integral over [0,a], while an odd integrand integrates to zero.</p></div>
-<div class="kp"><div class="kph"><span class="kpt">两曲线围成的面积</span><span class="kpr">笔记 §7.4 · p.117<i>TC §5.3, 5.4, 5.5, 5.6</i></span></div><div class="kpfimg"><img src="kbimg/t8_area.png" alt="公式截图 · 摘自教授笔记" loading="lazy"></div><p class="kpb">f、g 在 [a,b] 可积时，两图之间从 x=a 到 x=b 的面积定义为 ∫aᵇ |f(x)−g(x)|dx。实际做法：解 f(x)=g(x) 求交点以确定积分限，判断哪条曲线在上后用（上−下）积分；若交点两侧上下关系互换，必须在交点处分段，各段取绝对值后相加。</p><p class="kpe"><b>考场</b>先求交点定限，不画图就在每段中点代入试值判断谁在上。问“总面积”时（如 y=−x²−2x 与 x 轴之间，−3≤x≤2）必须分段加绝对值，直接积出来的是有符号面积，正负会抵消。</p><p class="kpen">The area between y=f(x) and y=g(x) from a to b is ∫aᵇ|f−g|dx: find intersections, decide which curve is on top, and split at crossings.</p></div>
-<div class="kp"><div class="kph"><span class="kpt">旋转体体积：圆盘法与垫圈法</span><span class="kpr">笔记 §8.1.2 · p.125<i>TC §6.1, 6.2</i></span></div><div class="kpfimg"><img src="kbimg/t8_volume.png" alt="公式截图 · 摘自教授笔记" loading="lazy"></div><p class="kpb">切片法通式：立体位于 x=a 与 x=b 之间时 V=∫aᵇ A(x)dx，A(x) 为截面面积。圆盘法（单条曲线与轴之间的区域）：绕水平线 V=∫aᵇ π(radius)²dx；绕竖直线则把 x 反解成 y 的函数，V=∫cᵈ π(radius)²dy。垫圈法（两曲线之间的区域）：V=∫π[(外半径)²−(内半径)²]dx，绕竖直线时对 y 积分。半径始终是“曲线到旋转轴的距离”，不是到 x 轴的距离。</p><p class="kpe"><b>考场</b>绕 y 轴要做对 y 的积分，先把边界曲线反解成 x=g(y) 并换成 y 的积分限。绕 y=2、x=−1 这类非坐标轴时半径要重新量（如绕 y=2 时半径是 2−y 而非 y），画一条代表性切片再写半径最稳。</p><p class="kpen">For a solid of revolution, V=∫π(radius)² (disk) or V=∫π[(outer)²−(inner)²] (washer), integrating in x about horizontal axes and in y about vertical axes.</p></div>
-<div class="kp"><div class="kph"><span class="kpt">弧长与旋转曲面表面积</span><span class="kpr">笔记 §8.2 · p.128<i>TC §6.3, 6.4</i></span></div><div class="kpfimg"><img src="kbimg/t8_arclen.png" alt="公式截图 · 摘自教授笔记" loading="lazy"></div><p class="kpb">f 连续可微（f′ 连续，称 smooth）时，曲线 y=f(x) 从 x=a 到 x=b 的弧长 L=∫aᵇ √(1+(dy/dx)²)dx；曲线给成 x=g(y) 时改用 L=∫cᵈ √(1+(dx/dy)²)dy。弧长函数 s(x)=∫aˣ √(1+f′(t)²)dt 给出沿曲线的有向距离，由 FTC I 得 s′(x)=√(1+f′(x)²)，弧长微分 ds=√(1+f′(x)²)dx。旋转曲面表面积：绕 x 轴 S=∫aᵇ 2πy ds，绕 y 轴 S=∫cᵈ 2πx ds。</p><p class="kpe"><b>考场</b>被积函数是 √(1+(y′)²)，不是 √(1+y²)：先求导再平方。开方前先用三角恒等式（如 1+cos2x=2cos²x）配成完全平方，开出来要按区间定符号、必要时加绝对值分段。求 s′(x) 直接套 FTC I，别先去算积分。</p><p class="kpen">Arc length is L=∫√(1+(y′)²)dx (or the dy version), and the surface area of revolution is S=∫2π(radius)ds, with ds=√(1+(y′)²)dx.</p></div>
-<div class="kp"><div class="kph"><span class="kpt">功与液体静压力</span><span class="kpr">笔记 §8.4 · p.135<i>TC §6.5</i></span></div><div class="kpfimg"><img src="kbimg/t8_work.png" alt="公式截图 · 摘自教授笔记" loading="lazy"></div><div class="kpfimg"><img src="kbimg/t8_fluid.png" alt="公式截图 · 摘自教授笔记" loading="lazy"></div><p class="kpb">变力 F(x) 沿 x 轴把物体从 a 移到 b 所做的功 W=∫aᵇ F(x)dx（牛·米=焦耳）；弹簧遵循 Hooke 定律 F(x)=kx，先由给定伸长与受力定出 k 再积分；抽水、提绳类问题取水平薄层，层重=（重率）×（层体积），W=∫（层重）×（该层的提升距离）。液体静压力（§8.5 · p.137–138）：深度 h 处压强 p=wh（w 为液体重率 N/m³）；竖直薄板按水平条带切分，条带面积≈L(y)dy，故 F=∫w·(深度)·L(y)dy，笔记把深度记作 b−y 时写作 ∫0ᵃ w(b−y)L(y)dy。</p><p class="kpe"><b>考场</b>深度是“水面到该条带的垂直距离”，不是条带到板顶的距离：板顶在水下 0.6 m、y 从板顶向下量时深度 = 0.6+y。条带宽度 L(y) 要用相似三角形写成 y 的函数。抽水时每层的提升距离随层变化，不能统一乘总高度。</p><p class="kpen">Work is W=∫F(x)dx (Hooke's law F=kx for springs); fluid force on a vertical plate is F=∫w·(depth)·L(y)dy using horizontal strips.</p></div>
+<div class="kp"><div class="kph"><span class="kpt">反导数与不定积分</span><span class="kpr">笔记 §6.1 · p.94<i>TC §4.7</i></span></div><div class="kpfimg"><img src="kbimg/t8_antideriv.png" alt="公式截图 · 摘自教授笔记" loading="lazy"></div><p class="kpb">若 F′(x)=f(x) 在区间 I 上处处成立，则 F 是 f 在 I 上的一个反导数；f 的全体反导数恰为 F(x)+C（C 为任意常数），这个集合叫不定积分，记作 ∫f(x)dx=F(x)+C。不定积分是线性的：∫(αf(x)+βg(x))dx=α∫f(x)dx+β∫g(x)dx。</p><p class="kpe"><b>考场</b>不定积分的答案是函数族，漏写 +C 直接扣分；反之定积分是一个数，不能带 C。算完求导回去验算一遍。</p><p class="kpen">F is an antiderivative of f on I when F'(x)=f(x); all antiderivatives form the family F(x)+C, written ∫f(x)dx=F(x)+C.</p></div>
+<div class="kp"><div class="kph"><span class="kpt">面积逼近、分割与黎曼和：定积分的定义</span><span class="kpr">笔记 §6.2.1 · p.95<i>TC §5.1, 5.2</i></span></div><div class="kpfimg"><img src="kbimg/t8_riemann_def.png" alt="公式截图 · 摘自教授笔记" loading="lazy"></div><p class="kpb">把 [a,b] 分成 n 个等长子区间，以子区间为底、端点函数值为高作矩形逼近曲边梯形面积，取左端点或右端点都行，n→∞ 时矩形总面积趋于真实面积。形式化：分割 P=x0,...,xn 满足 a=x0&lt;x1&lt;...&lt;xn=b，Δxi=xi−xi−1，取样本点 x*i∈[xi−1,xi]，黎曼和 Sp=Σf(x*i)Δxi；当 ‖P‖=max Δxi→0 时黎曼和恒趋于同一个数 J，则称 J 为 f 在 [a,b] 上的定积分（ε–δ 表述见 p.98）。计算步骤（p.102）：取 Δx=(b−a)/n、xi=a+iΔx、选 x*i（常取右端点 xi），写 Sn=Σf(x*i)Δx，再令 n→∞ 取极限。</p><p class="kpe"><b>考场</b>求和时必须代入 Σ1=n、Σi=n(n+1)/2、Σi²=n(n+1)(2n+1)/6、Σi³=n²(n+1)²/4（p.103）再取极限。默认等分并取右端点 x*i=xi 最省事；f≥0 时定积分才等于面积。</p><p class="kpen">Approximate the area with n rectangles (endpoint heights); as n→∞ the Riemann sums Σf(x*i)Δxi converge to the definite integral.</p></div>
+<div class="kp"><div class="kph"><span class="kpt">上和、下和与可积性条件</span><span class="kpr">笔记 §6.2.2 · p.99<i>TC §5.1, 5.2</i></span></div><div class="kpf">\(U_P(f)=\sum_{i=1}^{n}M_i\Delta x_i,\qquad L_P(f)=\sum_{i=1}^{n}m_i\Delta x_i\)</div><p class="kpb">设 Mi、mi 为 f 在 [xi−1,xi] 上的最大、最小值，上和 UP=ΣMiΔxi、下和 LP=ΣmiΔxi；分割加细时 UP 只减、LP 只增，两者间隙趋于 0 时所有黎曼和被夹逼到同一个极限，即 f 可积。充分条件：f 在 [a,b] 连续 ⇒ 可积；f 在 [a,b] 有界且只在有限个点不连续 ⇒ 可积。必要条件：f 在 [a,b] 无界 ⇒ 不可积（例如 f(x)=1/x 于 (0,1]、f(0)=0）。</p><p class="kpe"><b>考场</b>可积不等于连续：有限个跳跃间断点的有界函数可积；Dirichlet 函数（有理点取 1、无理点取 0）处处不连续且不可积。拿到题先查有界性，无界直接判不可积。</p><p class="kpen">Upper and lower sums squeeze all Riemann sums; f is integrable if it is continuous, or bounded with only finitely many discontinuities, but never if unbounded.</p></div>
 </div></details>
 </div>
-<div class="card analysis" id="kpn8" data-key="K::T8 · 定积分应用" data-label="T8 · 定积分应用" data-topic="t8" data-tname="T8 · 定积分应用" data-kp="反导数 黎曼和 FTC 变限积分求导 平均值 面积 旋转体体积 弧长 液体压力">
+<div class="card analysis" id="kpn8" data-key="K::T8 · 反导数与黎曼和" data-label="T8 · 反导数与黎曼和" data-topic="t8" data-tname="T8 · 反导数与黎曼和" data-kp="不定积分 +C 反导数验算 黎曼和写法 求和公式 可积性条件">
   <h4 style="margin-top:0">专题分析<button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这个专题的知识点">☆</button></h4>
   <table>
-    <tr><th class="k">考什么</th><td>定积分的定义（黎曼和）与性质、FTC 两部分、变限积分求导、函数平均值、两曲线围成面积、旋转体体积、弧长、液体静压力</td></tr><tr><th class="k">怎么识别</th><td>① 积分上下限含变量还要求导 → FTC Part I + 链式法则；② average value → \(\frac1{b-a}\int_a^b f\)；③ 围成面积 → 先求交点、上减下；④ 旋转体 → 圆盘 / 垫圈法，看清绕哪条轴；⑤ 液体压力 → 水平条带 \(F=w\int(\text{宽})(\text{深})\,dy\)</td></tr><tr><th class="k">易错</th><td>① 面积在两曲线上下关系改变处要<b>分段</b>；② 绕 \(y\) 轴体积是 \(\int \pi x^2\,dy\)，别照抄绕 \(x\) 轴的公式；③ 弧长 \(\int\sqrt{1+(y')^2}\,\) 的根号常用半角公式化简；④ 压力题的深度是<b>水面到该条带的距离</b>，不是 \(y\)；⑤ 平均值别忘除以 \(b-a\)</td></tr>
+    <tr><th class="k">考什么</th><td>反导数与不定积分（含 \(+C\)）；用矩形和逼近面积、写黎曼和、用求和公式算「和的极限」；可积性的充分 / 必要条件</td></tr><tr><th class="k">怎么识别</th><td>① 题目写 \(\int f(x)dx\) 没有上下限 → 不定积分，答案是函数族；② 出现 \(\lim_{n\to\infty}\sum\) → 先凑成 \(\frac1n\sum f(\frac in)\) 再读出被积函数与区间；③ 问「是否可积」→ 先看有没有界</td></tr><tr><th class="k">易错</th><td>① 不定积分漏写 \(+C\)（定积分才是数，不能带 \(C\)）；② 黎曼和的分点是 \(\frac in\)，必须先提出因子 \(\frac1n\) 才读得出 \(\int_0^1\)；③ 求和公式别混：\(\sum i=\frac{n(n+1)}2\)、\(\sum i^2=\frac{n(n+1)(2n+1)}6\)、\(\sum i^3=\frac{n^2(n+1)^2}4\)；④ 可积 ≠ 连续（有限个跳跃间断仍可积），但无界一定不可积</td></tr>
   </table>
   <details class="en"><summary class="dsum">Key points (EN)</summary><div class="dbody">
     <ul>
-      <li>FTC I: \(\frac{d}{dx}\int_a^x f(t)\,dt=f(x)\); with a function limit, multiply by its derivative.</li><li>Area between curves: find intersections, integrate (top − bottom), split where they cross.</li><li>Volume by disks about the \(y\)-axis: \(\int\pi x^2\,dy\). Arc length: \(\int\sqrt{1+(y')^2}\,dx\).</li><li>Average value \(=\frac{1}{b-a}\int_a^b f\). Hydrostatic force \(=w\int(\text{width})(\text{depth})\,dy\).</li>
+      <li>An antiderivative family is \(F(x)+C\); always verify by differentiating back.</li><li>Riemann sum: \(\Delta x=\frac{b-a}{n}\), \(x_i=a+i\Delta x\); factor out \(\frac1n\) to read \(\int_a^b f(x)\,dx\).</li><li>Sum formulas: \(\sum i=\frac{n(n+1)}{2}\), \(\sum i^2=\frac{n(n+1)(2n+1)}{6}\), \(\sum i^3=\frac{n^2(n+1)^2}{4}\).</li><li>Integrable if continuous, or bounded with finitely many discontinuities; never if unbounded.</li>
     </ul>
   </div></details>
 </div>
-<div class="qcard past" id="q37" data-key="P::2024期中 Q12" data-label="2024期中 Q12" data-topic="t8" data-tname="T8 · 定积分应用" data-kp="函数平均值 圆扇形+三角形面积 三角换元">
-  <div class="qhead"><span class="qno">2024期中 Q12</span><span class="qmeta">8 分</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
-  <div class="qbody">
-    <div class="ver en">
-      <p class="stem stem-en">[8] Using known methods for computing areas, find the <b>mean value (average value)</b> of \(f(x)=\sqrt{a^2-x^2}\) over \(-\frac a2\le x\le\frac a2\) (where \(a&gt;0\)).</p>
-    </div>
-    <div class="ver zh">
-      <p class="stem">[8] 用已知的<b>面积</b>方法，求 \(f(x)=\sqrt{a^2-x^2}\) 在 \(-\frac a2\le x\le\frac a2\) 上的<b>平均值</b>（\(a&gt;0\)）。</p>
-    </div>
-  </div>
-  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
-    <div class="aver en"><div class="enexp"><span class="entag">EN</span> Average \(=a\left(\dfrac{\pi}{6}+\dfrac{\sqrt3}{4}\right)\approx0.957\,a\).</div></div>
-    <div class="aver zh">
-    <div class="ans-line"><b>答案：\(a\left(\dfrac\pi6+\dfrac{\sqrt3}{4}\right)\approx0.957\,a\)</b><span class="tag b">AI 解析</span></div>
-    <p>区间长度 \(=\dfrac a2-\left(-\dfrac a2\right)=a\)，故平均值 \(=\dfrac1a\displaystyle\int_{-a/2}^{a/2}\sqrt{a^2-x^2}\,dx\)。<br>
-    积分就是半径为 \(a\) 的上半圆在 \(x\in\left[-\frac a2,\frac a2\right]\) 下方的面积，用「扇形 + 两个直角三角形」读图：<br>
-    该区域对应圆心角 \(2\cdot30^\circ=60^\circ=\dfrac\pi3\)，扇形面积 \(=\dfrac12a^2\cdot\dfrac\pi3=\dfrac{\pi a^2}{6}\)；<br>
-    两侧直角三角形直角边分别为 \(\dfrac a2\) 与 \(\dfrac{\sqrt3a}{2}\)，单个面积 \(=\dfrac12\cdot\dfrac a2\cdot\dfrac{\sqrt3a}{2}=\dfrac{\sqrt3a^2}{8}\)，两个共 \(\dfrac{\sqrt3a^2}{4}\)。<br>
-    面积合计 \(=\dfrac{\pi a^2}{6}+\dfrac{\sqrt3a^2}{4}\)，平均值 \(=\dfrac1a\cdot\)（面积）\(=a\left(\dfrac\pi6+\dfrac{\sqrt3}{4}\right)\approx0.9566a\)。<br>
-    <span class="small">（换元校验：令 \(x=a\sin\theta\)，积分化为 \(a^2\int_{-\pi/6}^{\pi/6}\cos^2\theta\,d\theta=a^2\left[\frac\theta2+\frac{\sin2\theta}{4}\right]_{-\pi/6}^{\pi/6}=a^2\left(\frac\pi6+\frac{\sqrt3}{4}\right)\) ✓）</span></p>
-    <div class="err"><b>易错：</b>求「平均值」时除以的是<b>区间长度 \(a\)</b>，不是直径 \(2a\)；另外别把整个半圆面积 \(\frac{\pi a^2}{2}\) 直接用上——只取中间一段。</div>
-  </div>
-  </div></details>
-</div></section>
+</section>
 </section>
 
 <section class="module anchor" id="m5">
 <div class="modhead">
 <div class="modno">M5</div>
 <div class="modtxt">
-<h2 class="modtitle">微分方程 <span class="modq">1 题 · 1 专题</span></h2>
-<p class="modsub">笔记第 15 章 · TC §7.4、§16.1–16.4</p>
-<p class="modwhy">导数关系的反面：已知变化率，反求原函数。期中只考可分离变量与一阶线性两种。</p>
+<h2 class="modtitle">综合自检：概念快答 <span class="modq">5 题 · 1 专题</span></h2>
+<p class="modsub">跨章 · 三年卷的第一道大题（TC §2.1–5.2）</p>
+<p class="modwhy">三年卷的第一题都是判断题小问，覆盖全章。建议复习完 M1–M4 再回来用它做限时自检——它最能暴露「以为懂了其实没懂」的概念。</p>
 </div></div>
 <section class="topic anchor" id="t9">
-<h2 class="th">T9 · 微分方程与初值问题 <span class="freq">1 题</span></h2>
+<h2 class="th">T9 · 快答：判断题与小题综合 <span class="freq">5 题</span></h2>
 <div class="kpset">
-<details open><summary class="dsum">知识板块 · 全部摘自教授笔记，标了页码（8 个）</summary>
-<div class="dbody">
-<div class="kp"><div class="kph"><span class="kpt">微分方程的阶、解与初值问题 / ODE &amp; IVP</span><span class="kpr">笔记 §15.1 · p.208<i>TC §7.4, 16.1</i></span></div><div class="kpf">\(F\left(x,y,\frac{dy}{dx},\dots,\frac{d^ny}{dx^n}\right)=0\)</div><p class="kpb">含未知函数导数的方程 F(x,y,y',…,y⁽ⁿ⁾)=0 叫常微分方程，最高阶导数的阶数 n 就是方程的阶；本课只处理一阶方程 F(x,y,(dy)/(dx))=0。满足方程的函数叫解，带任意常数的解族叫通解；满足初始条件 y(x₀)=y₀ 的解叫特解，方程连同初始条件合称初值问题（IVP）。</p><p class="kpe"><b>考场</b>验证某函数是解，就把它和它的导数代回方程两边核对；求特解先解出通解（含 C），再代初值定 C，别把 C 留着不代。有些方程解不出 y 关于 x 的显式表达式，隐函数形式的解也算解。</p><p class="kpen">The order of an ODE is the highest derivative appearing; a general solution carries a constant, and an initial condition y(x0)=y0 selects one particular solution (an IVP).</p></div>
-<div class="kp"><div class="kph"><span class="kpt">可分离变量方程 / Separable Equations</span><span class="kpr">笔记 §15.4 · p.211</span></div><div class="kpfimg"><img src="kbimg/t10_separable.png" alt="公式截图 · 摘自教授笔记" loading="lazy"></div><p class="kpb">形如 (dy)/(dx)=f(x)g(y)：写成微分形式 (1)/(g(y))dy=f(x)dx，两边各自积分得 ∫(dy)/(g(y))=∫ f(x)dx，再解出 y（含常数 C）。齐次方程（H(tx,ty)=H(x,y)，如 (dy)/(dx)=(x+y)/(x-y)）作代换 v=(y)/(x) 后可化为可分离变量方程。</p><p class="kpe"><b>考场</b>除以 g(y) 会丢掉 g(y)=0 对应的常数解（如 (dy)/(dx)=y 的平凡解 y≡0），题目要“所有解”时必须补上。IVP 是先积出通式再代 (x₀,y₀) 定 C，不要把初值直接塞进积分限。</p><p class="kpen">Separate as dy/g(y)=f(x)dx and integrate both sides; dividing by g(y) may discard constant solutions, so list them separately.</p></div>
-<div class="kp"><div class="kph"><span class="kpt">一阶线性方程与积分因子 / Integrating Factor</span><span class="kpr">笔记 §15.5 · p.215<i>TC §16.2</i></span></div><div class="kpfimg"><img src="kbimg/t10_linear_mu.png" alt="公式截图 · 摘自教授笔记" loading="lazy"></div><div class="kpfimg"><img src="kbimg/t10_linear_sol.png" alt="公式截图 · 摘自教授笔记" loading="lazy"></div><p class="kpb">标准形式 (dy)/(dx)+p(x)y=q(x)。取积分因子 μ=e⁽P(x)⁾，其中 P(x)=∫ p(x)dx；两边同乘 μ 后左边恰好是乘积的导数 (d)/(dx)(e⁽P(x)⁾y)=e⁽P(x)⁾q(x)，积分即得 y=e⁽-P(x)⁾∫ e⁽P(x)⁾q(x)dx。</p><p class="kpe"><b>考场</b>必须先化成标准形式（y 的系数为 1）再取 μ：x(dy)/(dx)=x²+3y 要化为 y'-(3)/(x)y=x，此时 p=-(3)/(x)、μ=e⁽-3ln x⁾=x⁻³；系数没除干净，μ 会全错。∫ p dx 的积分常数不用写进 μ。</p><p class="kpen">Rewrite as y′+p(x)y=q(x), multiply by μ=e⁽∫p dx⁾ so the left side becomes (μy)′, then integrate both sides.</p></div>
-<div class="kp"><div class="kph"><span class="kpt">伯努利方程 / Bernoulli's Equation</span><span class="kpr">笔记 §15.5 · p.218</span></div><div class="kpf">\(y'+p(x)y=q(x)y^n,\qquad v=y^{1-n}\ \Longrightarrow\ v'+(1-n)p(x)v=(1-n)q(x)\)</div><p class="kpb">形如 (dy)/(dx)+p(x)y=q(x)yⁿ（n≠0,1）的方程：两边同除 yⁿ 后作代换 v=y¹⁻ⁿ，可化成一阶线性方程，再用积分因子求解（如 x(dy)/(dx)+y=x⁴y³）。</p><p class="kpe"><b>考场</b>识别标志是右端的 yⁿ（n≠0,1）——只要不是 y 的一次式就不是线性的。代换后别忘了 v'= (1-n)y⁻ⁿy' 带来的系数 (1-n)，且 y≡0 在 n&gt;0 时也是解。</p><p class="kpen">Divide by yⁿ and substitute v=y⁽1−n⁾ to turn a Bernoulli equation into a first-order linear one, then use the integrating factor.</p></div>
-<div class="kp"><div class="kph"><span class="kpt">斜率场与欧拉法 / Slope Fields &amp; Euler's Method</span><span class="kpr">笔记 §15.2 · p.209</span></div><div class="kpf">\(x_k=x_0+k\Delta x,\qquad y_k=y_{k-1}+F(x_{k-1},y_{k-1})\Delta x\)</div><p class="kpb">斜率场：在平面上每个点 (x₀,y₀) 画一小段斜率为 F(x₀,y₀) 的线段，因为解曲线在该点的切线斜率正是 F(x₀,y₀)，由此可看出解曲线族的形状。欧拉法：从 (x₀,y₀) 出发取步长 Δ x，用切线往前推，yₖ 作为 y(xₖ) 的近似值。</p><p class="kpe"><b>考场</b>欧拉法每步只用上一点的信息，斜率必须在 (xₖ₋₁,yₖ₋₁) 处取值，不能提前用 xₖ；Δ x 越小越准但步数越多。算出的 yₖ 是近似值，不是精确解，题目问“误差”时要另行比较。</p><p class="kpen">A slope field draws short segments of slope F(x,y) to visualize solutions; Euler's method advances by yₖ = y₍k−1₎+F(x₍k−1₎,y₍k−1₎)Δx.</p></div>
-<div class="kp"><div class="kph"><span class="kpt">指数增长与衰减、连续复利 / dy/dt=ky</span><span class="kpr">笔记 §15.6.1 · p.220<i>TC §7.4, 16.3, 16.4</i></span></div><div class="kpf">\(\frac{dy}{dt}=ky\ \Longrightarrow\ y=y_0e^{kt};\qquad \frac{dA}{dt}=\frac{r}{100}A\)</div><p class="kpb">模型假设是变化率与当前量成正比：(dy)/(dt)=ky，解为 y=y₀eᵏᵗ。k&lt;0 为衰减（放射性衰变，半衰期 T 满足 y(T)=(y₀)/(2)）；k&gt;0 为增长（细菌无限制繁殖）。连续复利同理：(dA)/(dt)=(r)/(100)A，r 是连续利率。</p><p class="kpe"><b>考场</b>先看 k 的符号定增减；半衰期（或倍增时间）由 (y₀)/(2)=y₀e⁽kT⁾ 得 T=-(ln2)/(k)。百分号要化成小数（6% → (r)/(100)=0.06），问“衰减了 10%”是 y=0.9y₀ 而不是 y=0.1y₀。</p><p class="kpen">Whenever the rate is proportional to the amount, y=y₀eᵏᵗ: k&lt;0 gives decay with a half-life, k&gt;0 gives growth, and continuous interest uses dA/dt=(r/100)A.</p></div>
-<div class="kp"><div class="kph"><span class="kpt">牛顿冷却与阻力 ∝ 速度的运动</span><span class="kpr">笔记 §15.6.4 · p.222<i>TC §7.4, 16.3, 16.4</i></span></div><div class="kpf">\(\frac{dT}{dt}=-k(T-T_S),\qquad m\frac{dv}{dt}=-kv\ \Longrightarrow\ v=v_0e^{-kt/m},\quad \frac{ds}{dt}=v_0e^{-kt/m}\)</div><p class="kpb">牛顿冷却定律：温度的变化率与物体和环境的温差成正比，(dT)/(dt)=-k(T-T₍S₎)，k&gt;0，T&gt;T₍S₎ 时降温、T&lt;T₍S₎ 时升温。阻力与速度成正比时，由牛顿第二定律 m(dv)/(dt)=-kv，得 v=v₀e⁽-kt/m⁾，位移满足 (ds)/(dt)=v₀e⁽-kt/m⁾, s(0)=0，积分可得总滑行距离。</p><p class="kpe"><b>考场</b>两式都可分离变量，注意 k 与 m 的单位（kg/s 与 kg）配套。问“还要多久”要算两个时刻之差；滑行距离是对 v(t) 从 0 积到 ∞，不是 v 乘以有限时间。</p><p class="kpen">Newton's law of cooling dT/dt=−k(T−T₍S₎) and linear drag m dv/dt=−kv are separable; velocity decays exponentially and distance comes from integrating it.</p></div>
-<div class="kp"><div class="kph"><span class="kpt">Logistic 增长、正交轨线与自治方程相线</span><span class="kpr">笔记 §15.6.6 · p.224<i>TC §7.4, 16.3, 16.4</i></span></div><div class="kpf">\(\frac{dP}{dt}=r(M-P)P,\qquad \frac{dy}{dx}=f(y),\ f(K)=0\ \Rightarrow\ y\equiv K\ \text{为平衡解}\)</div><p class="kpb">资源有限时的人口模型 (dP)/(dt)=r(M-P)P（logistic），M 是容纳量：P&lt;M 时 P'&gt;0 增长，P&gt;M 时 P'&lt;0 下降。自治方程 (dy)/(dx)=f(y) 不显含自变量：f 的零点 K 是平衡点，y≡ K 是平衡解，按 f 在各区间的符号即可画出相线、判断解的走向。正交轨线：先求原曲线族满足的微分方程，再把斜率 m 换成 -(1)/(m) 后求解。</p><p class="kpe"><b>考场</b>logistic 是可分离变量方程（不是线性的），分离后右端要用部分分式拆 (1)/((M-P)P)。自治方程问长期行为时先找平衡点、再判符号，不必真把解算出来。</p><p class="kpen">Logistic growth dP/dt=r(M−P)P is separable with carrying capacity M; for autonomous y′=f(y), zeros of f are equilibria and the sign of f gives the phase line.</p></div>
-</div></details>
-</div>
-<div class="card analysis" id="kpn9" data-key="K::T9 · 微分方程" data-label="T9 · 微分方程" data-topic="t9" data-tname="T9 · 微分方程" data-kp="直接积分 一阶线性 ODE 积分因子 初值定常数">
-  <h4 style="margin-top:0">专题分析<button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这个专题的知识点">☆</button></h4>
-  <table>
-    <tr><th class="k">考什么</th><td>\(y'=f(x)\) 型直接积分；一阶线性 \(y'+P(x)y=Q(x)\) 型用积分因子；均由初值定常数</td></tr>
-    <tr><th class="k">怎么识别</th><td>① 右边只含 \(x\) → 直接积分；② 含 \(y\) 的一次项 → 化为标准线性形式后取积分因子 \(\mu=e^{\int P dx}\)</td></tr>
-    <tr><th class="k">易错</th><td>① 积分因子别漏负号：标准式是 \(y'+P(x)y=Q(x)\)，\(\mu=e^{\int P\,dx}\)；② 常数要在<b>通解</b>里定，别急着代入；③ 完成后<b>代回原方程验算</b>只要 20 秒</td></tr>
-  </table>
-  <details class="en"><summary class="dsum">Key points (EN)</summary><div class="dbody">
-    <ul>
-      <li>Direct integration: \(y'=f(x)\) ⇒ \(y=\int f\,dx + C\), fix \(C\) from the initial value.</li>
-      <li>Linear form: \(y'+P(x)y=Q(x)\); integrating factor \(\mu=e^{\int P\,dx}\); then \((\mu y)'=\mu Q\).</li>
-      <li>Always substitute the answer back into the original equation as a 20-second sanity check.</li>
-    </ul>
-  </div></details>
-</div><div class="qcard past" id="q47" data-key="P::2024期中 Q11" data-label="2024期中 Q11" data-topic="t9" data-tname="T9 · 微分方程" data-kp="初值问题 直接积分">
-  <div class="qhead"><span class="qno">2024期中 Q11</span><span class="qmeta">6 分</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
-  <div class="qbody">
-    <div class="ver en">
-      <p class="stem stem-en">[6] Solve the initial value problem \(\begin{cases}\dfrac{dy}{dx}=1-\cos x,\\[2pt] y(0)=1.\end{cases}\)</p>
-    </div>
-    <div class="ver zh">
-      <p class="stem">[6] 解初值问题 \(\begin{cases}\dfrac{dy}{dx}=1-\cos x,\\[2pt] y(0)=1.\end{cases}\)</p>
-    </div>
-  </div>
-  <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
-    <div class="aver en"><div class="enexp"><span class="entag">EN</span> \(y=x-\sin x+1\).</div></div>
-    <div class="aver zh">
-    <div class="ans-line"><b>答案：\(y=x-\sin x+1\)</b><span class="tag b">AI 解析</span></div>
-    <p>右边只含 \(x\)，直接对 \(x\) 积分：<br>
-    \(y=\displaystyle\int(1-\cos x)dx=x-\sin x+C\)。<br>
-    由 \(y(0)=1\)：\(0-0+C=1\Rightarrow C=1\)。故 <b>\(y=x-\sin x+1\)</b>。<br>
-    验算：\(y'=1-\cos x\) ✓；\(y(0)=1\) ✓。</p>
-    <p class="pt"><b>知识点：</b>这类题就是「求原函数 + 定常数」两条动作的叠加，别被「微分方程」的名字吓到。</p>
-  </div>
-  </div></details>
-</div></section>
-</section>
-
-<section class="module anchor" id="m6">
-<div class="modhead">
-<div class="modno">M6</div>
-<div class="modtxt">
-<h2 class="modtitle">综合自检：概念快答 <span class="modq">5 题 · 1 专题</span></h2>
-<p class="modsub">跨章 · 三年卷的第一道大题</p>
-<p class="modwhy">三年卷的第一题都是判断题小问，覆盖全章。建议复习完 M1–M5 再回来用它做限时自检——它最能暴露「以为懂了其实没懂」的概念。</p>
-</div></div>
-<section class="topic anchor" id="t10">
-<h2 class="th">T10 · 快答：判断题与小题综合 <span class="freq">5 题</span></h2>
-<div class="kpset">
-<details open><summary class="dsum">判断题陷阱清单 · 按章归类（41 条）</summary>
+<details open><summary class="dsum">判断题陷阱清单 · 按章归类（23 条）</summary>
 <div class="dbody">
 <div class="kp"><div class="kph"><span class="kpt">极限与连续篇</span></div><ul class="kptraps"><li><b>f(x) &lt; g(x) 推出极限也严格小于</b> 错。严格不等式取极限后只能保住 ≤。反例（笔记 §2.4）：在 c=0 附近恒有 sin x&lt;|x|，但两者在 0 处的极限都等于 0，并不严格小。<span class="kprl">笔记 §2.4 · p.9</span></li><li><b>lim (f/g) = L/M 总能直接用</b> 错。商的定理要求分母极限 M≠ 0；M=0 时定理根本不适用，必须改走约分或有理化，硬套会停在 0/0 或 ∞ 上。<span class="kprl">笔记 §2.2 · p.7</span></li><li><b>左右极限都存在，所以极限存在</b> 错。左右极限还必须相等。反例（笔记 §2.7）：f(x)=((x+3)|x+2|)/(x+2) 在 x=-2 处左极限 -1、右极限 1，两个都存在但不相等，故极限不存在。<span class="kprl">笔记 §2.7 · p.12</span></li><li><b>lim g(f(x)) = g(lim f(x)) 总成立</b> 错。只有外层函数 g 连续才允许把极限移进函数里。反例（笔记 §3.3）：g(x)=0（x=0）与 1（x≠ 0）、f(x)=x，则 g(lim₍x→ 0₎f(x))=g(0)=0，而 lim₍x→ 0₎g(f(x))=1。<span class="kprl">笔记 §3.3 · p.24</span></li><li><b>f(a) 与 f(b) 异号，(a,b) 内必有根</b> 错。缺了「f 在 [a,b] 上连续」这个前提，IVT 不成立。带跳跃间断的函数完全可以从负值直接跳到正值而始终不取到 0。<span class="kprl">笔记 §3.5 · p.26</span></li><li><b>水平渐近线最多一条 / 函数无定义处就是竖直渐近线</b> 两半都错。x→∞ 与 x→-∞ 可以各给一条水平渐近线，共两条；而 x=a 要成为竖直渐近线必须有某个单侧极限为 ±∞，可去间断点（如 (x²-x-2)/(x-2) 在 x=2）不是渐近线。<span class="kprl">笔记 §2.10 · p.17</span></li></ul></div>
-<div class="kp"><div class="kph"><span class="kpt">导数：定义与运算篇</span></div><ul class="kptraps"><li><b>连续必可导？</b> 错。连续推不出可导，反例 f(x)=|x| 在 x=0 处连续，但左导数 -1、右导数 1，不可导。可导可以推出连续，反之不行。<span class="kprl">笔记 §4.4 · p.31</span></li><li><b>左右导数都存在就可导？</b> 错。两侧导数都必须存在且相等，f'(x₀) 才存在。|x| 在 0 处左右导数都存在但不相等，所以不可导。<span class="kprl">笔记 §4.3 · p.29</span></li><li><b>(fg)'=f'g'？</b> 错。乘积法则是 (fg)'=f g'+g f'，不是两个导数相乘。检验：f=g=x 时 (x²)'=2x，而 f'g'=1。<span class="kprl">笔记 §4.5 · p.32</span></li><li><b>(f\circ g)'(x)=f'(x)\,g'(x)？</b> 错。外层导数要在内层值处取：(f∘ g)'(x)=f'(g(x))· g'(x)。把 f' 的自变量写成 x 是链式法则最常见的错法。<span class="kprl">笔记 §4.10 · p.42</span></li><li><b>隐函数求导时 \dfrac{d}{dx}(y^2)=2y？</b> 错。y 是 x 的函数，必须补链式因子：(d)/(dx)(y²)=2y(dy)/(dx)。含 y 的每一项求导后都要带一个 (dy)/(dx)。<span class="kprl">笔记 §4.11 · p.49</span></li><li><b>f 可导则 f^{-1} 一定可导、且 (f^{-1})'=1/f' 处处成立？</b> 错。前提是 f 连续且单射（水平线检验），且 f'(a)≠ 0；在 f'(a)=0 处公式失效，f⁻¹ 在该点不可导。另外 f⁻¹ 表示反函数，不是 1/f。<span class="kprl">笔记 §9.1 · p.142</span></li></ul></div>
-<div class="kp"><div class="kph"><span class="kpt">导数的应用篇</span></div><ul class="kptraps"><li><b>“dy 就是 Δy”</b> 错。dy=f′(x)dx 是切线给出的近似变化，Δy=f(x0+Δx)−f(x0) 才是精确变化；两者都依赖 x0 与 Δx，只在 Δx 很小时近似相等，误差为 E=f(x0+Δx)−L(x0+Δx)。<span class="kprl">笔记 §4.13 · p.58</span></li><li><b>“线性化 L(x) 对任意 x 都等于 f(x)”</b> 错。L 只在中心 c 附近近似 f，f(x)≈L(x) 不是恒等式；并且要求 f 在 c 可导。离 c 越远，误差 E(x0,Δx) 越大。<span class="kprl">笔记 §4.13 · p.56</span></li><li><b>“牛顿法从任意 x0 出发都会收敛到根，且 f′(xi)=0 时也能继续迭代”</b> 错。牛顿法不总收敛（可能收敛到别处或根本不收敛），收敛的充分条件要求 f′ 连续、f(r)=0、f′(r)≠0 且 x0 足够靠近 r；另外 f′(xi)=0 时切线不与 x 轴相交，迭代公式的分母为零，根本无法进行。<span class="kprl">笔记 §5.5 · p.93</span></li><li><b>“平均速度就是瞬时速度，速率等于速度”</b> 错。平均变化率是割线斜率 (f(b)−f(a))/(b−a)，瞬时变化率是切线斜率 f′(x0)，二者是不同的量；speed 是 |v(t)|（非负），velocity 是带符号的 v(t)。<span class="kprl">笔记 §4.1–4.2 · p.27</span></li><li><b>“∫_a^b v(t)dt 就是物体走过的总路程”</b> 错。∫ₐᵇ v(t)dt=s(b)−s(a) 只是位移（净变化，带符号）。总路程是 ∫ₐᵇ |v(t)|dt，必须先解 v(t)=0 找出转向时刻并分段积分，否则折返的部分会被抵消掉。<span class="kprl">笔记 §7 · p.110</span></li><li><b>f''(c)=0 ⇒ c 一定是拐点</b> 错。拐点要求 c 两侧凹性真的不同，f''(c)=0 只是必要条件。反例：f(x)=x⁴ 在 x=0 处 f''(0)=0，但两侧都凹向上，不是拐点。<span class="kprl">笔记 §5.3.3 · p.84</span></li><li><b>临界点一定是极值点</b> 错。临界点只是“可能的”内点极值候选，笔记 p.64 的 Warning 明确说某些临界点不给出局部极值。反例：f(x)=x³ 在 x=0 处 f'=0 但函数单调递增，不是极值。<span class="kprl">笔记 §5.1.3 · p.64</span></li><li><b>绝对极值点一定是临界点</b> 错。绝对极值完全可以取在定义域端点，而临界点按定义必须是内点。反例：f(x)=x 在 [0,1] 上的最大最小值都在端点取得，全区间没有临界点（EVT 仍保证最值存在）。<span class="kprl">笔记 §5.1.3 · p.64</span></li><li><b>f'(c)=0 且 f''(c)=0 ⇒ c 不是极值点</b> 错。此时二阶导数判别法失效（inconclusive），什么都不能断定，必须改用一阶导数判别法。反例：f(x)=x⁴ 在 x=0 处 f'=f''=0，但它是局部极小（也是绝对极小）。<span class="kprl">笔记 §5.3.4 · p.85</span></li><li><b>只要 f(a)=f(b)，罗尔定理就成立</b> 错。还需 f 在 [a,b] 连续、在 (a,b) 可导，三个条件缺一不可（笔记 p.67 Remark，p.69 要求举缺条件反例）。反例：f(x)=|x| 在 [-1,1] 上 f(-1)=f(1)=1，但在 x=0 不可导，不存在 f'(c)=0。<span class="kprl">笔记 §5.2.1 · p.67</span></li><li><b>相关变化率可以在建立关系式后立刻代入已知数值再求导</b> 错。所有量都是 t 的函数，必须先对 t 求导（链式法则），求导之后才能代入该瞬间的数值；提前代入会把变量的导数当作 0。反例：圆锥水槽 r=h/2 若先代入 h=1.8 再求导，dV/dt 恒为 0，显然荒谬。<span class="kprl">笔记 §4.12 · p.55</span></li></ul></div>
-<div class="kp"><div class="kph"><span class="kpt">积分篇</span></div><ul class="kptraps"><li><b>“可积必连续”</b> 错。连续只是可积的充分条件之一；有界且只含有限个间断点的函数（如阶梯函数）可积但不连续。反之无界函数一定不可积。<span class="kprl">笔记 §6.2.2 · p.100</span></li><li><b>“∫_{−a}^{a} f = 2∫_0^a f 对任意 f 成立”</b> 错。该式只在 f 为偶函数时成立；f 为奇函数时 ∫₍−a₎ᵃ f=0，f 既不奇也不偶时没有这个等式。区间还必须关于 0 对称。<span class="kprl">笔记 §7.6 · p.123</span></li><li><b>“弧长 = ∫_a^b f(x)dx”</b> 错。弧长是 ∫aᵇ √(1+(y′)²)dx，被积函数含导数的平方；∫f(x)dx 算的是曲线下的面积（且需 f≥0）。两者数值与含义都不同。<span class="kprl">笔记 §8.2 · p.128</span></li><li><b>“∫_a^b f(x)dx 就是曲线与 x 轴之间的面积”</b> 错。只有 f 连续且 f≥0 时二者相等；f 在区间内变号时必须按交点分段并取绝对值（两曲线时为 ∫|f−g|dx），直接积分得到的是有符号面积。<span class="kprl">笔记 §7.4 · p.117</span></li><li><b>“d/dx ∫_a^{g(x)} f(t)dt = f(g(x))”</b> 错。上限是函数时要用链式法则，正确结果是 f(g(x))g′(x)；漏掉因子 g′(x) 是最典型的错法（下限是变量时还要先交换上下限变号）。<span class="kprl">笔记 §7.2 · p.112</span></li><li><b>“无界函数在 [a,b] 上也可能可积”</b> 错。笔记定理：f 在 [a,b] 无界则一定不可积，例如 f(x)=1/x 于 (0,1]、f(0)=0。判断可积性时先看有界性，无界即可直接判否。<span class="kprl">笔记 §6.2.2 · p.100</span></li><li><b>定积分换元必须换限</b> 换元后上下限要跟着变成 u=g(a),u=g(b)，换完限就不必再回代 x；用原限代回原变量再减，或直接沿用 a,b，都是典型错法。<span class="kprl">笔记 §7.5 · p.121</span></li><li><b>反常积分不能当普通定积分算</b> ∫₍-∞₎⁽∞⁾f 必须在某点 c 处拆成两段、两段都收敛才算收敛，它不等于 lim₍a→∞₎∫₋ₐᵃf（如 ∫₍-∞₎⁽∞⁾x dx 是发散的）；瑕积分则要先找出瑕点、取极限，不能直接代端点。<span class="kprl">笔记 §14.1 · p.199</span></li><li><b>比较判别法的前提常被忽略</b> 直接比较要求在某段之后 0≤ f≤ g，变号函数不能直接比；极限比较要求 lim f/g=L 是有限正数，L=0 时只能由 ∫ g 收敛推 ∫ f 收敛，L=∞ 时只能由 ∫ g 发散推 ∫ f 发散，反过来都推不出。<span class="kprl">笔记 §14.3 · p.203</span></li><li><b>p-积分的收敛条件在两类区间上相反</b> ∫₁⁽∞⁾(dx)/(xᵖ) 在 p&gt;1 时收敛、p≤1 时发散；∫₀¹(dx)/(xᵖ) 则在 p&lt;1 时收敛。记混“p&gt;1”并套到瑕积分上是最常见的判断题陷阱。<span class="kprl">笔记 §14.1 · p.199</span></li><li><b>Simpson 法则要求 n 为偶数，且误差有方向</b> n 为奇数时不能用 Simpson（系数 1,4,2,…,4,1 配不上）；误差定义为“近似值 − 真值”，梯形在下凸（f''&gt;0）时偏大、中点法则偏小，Simpson 与 f⁽⁴⁾ 同号，问的是 |E| 的上界而不是误差本身。<span class="kprl">笔记 §13.3 · p.196</span></li><li><b>一阶线性方程漏化标准形式 / 分离变量丢常数解</b> 取 μ=e⁽∫ p dx⁾ 前必须先把 y 的系数化为 1（如 x y'=x²+3y 要先除 x），否则 μ 全错；分离变量时除以 g(y) 会丢掉 g(y)=0 的常数解，如 y'=y 的 y≡0。<span class="kprl">笔记 §15.5 · p.215</span></li></ul></div>
-<div class="kp"><div class="kph"><span class="kpt">微分方程篇</span></div><ul class="kptraps"><li><b>定积分换元必须换限</b> 换元后上下限要跟着变成 u=g(a),u=g(b)，换完限就不必再回代 x；用原限代回原变量再减，或直接沿用 a,b，都是典型错法。<span class="kprl">笔记 §7.5 · p.121</span></li><li><b>反常积分不能当普通定积分算</b> ∫₍-∞₎⁽∞⁾f 必须在某点 c 处拆成两段、两段都收敛才算收敛，它不等于 lim₍a→∞₎∫₋ₐᵃf（如 ∫₍-∞₎⁽∞⁾x dx 是发散的）；瑕积分则要先找出瑕点、取极限，不能直接代端点。<span class="kprl">笔记 §14.1 · p.199</span></li><li><b>比较判别法的前提常被忽略</b> 直接比较要求在某段之后 0≤ f≤ g，变号函数不能直接比；极限比较要求 lim f/g=L 是有限正数，L=0 时只能由 ∫ g 收敛推 ∫ f 收敛，L=∞ 时只能由 ∫ g 发散推 ∫ f 发散，反过来都推不出。<span class="kprl">笔记 §14.3 · p.203</span></li><li><b>p-积分的收敛条件在两类区间上相反</b> ∫₁⁽∞⁾(dx)/(xᵖ) 在 p&gt;1 时收敛、p≤1 时发散；∫₀¹(dx)/(xᵖ) 则在 p&lt;1 时收敛。记混“p&gt;1”并套到瑕积分上是最常见的判断题陷阱。<span class="kprl">笔记 §14.1 · p.199</span></li><li><b>Simpson 法则要求 n 为偶数，且误差有方向</b> n 为奇数时不能用 Simpson（系数 1,4,2,…,4,1 配不上）；误差定义为“近似值 − 真值”，梯形在下凸（f''&gt;0）时偏大、中点法则偏小，Simpson 与 f⁽⁴⁾ 同号，问的是 |E| 的上界而不是误差本身。<span class="kprl">笔记 §13.3 · p.196</span></li><li><b>一阶线性方程漏化标准形式 / 分离变量丢常数解</b> 取 μ=e⁽∫ p dx⁾ 前必须先把 y 的系数化为 1（如 x y'=x²+3y 要先除 x），否则 μ 全错；分离变量时除以 g(y) 会丢掉 g(y)=0 的常数解，如 y'=y 的 y≡0。<span class="kprl">笔记 §15.5 · p.215</span></li></ul></div>
-</div></details>
+<div class="kp"><div class="kph"><span class="kpt">导数：定义与运算篇</span></div><ul class="kptraps"><li><b>连续必可导？</b> 错。连续推不出可导，反例 f(x)=|x| 在 x=0 处连续，但左导数 -1、右导数 1，不可导。可导可以推出连续，反之不行。<span class="kprl">笔记 §4.4 · p.31</span></li><li><b>左右导数都存在就可导？</b> 错。两侧导数都必须存在且相等，f'(x₀) 才存在。|x| 在 0 处左右导数都存在但不相等，所以不可导。<span class="kprl">笔记 §4.3 · p.29</span></li><li><b>(fg)'=f'g'？</b> 错。乘积法则是 (fg)'=f g'+g f'，不是两个导数相乘。检验：f=g=x 时 (x²)'=2x，而 f'g'=1。<span class="kprl">笔记 §4.5 · p.32</span></li><li><b>\((f\circ g)'(x)=f'(x)\,g'(x)\)？</b> 错。外层导数要在内层值处取：\((f\circ g)'(x)=f'(g(x))\cdot g'(x)\)。把 f' 的自变量写成 x 是链式法则最常见的错法。<span class="kprl">笔记 §4.10 · p.42</span></li><li><b>隐函数求导时 \(\dfrac{d}{dx}(y^2)=2y\)？</b> 错。y 是 x 的函数，必须补链式因子：\(\dfrac{d}{dx}(y^2)=2y\dfrac{dy}{dx}\)。含 y 的每一项求导后都要带一个 \(\dfrac{dy}{dx}\)。<span class="kprl">笔记 §4.11 · p.49</span></li></ul></div>
+<div class="kp"><div class="kph"><span class="kpt">导数的应用篇</span></div><ul class="kptraps"><li><b>“dy 就是 Δy”</b> 错。dy=f′(x)dx 是切线给出的近似变化，Δy=f(x0+Δx)−f(x0) 才是精确变化；两者都依赖 x0 与 Δx，只在 Δx 很小时近似相等，误差为 E=f(x0+Δx)−L(x0+Δx)。<span class="kprl">笔记 §4.13 · p.58</span></li><li><b>“线性化 L(x) 对任意 x 都等于 f(x)”</b> 错。L 只在中心 c 附近近似 f，f(x)≈L(x) 不是恒等式；并且要求 f 在 c 可导。离 c 越远，误差 E(x0,Δx) 越大。<span class="kprl">笔记 §4.13 · p.56</span></li><li><b>“牛顿法从任意 x0 出发都会收敛到根，且 f′(xi)=0 时也能继续迭代”</b> 错。牛顿法不总收敛（可能收敛到别处或根本不收敛），收敛的充分条件要求 f′ 连续、f(r)=0、f′(r)≠0 且 x0 足够靠近 r；另外 f′(xi)=0 时切线不与 x 轴相交，迭代公式的分母为零，根本无法进行。<span class="kprl">笔记 §5.5 · p.93</span></li><li><b>“平均速度就是瞬时速度，速率等于速度”</b> 错。平均变化率是割线斜率 (f(b)−f(a))/(b−a)，瞬时变化率是切线斜率 f′(x0)，二者是不同的量；speed 是 |v(t)|（非负），velocity 是带符号的 v(t)。<span class="kprl">笔记 §4.1–4.2 · p.27</span></li><li><b>f''(c)=0 ⇒ c 一定是拐点</b> 错。拐点要求 c 两侧凹性真的不同，f''(c)=0 只是必要条件。反例：f(x)=x⁴ 在 x=0 处 f''(0)=0，但两侧都凹向上，不是拐点。<span class="kprl">笔记 §5.3.3 · p.84</span></li><li><b>临界点一定是极值点</b> 错。临界点只是“可能的”内点极值候选，笔记 p.64 的 Warning 明确说某些临界点不给出局部极值。反例：f(x)=x³ 在 x=0 处 f'=0 但函数单调递增，不是极值。<span class="kprl">笔记 §5.1.3 · p.64</span></li><li><b>绝对极值点一定是临界点</b> 错。绝对极值完全可以取在定义域端点，而临界点按定义必须是内点。反例：f(x)=x 在 [0,1] 上的最大最小值都在端点取得，全区间没有临界点（EVT 仍保证最值存在）。<span class="kprl">笔记 §5.1.3 · p.64</span></li><li><b>f'(c)=0 且 f''(c)=0 ⇒ c 不是极值点</b> 错。此时二阶导数判别法失效（inconclusive），什么都不能断定，必须改用一阶导数判别法。反例：f(x)=x⁴ 在 x=0 处 f'=f''=0，但它是局部极小（也是绝对极小）。<span class="kprl">笔记 §5.3.4 · p.85</span></li><li><b>只要 f(a)=f(b)，罗尔定理就成立</b> 错。还需 f 在 [a,b] 连续、在 (a,b) 可导，三个条件缺一不可（笔记 p.67 Remark，p.69 要求举缺条件反例）。反例：f(x)=|x| 在 [-1,1] 上 f(-1)=f(1)=1，但在 x=0 不可导，不存在 f'(c)=0。<span class="kprl">笔记 §5.2.1 · p.67</span></li><li><b>相关变化率可以在建立关系式后立刻代入已知数值再求导</b> 错。所有量都是 t 的函数，必须先对 t 求导（链式法则），求导之后才能代入该瞬间的数值；提前代入会把变量的导数当作 0。反例：圆锥水槽 r=h/2 若先代入 h=1.8 再求导，dV/dt 恒为 0，显然荒谬。<span class="kprl">笔记 §4.12 · p.55</span></li></ul></div>
+<div class="kp"><div class="kph"><span class="kpt">积分初步篇（TC §5.1–5.2 以内）</span></div><ul class="kptraps"><li><b>“可积必连续”</b> 错。连续只是可积的充分条件之一；有界且只含有限个间断点的函数（如阶梯函数）可积但不连续。反之无界函数一定不可积。<span class="kprl">笔记 §6.2.2 · p.100</span></li><li><b>“无界函数在 [a,b] 上也可能可积”</b> 错。笔记定理：f 在 [a,b] 无界则一定不可积，例如 f(x)=1/x 于 (0,1]、f(0)=0。判断可积性时先看有界性，无界即可直接判否。<span class="kprl">笔记 §6.2.2 · p.100</span></li></ul></div></div></details>
 </div>
-<div class="card analysis" id="kpn10" data-key="K::T10 · 判断与概念快答" data-label="T10 · 判断与概念快答" data-topic="t10" data-tname="T10 · 判断与概念快答" data-kp="IVT 夹逼 极限不等式 渐近线 线性化 εΔx Rolle 条件 拐点定义 二阶导判定 链式法则 奇偶积分 黎曼和 部分分式 斜率场">
+<div class="card analysis" id="kpn9" data-key="K::T9 · 判断与概念快答" data-label="T9 · 判断与概念快答" data-topic="t9" data-tname="T9 · 判断与概念快答" data-kp="IVT 夹逼 极限不等式 渐近线 线性化 εΔx Rolle 条件 拐点定义 二阶导判定 链式法则 黎曼和 不定积分">
   <h4 style="margin-top:0">专题分析<button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这个专题的知识点">☆</button></h4>
   <table>
-    <tr><th class="k">考什么</th><td>极限/连续的定义级判断（IVT、夹逼、极限不等号）、渐近线、线性化 \(\Delta y\approx dy\)、Rolle 定理前提、拐点与二阶导、链式法则、奇偶函数积分、黎曼和写法、部分分式、斜率场识别</td></tr>
+    <tr><th class="k">考什么</th><td>极限/连续的定义级判断（IVT、夹逼、极限不等号）、渐近线、线性化 \(\Delta y\approx dy\)、Rolle 定理前提、拐点与二阶导、链式法则、黎曼和写法、不定积分</td></tr>
     <tr><th class="k">怎么识别</th><td>题干出现 True or False / No explanation required / short questions —— 不写过程，<b>但判断必须秒出</b>，靠的是把定理「条件」背熟</td></tr>
     <tr><th class="k">易错</th><td>① 严格不等号取极限后只能保证 \(\le\)；② 夹逼要求<b>两端极限相等</b>；③ IVT 要「闭区间连续」；④ Rolle 要「区间内处处可导」，\(|x|\) 在 0 不可导就不行；⑤ \(f''(c)=0\) 不代表拐点，要<b>凹性真的改变</b>；⑥ \(f''(0)=0\) 也可以有局部极小（如 \(x^4\)）</td></tr>
   </table>
@@ -1428,10 +1313,10 @@ section.module > section.topic{margin:16px 0}
       <li>Squeeze Theorem needs the two outer limits to be <b>equal</b>; IVT needs continuity on a <b>closed</b> interval.</li>
       <li>Rolle's Theorem requires differentiability at <b>every</b> interior point — \(|x|\) fails at 0.</li>
       <li>Inflection point = tangent line exists <b>and</b> concavity changes; \(f''(c)=0\) alone is not enough (\(x^4\)).</li>
-      <li>Odd integrand over a symmetric interval integrates to 0 — use it before computing anything.</li>
+      <li>Riemann-sum limits: factor out \(\frac1n\) and read the sum as \(\int_0^1 f(x)\,dx\).</li>
     </ul>
   </div></details>
-</div><div class="qcard past" id="q1" data-key="P::2022期中 Q1" data-label="2022期中 Q1" data-topic="t10" data-tname="T10 · 判断与概念快答" data-kp="IVT 线性化 极限不等号 渐近线 夹逼">
+</div><div class="qcard past" id="q1" data-key="P::2022期中 Q1" data-label="2022期中 Q1" data-topic="t9" data-tname="T9 · 判断与概念快答" data-kp="IVT 线性化 极限不等号 渐近线 夹逼">
   <div class="qhead"><span class="qno">2022期中 Q1</span><span class="qmeta">判断 ×5 · 10 分</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
   <div class="qbody">
     <div class="ver en">
@@ -1464,7 +1349,7 @@ section.module > section.topic{margin:16px 0}
   </div>
   </div></details>
 </div>
-<div class="qcard past" id="q2" data-key="P::2022期中 Q2" data-label="2022期中 Q2" data-topic="t10" data-tname="T10 · 判断与概念快答" data-kp="间断点 可导区间 乘法法则 二阶导 商法则 振动 增量 初值问题">
+<div class="qcard past" id="q2" data-key="P::2022期中 Q2" data-label="2022期中 Q2" data-topic="t9" data-tname="T9 · 判断与概念快答" data-kp="间断点 可导区间 乘法法则 二阶导 商法则 振动 增量 初值问题">
   <div class="qhead"><span class="qno">2022期中 Q2</span><span class="qmeta">简答 ×8 · 16 分</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
   <div class="qbody">
     <div class="ver en">
@@ -1510,8 +1395,8 @@ section.module > section.topic{margin:16px 0}
   </div>
   </div></details>
 </div>
-<div class="qcard past" id="q3" data-key="P::2024期中 Q1" data-label="2024期中 Q1" data-topic="t10" data-tname="T10 · 判断与概念快答" data-kp="最值定理 MVT 加速度 IVT 单调函数 可积性">
-  <div class="qhead"><span class="qno">2024期中 Q1</span><span class="qmeta">判断 ×5 · 10 分</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+<div class="qcard past" id="q3" data-key="P::2024期中 Q1" data-label="2024期中 Q1" data-topic="t9" data-tname="T9 · 判断与概念快答" data-kp="最值定理 MVT 加速度 IVT 单调函数">
+  <div class="qhead"><span class="qno">2024期中 Q1</span><span class="qmeta">判断 ×4 · 8 分 · 超纲小题已删</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
   <div class="qbody">
     <div class="ver en">
       <p class="stem stem-en">[10] True or False? No need to show intermediate steps.</p>
@@ -1520,7 +1405,6 @@ section.module > section.topic{margin:16px 0}
         <div class="op"><b>(ii)</b> If a car's speedometer reads 30 km/h at 2:00 PM and 50 km/h at 2:10 PM, then at some moment between 2:00 and 2:10 the car's acceleration is exactly 120 km/(hour)². (Assume velocity is differentiable.)</div>
         <div class="op"><b>(iii)</b> \(f(x)=x^3+2x+\tan x\) does not have any local maximum or minimum values.</div>
         <div class="op"><b>(iv)</b> If \(x=1\) is a critical point of \(f\), \(f'&lt;0\) on \((0,1)\), and \(f'&gt;0\) on \((1,2)\), then \(f(1)\) is a local minimum of \(f\).</div>
-        <div class="op"><b>(v)</b> If \(f\) is continuous on \([a,b]\) except at \(c\in[a,b]\) with a finite jump, then \(\int_a^b f\,dx=\int_a^c f\,dx+\int_c^b f\,dx\) still holds.</div>
       </div>
     </div>
     <div class="ver zh">
@@ -1530,24 +1414,23 @@ section.module > section.topic{margin:16px 0}
         <div class="op"><b>(ii)</b> 汽车 2:00 时速度表读 30 km/h，2:10 时读 50 km/h，则 2:00–2:10 之间必有某时刻加速度恰为 120 km/h²（设速度可导）。</div>
         <div class="op"><b>(iii)</b> \(f(x)=x^3+2x+\tan x\) 没有任何局部极值。</div>
         <div class="op"><b>(iv)</b> \(x=1\) 是 \(f\) 的驻点，\(f'&lt;0\) 于 \((0,1)\)、\(f'&gt;0\) 于 \((1,2)\)，则 \(f(1)\) 是局部极小值。</div>
-        <div class="op"><b>(v)</b> \(f\) 在 \([a,b]\) 上除有限跳跃间断点 \(c\) 外连续，则 \(\int_a^b f=\int_a^c f+\int_c^b f\) 仍成立。</div>
       </div>
     </div>
   </div>
   <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
-    <div class="aver en"><div class="enexp"><span class="entag">EN</span> <b>(i) F</b> (needs closed interval) <b>(ii) T</b> (MVT on velocity) <b>(iii) T</b> (\(f'&gt;0\) always) <b>(iv) T</b> (First Derivative Test) <b>(v) T</b> (additivity holds for integrable functions).</div></div>
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> <b>(i) F</b> (needs closed interval) <b>(ii) T</b> (MVT on velocity) <b>(iii) T</b> (\(f'&gt;0\) always) <b>(iv) T</b> (First Derivative Test).</div></div>
     <div class="aver zh">
-    <div class="ans-line"><b>答案：(i) F　(ii) T　(iii) T　(iv) T　(v) T</b><span class="tag b">AI 解析</span></div>
+    <div class="ans-line"><b>答案：(i) F　(ii) T　(iii) T　(iv) T</b><span class="tag b">AI 解析</span></div>
     <p><b>(i)</b> 最值定理（Extreme Value Theorem）要求<b>闭区间</b> \([a,b]\) 连续；开区间上如 \(f(x)=x\) 就取不到。<br>
     <b>(ii)</b> 对速度 \(v(t)\) 用 MVT：\(\dfrac{v(2{:}10)-v(2{:}00)}{1/6\text{ h}}=\dfrac{50-30}{1/6}=120\)，故某时刻 \(v'(t)=a=120\) km/h²。<br>
     <b>(iii)</b> \(f'=3x^2+2+\sec^2x\ge 2&gt;0\) 恒成立 → 严格递增，无局部极值。<br>
     <b>(iv)</b> 一阶导数判别法：\(f'\) 由负变正 → 局部极小，前提只是 \(f\) 在 1 连续（驻点处天然满足）。<br>
-    <b>(v)</b> 有限跳跃间断不破坏可积性，区间可加性对可积函数恒成立。</p>
-    <p class="pt"><b>易错：</b>(ii) 用的是「对 \(v\) 用 MVT」而不是对位置；(v) 别和「\(\int\) 要求连续」混淆——可积只需要有界且间断点有限。</p>
+</p>
+    <p class="pt"><b>易错：</b>(ii) 用的是「对 \(v\) 用 MVT」而不是对位置；(i) 把开区间当成闭区间是最值定理最常见的坑。</p>
   </div>
   </div></details>
 </div>
-<div class="qcard past" id="q4" data-key="P::2024期中 Q2" data-label="2024期中 Q2" data-topic="t10" data-tname="T10 · 判断与概念快答" data-kp="可去间断 竖直渐近线 导数定义 链式法则 牛顿法 IVT">
+<div class="qcard past" id="q4" data-key="P::2024期中 Q2" data-label="2024期中 Q2" data-topic="t9" data-tname="T9 · 判断与概念快答" data-kp="可去间断 竖直渐近线 导数定义 链式法则 牛顿法 IVT">
   <div class="qhead"><span class="qno">2024期中 Q2</span><span class="qmeta">简答 ×6 · 18 分</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
   <div class="qbody">
     <div class="ver en">
@@ -1587,8 +1470,8 @@ section.module > section.topic{margin:16px 0}
   </div>
   </div></details>
 </div>
-<div class="qcard past" id="q5" data-key="P::2025期中 Q1" data-label="2025期中 Q1" data-topic="t10" data-tname="T10 · 判断与概念快答" data-kp="高阶导 极限趋势 渐近线 介值 连续性 切线 线性化 Rolle 拐点 二阶导 奇偶积分 黎曼和 牛顿法 不定积分">
-  <div class="qhead"><span class="qno">2025期中 Q1</span><span class="qmeta">小题 ×15 · 45 分</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
+<div class="qcard past" id="q5" data-key="P::2025期中 Q1" data-label="2025期中 Q1" data-topic="t9" data-tname="T9 · 判断与概念快答" data-kp="高阶导 极限趋势 渐近线 介值 连续性 切线 线性化 Rolle 拐点 二阶导 黎曼和 牛顿法 不定积分">
+  <div class="qhead"><span class="qno">2025期中 Q1</span><span class="qmeta">小题 ×13 · 39 分 · 超纲小题已删</span><button class="star" type="button" onclick="toggleStar(event,this)" title="收藏这道题和它对应的知识点">☆</button><button class="trbtn" type="button" onclick="toggleTr(event,this)" title="切换中文 / English">译</button></div>
   <div class="qbody">
     <div class="ver en">
       <p class="stem stem-en">(45 points) Short Questions — NO need to show your work, NO partial credits.</p>
@@ -1603,11 +1486,9 @@ section.module > section.topic{margin:16px 0}
         <div class="op"><b>(viii)</b> \(g(x)=|x|\) on \([-1,1]\). Which is correct? (a) some \(c\) with \(g'(c)=0\) by Rolle　(b) exactly one such \(c\)　(c) Rolle fails: \(g\) not continuous at 0　(d) Rolle fails: \(g\) not differentiable on \((-1,1)\).</div>
         <div class="op"><b>(ix)</b> T/F: if \((c,f(c))\) is an inflection point, then near \((c,f(c))\) the graph crosses the tangent line through \((c,f(c))\).</div>
         <div class="op"><b>(x)</b> T/F: if \(f''\) exists everywhere and \(f(0)\) is a local minimum, then 0 is a critical point and \(f''(0)&gt;0\).</div>
-        <div class="op"><b>(xi)</b> \(a=\int_{-\pi/2}^{\pi/2}\frac{\sin x}{1+x^2\cos^4x}dx\), \(b=\int_{-\pi/2}^{\pi/2}(\sin^3x+\cos^4x)dx\), \(c=\int_{-\pi/2}^{\pi/2}(x^2\sin^3x-\cos^4x)dx\). Then (a) \(b&lt;c&lt;a\)　(b) \(a&lt;c&lt;b\)　(c) \(b&lt;a&lt;c\)　(d) \(c&lt;a&lt;b\).</div>
-        <div class="op"><b>(xii)</b> \(f&gt;0\) continuous on \([a,b]\). The number of roots in \((a,b)\) of \(\int_a^x f+\int_x^b f=0\) is (a) 0　(b) 1　(c) 2　(d) 3.</div>
-        <div class="op"><b>(xiii)</b> Newton's method for \(\cos x=2x\) with \(x_0=0\): the next approximation is ___.</div>
-        <div class="op"><b>(xiv)</b> Express \(\lim_{n\to\infty}\left(\frac{1}{n+1}+\frac{1}{n+2}+\cdots+\frac{1}{2n}\right)\) as a definite integral via Riemann sums (hint: \(\frac{1}{n+i}=\frac{1}{n}\cdot\frac{1}{1+i/n}\)).</div>
-        <div class="op"><b>(xv)</b> Find \(\int\left(2x(1-x^{-3})-\sec^2(2x)\right)dx\).</div>
+        <div class="op"><b>(xi)</b> Newton's method for \(\cos x=2x\) with \(x_0=0\): the next approximation is ___.</div>
+        <div class="op"><b>(xii)</b> Express \(\lim_{n\to\infty}\left(\frac{1}{n+1}+\frac{1}{n+2}+\cdots+\frac{1}{2n}\right)\) as a definite integral via Riemann sums (hint: \(\frac{1}{n+i}=\frac{1}{n}\cdot\frac{1}{1+i/n}\)).</div>
+        <div class="op"><b>(xiii)</b> Find \(\int\left(2x(1-x^{-3})-\sec^2(2x)\right)dx\).</div>
       </div>
     </div>
     <div class="ver zh">
@@ -1623,18 +1504,16 @@ section.module > section.topic{margin:16px 0}
         <div class="op"><b>(viii)</b> \(g(x)=|x|\) 于 \([-1,1]\)，Rolle 定理结论如何？</div>
         <div class="op"><b>(ix)</b> 判断：拐点附近图线必穿过该点处的切线。</div>
         <div class="op"><b>(x)</b> 判断：\(f''\) 处处存在且 \(f(0)\) 是局部极小 \(\Rightarrow\) 0 是驻点且 \(f''(0)&gt;0\)。</div>
-        <div class="op"><b>(xi)</b> 比较三个对称区间积分 \(a,b,c\) 的大小。</div>
-        <div class="op"><b>(xii)</b> \(f&gt;0\) 且在 \([a,b]\) 连续，方程 \(\int_a^x f+\int_x^b f=0\) 在 \((a,b)\) 内有几个根？</div>
-        <div class="op"><b>(xiii)</b> 牛顿法解 \(\cos x=2x\)，\(x_0=0\)，求下一次近似。</div>
-        <div class="op"><b>(xiv)</b> 用黎曼和把 \(\lim_{n\to\infty}\left(\frac{1}{n+1}+\cdots+\frac{1}{2n}\right)\) 写成定积分（不求值）。</div>
-        <div class="op"><b>(xv)</b> 求 \(\int\left(2x(1-x^{-3})-\sec^2(2x)\right)dx\)。</div>
+        <div class="op"><b>(xi)</b> 牛顿法解 \(\cos x=2x\)，\(x_0=0\)，求下一次近似。</div>
+        <div class="op"><b>(xii)</b> 用黎曼和把 \(\lim_{n\to\infty}\left(\frac{1}{n+1}+\cdots+\frac{1}{2n}\right)\) 写成定积分（不求值）。</div>
+        <div class="op"><b>(xiii)</b> 求 \(\int\left(2x(1-x^{-3})-\sec^2(2x)\right)dx\)。</div>
       </div>
     </div>
   </div>
   <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
-    <div class="aver en"><div class="enexp"><span class="entag">EN</span> (i) a　(ii) d　(iii) vertical \(x=1\), oblique \(y=x+1\), no horizontal　(iv) T　(v) T　(vi) \(y=x-\pi-9\)　(vii) T　(viii) d　(ix) F (see note)　(x) F　(xi) d　(xii) a　(xiii) \(x_1=\frac12\)　(xiv) \(\int_0^1\frac{dx}{1+x}\)　(xv) \(x^2+\frac{2}{x}-\frac12\tan(2x)+C\).</div></div>
+    <div class="aver en"><div class="enexp"><span class="entag">EN</span> (i) a　(ii) d　(iii) vertical \(x=1\), oblique \(y=x+1\), no horizontal　(iv) T　(v) T　(vi) \(y=x-\pi-9\)　(vii) T　(viii) d　(ix) F (see note)　(x) F　(xi) \(x_1=\frac12\)　(xii) \(\int_0^1\frac{dx}{1+x}\)　(xiii) \(x^2+\frac{2}{x}-\frac12\tan(2x)+C\).</div></div>
     <div class="aver zh">
-    <div class="ans-line"><b>答案：(i) a　(ii) d　(iii) \(x=1\) 竖直，\(y=x+1\) 斜，无水平　(iv) T　(v) T　(vi) \(y=x-\pi-9\)　(vii) T　(viii) d　(ix) F　(x) F　(xi) d　(xii) a　(xiii) \(x_1=\tfrac12\)　(xiv) \(\int_0^1\frac{dx}{1+x}\)　(xv) \(x^2+\frac{2}{x}-\frac12\tan2x+C\)</b><span class="tag b">AI 解析</span></div>
+    <div class="ans-line"><b>答案：(i) a　(ii) d　(iii) \(x=1\) 竖直，\(y=x+1\) 斜，无水平　(iv) T　(v) T　(vi) \(y=x-\pi-9\)　(vii) T　(viii) d　(ix) F　(x) F　(xi) \(x_1=\tfrac12\)　(xii) \(\int_0^1\frac{dx}{1+x}\)　(xiii) \(x^2+\frac{2}{x}-\frac12\tan2x+C\)</b><span class="tag b">AI 解析</span></div>
     <p><b>(i)</b> 求导周期 4：\(\cos\to-\sin\to-\cos\to\sin\to\cos\)，\(27\bmod4=3\) → \(\sin t\)，选 a。<br>
     <b>(ii)</b> \(n=k\) 时两侧极限同为 \(a_n/b_k\)（相等，不是相反）；\(n&gt;k\) 时 \(x\to+\infty\) 发散到 \(+\infty\) 而非 0；\(x\to-\infty\) 的符号取决于 \(n-k\) 的奇偶 → 三个都不对，选 <b>d</b>。<br>
     <b>(iii)</b> \(x=1\) 竖直渐近线；带余除法 \(x^2+1=(x-1)(x+1)+2\) → \(f=x+1+\frac{2}{x-1}\)，斜渐近线 \(y=x+1\)。<br>
@@ -1645,12 +1524,10 @@ section.module > section.topic{margin:16px 0}
     <b>(viii)</b> \(|x|\) 在 \(0\) 不可导，Rolle 前提（区间内处处可导）不满足 → <b>d</b>。<br>
     <b>(ix)</b> <b>F</b>。反例 \(y=\sqrt[3]{x}\)：\((0,0)\) 是拐点、切线是竖直线 \(x=0\)，但函数图像在每个 \(x\) 只有一个点，谈不上「穿过」这条竖直切线。（补充：若切线非竖直——\(f\) 在 \(c\) 可导且两侧凹性区间式改变——则可证必穿过切线，见下方易错框。）<span class="tag a">争议：部分老师按「非竖直切线必穿过」判 T，写明理由即可</span><br>
     <b>(x)</b> 0 确是驻点（Fermat 定理），但 \(f''(0)&gt;0\) 不必然：\(f(x)=x^4\) 有局部极小而 \(f''(0)=0\) → <b>F</b>。<br>
-    <b>(xi)</b> \(a=0\)（奇函数）；\(\int_{-\pi/2}^{\pi/2}\cos^4x\,dx=2\cdot\frac34\cdot\frac12\cdot\frac\pi2=\frac{3\pi}{8}\)，且 \(\sin^3x\)、\(x^2\sin^3x\) 都是奇函数积分为 0 → \(b=\frac{3\pi}{8}\)，\(c=-\frac{3\pi}{8}\) → \(c&lt;a&lt;b\)，选 <b>d</b>。全题<b>不用算任何积分</b>，靠奇偶性。<br>
-    <b>(xii)</b> \(\int_a^x f+\int_x^b f=\int_a^b f&gt;0\) 对一切 \(x\) 成立，方程恒不成立 → <b>0 个根</b>，选 a。<br>
-    <b>(xiii)</b> \(f=\cos x-2x\)，\(f'=-\sin x-2\)；\(x_1=0-\frac{1}{-2}=\frac12\)。<br>
-    <b>(xiv)</b> \(\frac1{n+i}=\frac1n\cdot\frac{1}{1+i/n}\)，和式即 \(f(x)=\frac{1}{1+x}\) 在 \([0,1]\) 上的右端点黎曼和 → \(\displaystyle\int_0^1\frac{dx}{1+x}\)（值是 \(\ln2\)，题目不要求）。<br>
-    <b>(xv)</b> 拆开：\(\int(2x-2x^{-2}-\sec^22x)dx=x^2+\frac{2}{x}-\frac12\tan(2x)+C\)。</p>
-    <div class="err"><b>易错集中营：</b>(xi) 别硬算——对称区间先查奇偶；(xii) 把两个积分拼成 \(\int_a^b f\) 是一步到位的关键；(ix) 是「拐点是否穿切线」的经典坑，竖直切线是反例来源。</div>
+    <b>(xi)</b> \(f=\cos x-2x\)，\(f'=-\sin x-2\)；\(x_1=0-\frac{1}{-2}=\frac12\)。<br>
+    <b>(xii)</b> \(\frac1{n+i}=\frac1n\cdot\frac{1}{1+i/n}\)，和式即 \(f(x)=\frac{1}{1+x}\) 在 \([0,1]\) 上的右端点黎曼和 → \(\displaystyle\int_0^1\frac{dx}{1+x}\)（值是 \(\ln2\)，题目不要求）。<br>
+    <b>(xiii)</b> 拆开：\(\int(2x-2x^{-2}-\sec^22x)dx=x^2+\frac{2}{x}-\frac12\tan(2x)+C\)。</p>
+    <div class="err"><b>易错集中营：</b>(ix) 是「拐点是否穿切线」的经典坑，竖直切线是反例来源；(xii 黎曼和) 必须先提出 \(\frac1n\) 才能读出 \(\int_0^1\)；(xiii 不定积分) 别忘 \(+C\)。</div>
   </div>
   </div></details>
 </div></section>
@@ -1672,7 +1549,7 @@ section.module > section.topic{margin:16px 0}
     <tr><td class="k">2022期中 Q9</td><td>递减 \([0,\frac\pi2]\cup[\frac{3\pi}2,2\pi]\)，递增 \([\frac\pi2,\frac{3\pi}2]\)；极小 \(x=\frac\pi2\)，极大 \(x=\frac{3\pi}2\)</td><td><span class="tag g">官方</span></td></tr>
     <tr><td class="k">2022期中 Q10</td><td>凹向下 \([0,2]\)、凹向上 \([2,\infty)\)；拐点 \(x=2\)；极大 \(x=2-\sqrt2\)，全局极小 \(x=2+\sqrt2\)；截距 \(0,\,3\pm\sqrt3\)</td><td><span class="tag g">官方</span></td></tr>
     <tr><td class="k">2022期中 Q11</td><td>\(1\)</td><td><span class="tag g">官方</span></td></tr>
-    <tr><td class="k">2024期中 Q1</td><td>(i) F　(ii) T　(iii) T　(iv) T　(v) T</td><td><span class="tag b">AI</span></td></tr>
+    <tr><td class="k">2024期中 Q1</td><td>(i) F　(ii) T　(iii) T　(iv) T</td><td><span class="tag b">AI</span></td></tr>
     <tr><td class="k">2024期中 Q2</td><td>(i) 可去间断　(ii) \(x=\pm1\)　(iv) 20240　(v) B　(vi) D</td><td><span class="tag b">AI</span></td></tr>
     <tr><td class="k">2024期中 Q3</td><td>\(1\)</td><td><span class="tag b">AI</span></td></tr>
     <tr><td class="k">2024期中 Q4</td><td>左 \(a^2-1\)、右 0；极限存在 \(\Leftrightarrow a=\pm1\)；连续 \(\Leftrightarrow a=-1\)</td><td><span class="tag b">AI</span></td></tr>
@@ -1682,13 +1559,10 @@ section.module > section.topic{margin:16px 0}
     <tr><td class="k">2024期中 Q8</td><td>\(6\) cm³</td><td><span class="tag b">AI</span></td></tr>
     <tr><td class="k">2024期中 Q9</td><td>临界点 \(-\sqrt2,\,0,\,1\)；拐点 \(-\sqrt{6/5},\,1\)</td><td><span class="tag b">AI</span></td></tr>
     <tr><td class="k">2024期中 Q10</td><td>面积 1（\(1\times1\) 正方形）</td><td><span class="tag b">AI</span></td></tr>
-    <tr><td class="k">2024期中 Q11</td><td>\(y=x-\sin x+1\)</td><td><span class="tag b">AI</span></td></tr>
-    <tr><td class="k">2024期中 Q12</td><td>\(a\left(\frac\pi6+\frac{\sqrt3}4\right)\)</td><td><span class="tag b">AI</span></td></tr>
-    <tr><td class="k">2024期中 Q13</td><td>路程 \(\frac16\) m \(&lt;0.25\) m</td><td><span class="tag b">AI</span></td></tr>
-    <tr><td class="k">2025期中 Q1</td><td>(i) a (ii) d (iii) \(x=1\)、\(y=x+1\) (iv) T (v) T (vi) \(y=x-\pi-9\) (vii) T (viii) d (ix) F (x) F (xi) d (xii) a (xiii) \(\frac12\) (xiv) \(\int_0^1\frac{dx}{1+x}\) (xv) \(x^2+\frac2x-\frac12\tan2x+C\)</td><td><span class="tag b">AI</span></td></tr>
+    <tr><td class="k">2025期中 Q1</td><td>(i) a (ii) d (iii) \(x=1\)、\(y=x+1\) (iv) T (v) T (vi) \(y=x-\pi-9\) (vii) T (viii) d (ix) F (x) F (xi) \(\frac12\) (xii) \(\int_0^1\frac{dx}{1+x}\) (xiii) \(x^2+\frac2x-\frac12\tan2x+C\)</td><td><span class="tag b">AI</span></td></tr>
     <tr><td class="k">2025期中 Q2</td><td>(i) \(\frac32\)　(ii) \(-\frac32\)　(iii) 不存在　(iv) \(\frac12\)</td><td><span class="tag b">AI</span></td></tr>
     <tr><td class="k">2025期中 Q3</td><td>(i) 不存在　(ii) \(2\sin1-\cos1\)　(iii) \(\frac1{y+1}\)　(iv) \(-\frac1{(y+1)^3}\)</td><td><span class="tag b">AI</span></td></tr>
-    <tr><td class="k">2025期中 Q4</td><td>\(s=-\cos t+\frac t2+3\)；总路程 \(2\sqrt3+\frac\pi3\)</td><td><span class="tag b">AI</span></td></tr>
+    <tr><td class="k">2025期中 Q4</td><td>\(s=-\cos t+\frac t2+3\)</td><td><span class="tag b">AI</span></td></tr>
     <tr><td class="k">2025期中 Q5</td><td>\(a=\frac{20000}x+150+0.5x\)，\(m=150+x\)；\(x=200\)；交点 \((200,350)\)</td><td><span class="tag b">AI</span></td></tr>
     <tr><td class="k">2025期中 Q6</td><td>\(5\) m/min</td><td><span class="tag b">AI</span></td></tr>
     <tr><td class="k">2025期中 Q7</td><td>临界点 \(2,\frac{62}{27}\)；极大在 \(0,\frac{62}{27}\)；全局最大 \(2+2^{2/3}\)（\(x=0\)）；处处凹向下；无拐点</td><td><span class="tag b">AI</span></td></tr>
@@ -1698,7 +1572,7 @@ section.module > section.topic{margin:16px 0}
 </div>
 
 <div class="footer">
-  <p><b>数据来源：</b>2022/2024/2025 三年 MAT1001 期中卷（2022 期末卷已撤下），共 33 道大题（含所有小问）。2022 期中的答案对照学校流出的手写答案 PDF 逐题核对；其余两套无官方答案，解析由 AI 求解并逐步验算，<b>如与课堂讲评不一致请以老师为准</b> —— 发现错漏欢迎直接改或提 issue。</p>
+  <p><b>数据来源：</b>2022/2024/2025 三年 MAT1001 期中卷（2022 期末卷已撤下），并按 2026 秋期中范围 <b>TC §2.1–5.2（不含 §2.3）</b> 裁掉范围外的专题与小问，当前共 30 道大题（含所有小问）。2022 期中的答案对照学校流出的手写答案 PDF 逐题核对；其余两套无官方答案，解析由 AI 求解并逐步验算，<b>如与课堂讲评不一致请以老师为准</b> —— 发现错漏欢迎直接改或提 issue。</p>
   <p><b>使用提示：</b>收藏数据存在浏览器 localStorage，换设备或清缓存会丢失；Ctrl/⌘+P 打印时答案会自动全部展开、中英双版同时显示（适合打印成复习册）。</p>
 </div>
 
