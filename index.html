@@ -114,6 +114,16 @@ details.en>.dsum:hover{background:var(--brand-soft)}
 details.en>.dbody{border-top-color:var(--brand-line)}
 details.en ul{margin:6px 0 10px}
 details.en li{font-size:13.6px;line-height:1.72;margin:5px 0}
+details.brk{border-color:#d5c9f4;background:#fdfcff}
+details.brk>.dsum{color:#534ab7}
+details.brk>.dsum:hover{background:#eeedfe}
+details.brk>.dbody{border-top-color:#d5c9f4}
+table.brkt{width:100%;border-collapse:collapse;margin:2px 0 6px}
+table.brkt th{width:52px;text-align:left;vertical-align:top;white-space:nowrap;color:#534ab7;font-weight:600;font-size:13.2px;padding:6px 10px;border-bottom:1px solid #ece7fb}
+table.brkt td{font-size:13.4px;line-height:1.75;padding:6px 10px;border-bottom:1px solid #f2eefc}
+table.brkt tr:last-child th,table.brkt tr:last-child td{border-bottom:none}
+p.brkkw{margin:8px 0 2px;font-size:13.2px;line-height:1.8;color:#3c3489}
+p.brkkw b{color:#26215c}
 .en-badge{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:.6px;color:#fff;
   background:#2b41a8;border-radius:4px;padding:1px 6px;vertical-align:2px;margin-right:7px}
 .ans-line{background:var(--green-soft);border:1px solid var(--green-line);border-radius:8px;padding:7px 12px;margin:8px 0;font-size:14px}
@@ -606,6 +616,15 @@ section.module > section.topic{margin:16px 0}
       </div>
     </div>
   </div>
+  <details class="brk"><summary class="dsum">题意拆解 · 已知 / 所求 / 关系 / 易错</summary><div class="dbody">
+    <table class="brkt">
+      <tr><th>已知</th><td>总成本 \(C(x)=20000+150x+0.5x^2\)，\(x\) = 产量（台），\(x&gt;0\)</td></tr>
+      <tr><th>所求</th><td>(i) 平均成本 \(a(x)\) 与边际成本 \(m(x)\)；(ii) 使平均成本最小的 \(x\)；(iii) 两曲线交点；(iv) 证明极小处 \(a=m\)</td></tr>
+      <tr><th>关系</th><td>\(a(x)=\dfrac{C(x)}{x}\)；\(m(x)=C'(x)\)；极小点由 \(a'(x)=0\) 定；交点由 \(a(x)=m(x)\) 解出</td></tr>
+      <tr><th>易错</th><td>边际成本是<b>导数</b> \(C'(x)\)，不是 \(C(x+1)-C(x)\)；(iv) 要用商法则 \(a'=\dfrac{xC'-C}{x^2}\) 配费马定理</td></tr>
+    </table>
+    <p class="brkkw"><b>英文 → 数学：</b>cost function 成本函数；average cost 平均成本 \(=C/x\)；marginal cost 边际成本 \(=C'\)；minimize → 求导令其为零；intersection point → 两式相等求解</p>
+  </div></details>
   <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
     <div class="aver en"><div class="enexp"><span class="entag">EN</span> (i) \(a(x)=\frac{20000}{x}+150+0.5x,\ m(x)=150+x\). (ii) \(x=200\). (iii) \((200,\ 350)\). (iv) \(a'(x)=\frac{xC'-C}{x^2}=0\Rightarrow C'=C/x\Rightarrow m=a\).</div></div>
     <div class="aver zh">
@@ -701,6 +720,15 @@ section.module > section.topic{margin:16px 0}
       <p class="stem">[6] 给一块棱长 10 cm 的正方体各面刷上厚 0.01 cm 的漆，形成一个略大的正方体。<b>用微分</b>估算用掉多少立方厘米的漆。</p>
     </div>
   </div>
+  <details class="brk"><summary class="dsum">题意拆解 · 已知 / 所求 / 关系 / 易错</summary><div class="dbody">
+    <table class="brkt">
+      <tr><th>已知</th><td>正方体棱长 \(s=10\) cm，漆厚 \(0.01\) cm（涂在<b>六个面</b>上）</td></tr>
+      <tr><th>所求</th><td>用掉多少立方厘米漆 —— 只要<b>估算值</b></td></tr>
+      <tr><th>关系</th><td>\(V=s^3\)，\(dV=3s^2\,ds\)。关键：<b>\(ds=2\times0.01=0.02\)</b>（两个相对的面各向外推 0.01），故 \(dV=3\cdot100\cdot0.02=6\) cm³</td></tr>
+      <tr><th>易错</th><td>把 \(ds\) 取成 0.01 会得 3 cm³ —— 这是本题唯一的坑；精确值 \(10.02^3-10^3=6.012\) 只差 0.012</td></tr>
+    </table>
+    <p class="brkkw"><b>英文 → 数学：</b>use a differential → 用微分<b>估算</b>（≈，不是精确值）；is applied to the faces → 涂在表面；thereby producing a slightly larger cube → 变化后的新状态</p>
+  </div></details>
   <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
     <div class="aver en"><div class="enexp"><span class="entag">EN</span> \(\Delta V\approx dV=3s^2\,ds=3\cdot100\cdot0.02=\mathbf{6\ \text{cm}^3}\). Exact value \(10.02^3-10^3=6.012\).</div></div>
     <div class="aver zh">
@@ -994,6 +1022,15 @@ section.module > section.topic{margin:16px 0}
       </div>
     </div>
   </div>
+  <details class="brk"><summary class="dsum">题意拆解 · 已知 / 所求 / 关系 / 易错</summary><div class="dbody">
+    <table class="brkt">
+      <tr><th>已知</th><td>\(t=4\) 周：\(N=820\) 条、\(N'=50\) 条/周；\(M=1.2\) g、\(M'=0.1\) g/周</td></tr>
+      <tr><th>所求</th><td>(i) 用 \(N,M\) 写出 \(B(t)\) 与 \(B'(t)\)；(ii) \(B'(4)\)</td></tr>
+      <tr><th>关系</th><td>总质量 = 条数 × 平均质量：\(B=N\cdot M\)；两边对 \(t\) 求导用<b>乘积法则</b>：\(B'=N'M+NM'\)。代值 \(50\times1.2+820\times0.1=142\) g/周</td></tr>
+      <tr><th>易错</th><td>两个因子<b>都在变</b>，必须两项都写：60 来自「鱼变多」，82 来自「鱼变重」，只算一项会丢一半分</td></tr>
+    </table>
+    <p class="brkkw"><b>英文 → 数学：</b>at what rate is ... increasing → 求导数的数值；growing at ... per week → 正的变化率；average mass → 平均质量（不是总质量）</p>
+  </div></details>
   <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
     <div class="aver en"><div class="enexp"><span class="entag">EN</span> (i) \(B=NM\), \(B'=N'M+NM'\). (ii) \(50(1.2)+820(0.1)=\mathbf{142\ \text{g/week}}\).</div></div>
     <div class="aver zh">
@@ -1015,6 +1052,15 @@ section.module > section.topic{margin:16px 0}
       <p class="stem">[6] 一个尖朝下的圆锥形水池（顶点在下、口在上），底半径 \(R=6\) m、高 \(H=4\) m。以 \(0.5\ \text{m}^3/\text{min}\) 注水。当水深为池高的一半（2 m）时，水位上升多快？</p>
     </div>
   </div>
+  <details class="brk"><summary class="dsum">题意拆解 · 已知 / 所求 / 关系 / 易错</summary><div class="dbody">
+    <table class="brkt">
+      <tr><th>已知</th><td>池子固定尺寸 \(R=6\) m、\(H=4\) m；注水速率 \(\dfrac{dV}{dt}=+0.5\) m³/min；瞬时水深 \(h=2\) m</td></tr>
+      <tr><th>所求</th><td>\(\dfrac{dh}{dt}\)（水位上升多快）</td></tr>
+      <tr><th>关系</th><td>\(V=\dfrac13\pi r^2h\)，相似 \(\dfrac{r}{h}=\dfrac{R}{H}=\dfrac32\Rightarrow r=\dfrac32h\) → \(V=\dfrac{3\pi}{4}h^3\) → \(\dfrac{dV}{dt}=\dfrac{9\pi}{4}h^2\dfrac{dh}{dt}\) → \(\dfrac{dh}{dt}=\dfrac{1}{18\pi}\) m/min</td></tr>
+      <tr><th>易错</th><td>① 必须<b>先用相似消去 \(r\)</b>，否则式子里多一个 \(\dfrac{dr}{dt}\) 做不下去；② \(R,H\) 是常数，\(r,h\) 才是随 \(t\) 变的量；③ \(h=2\) 要<b>求导之后</b>才代</td></tr>
+    </table>
+    <p class="brkkw"><b>英文 → 数学：</b>runs in at → 注入，取<b>正号</b>；how fast is ... rising → 求 \(\dfrac{dh}{dt}\)；when the water level is ... → 瞬时值，求导后再代</p>
+  </div></details>
   <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
     <div class="aver en"><div class="enexp"><span class="entag">EN</span> \(\dfrac{dh}{dt}=\dfrac{0.5}{9\pi}=\mathbf{\dfrac{1}{18\pi}\ \text{m/min}}\approx0.0177\).</div></div>
     <div class="aver zh">
@@ -1037,6 +1083,15 @@ section.module > section.topic{margin:16px 0}
       <p class="stem">[6] 质点在椭圆轨道 \(\dfrac{x^2}{4}+\dfrac{y^2}{9}=1\) 上运动。当 \(x=1\) m 且 \(y&gt;0\) 时 \(\dfrac{dx}{dt}=6\) m/s，求此时 \(\dfrac{dy}{dt}\)。</p>
     </div>
   </div>
+  <details class="brk"><summary class="dsum">题意拆解 · 已知 / 所求 / 关系 / 易错</summary><div class="dbody">
+    <table class="brkt">
+      <tr><th>已知</th><td>轨道方程 \(\dfrac{x^2}{4}+\dfrac{y^2}{9}=1\)；\(\dfrac{dx}{dt}=6\) m/s；瞬时 \(x=1\) m 且 \(y&gt;0\)</td></tr>
+      <tr><th>所求</th><td>该瞬间的 \(\dfrac{dy}{dt}\)</td></tr>
+      <tr><th>关系</th><td>两边对 \(t\) 求导：\(\dfrac{x}{2}\dfrac{dx}{dt}+\dfrac{2y}{9}\dfrac{dy}{dt}=0\) → \(\dfrac{dy}{dt}=-\dfrac{9x}{4y}\cdot\dfrac{dx}{dt}\)。先由椭圆解 \(y=\dfrac{3\sqrt3}{2}\)（取正），得 \(-3\sqrt3\) m/s</td></tr>
+      <tr><th>易错</th><td>\(y\) 不会直接给出，要自己代 \(x=1\) 进椭圆求，并用 \(y&gt;0\) 定号；负号表示此刻<b>向下</b>运动</td></tr>
+    </table>
+    <p class="brkkw"><b>英文 → 数学：</b>travels on the orbit → 质点的坐标<b>恒满足</b>该方程（可以对 t 求导）；when x=1 and y&gt;0 → 先定点，再代变化率</p>
+  </div></details>
   <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
     <div class="aver en"><div class="enexp"><span class="entag">EN</span> \(\dfrac{dy}{dt}=\mathbf{-3\sqrt3\ \text{m/s}}\approx-5.20\).</div></div>
     <div class="aver zh">
@@ -1063,6 +1118,15 @@ section.module > section.topic{margin:16px 0}
 |<---- x ---->|<------ s ------>|</pre><span class="small">图中：人与灯柱的水平距离为 \(x\)，影长 \(s\)，尖端距柱 \(u=x+s\)</span></div>
     </div>
   </div>
+  <details class="brk"><summary class="dsum">题意拆解 · 已知 / 所求 / 关系 / 易错</summary><div class="dbody">
+    <table class="brkt">
+      <tr><th>已知</th><td>灯高 6 m、人高 1.5 m；人走向灯柱 → \(\dfrac{dx}{dt}=-2\) m/s（\(x\) 在<b>减小</b>，故负号）</td></tr>
+      <tr><th>所求</th><td>影子<b>尖端</b>的移动速度 \(\dfrac{du}{dt}\)（不是影长的速度）</td></tr>
+      <tr><th>关系</th><td>相似 \(\dfrac{6}{x+s}=\dfrac{1.5}{s}\Rightarrow s=\dfrac{x}{3}\)；尖端 \(u=x+s=\dfrac43x\) → \(\dfrac{du}{dt}=\dfrac43\dfrac{dx}{dt}=-\dfrac83\) m/s，即 8/3 m/s 朝灯柱</td></tr>
+      <tr><th>易错</th><td>尖端 \(u=x+s\) 的速率是 \(\dfrac83\)，影长 \(s\) 的速率只有 \(\dfrac23\) —— 差在「人自己也在移动」这一项；方向别漏</td></tr>
+    </table>
+    <p class="brkkw"><b>英文 → 数学：</b>tip of his shadow → 尖端（一个<b>点的位置</b>），不是影子长度；walks towards → 距离减小，导数为<b>负</b></p>
+  </div></details>
   <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
     <div class="aver en"><div class="enexp"><span class="entag">EN</span> Tip moves at \(\mathbf{\frac83\ \text{m/s}}\) toward the lamppost.</div></div>
     <div class="aver zh">
@@ -1086,6 +1150,15 @@ section.module > section.topic{margin:16px 0}
       <p class="stem">(8 分) 球形气球以 \(20\pi\ \text{m}^3/\text{min}\) 充气。当半径为 1 m 时，半径增大得多快？（\(V=\frac43\pi r^3\)）</p>
     </div>
   </div>
+  <details class="brk"><summary class="dsum">题意拆解 · 已知 / 所求 / 关系 / 易错</summary><div class="dbody">
+    <table class="brkt">
+      <tr><th>已知</th><td>\(\dfrac{dV}{dt}=20\pi\) m³/min（充气，正）；瞬时 \(r=1\) m</td></tr>
+      <tr><th>所求</th><td>\(\dfrac{dr}{dt}\)（半径增大多快）</td></tr>
+      <tr><th>关系</th><td>\(V=\dfrac43\pi r^3\Rightarrow \dfrac{dV}{dt}=4\pi r^2\dfrac{dr}{dt}\)；代 \(20\pi=4\pi\cdot1^2\cdot\dfrac{dr}{dt}\Rightarrow \dfrac{dr}{dt}=5\) m/min</td></tr>
+      <tr><th>易错</th><td>别求成表面积变化率；\(\dfrac43\pi r^3\) 对 \(t\) 求导是 \(4\pi r^2\dfrac{dr}{dt}\)，系数别算错</td></tr>
+    </table>
+    <p class="brkkw"><b>英文 → 数学：</b>is inflated with gas at the rate → \(\dfrac{dV}{dt}\) 为正；at the moment when r=1 → 求导之后才代 \(r\)</p>
+  </div></details>
   <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
     <div class="aver en"><div class="enexp"><span class="entag">EN</span> \(\dfrac{dr}{dt}=\mathbf{5\ \text{m/min}}\).</div></div>
     <div class="aver zh">
@@ -1128,6 +1201,15 @@ section.module > section.topic{margin:16px 0}
       <p class="stem">[8] 求对角线长为 \(\sqrt2\) 的矩形的最大面积。</p>
     </div>
   </div>
+  <details class="brk"><summary class="dsum">题意拆解 · 已知 / 所求 / 关系 / 易错</summary><div class="dbody">
+    <table class="brkt">
+      <tr><th>已知</th><td>矩形对角线长 \(d=\sqrt2\)（固定）</td></tr>
+      <tr><th>所求</th><td>最大面积 \(A\)</td></tr>
+      <tr><th>关系</th><td>设边长 \(a,b&gt;0\)：约束 \(a^2+b^2=2\)，目标 \(A=ab\)。消元 \(b=\sqrt{2-a^2}\) → \(A(a)=a\sqrt{2-a^2}\)。<b>技巧：最大化 \(A^2=a^2(2-a^2)\)</b>，令 \(u=a^2\) 得 \(-u^2+2u\)，顶点 \(u=1\) → \(a=b=1\)，\(A_{\max}=1\)</td></tr>
+      <tr><th>易错</th><td>定义域是<b>开区间</b> \(0&lt;a&lt;\sqrt2\)，端点取不到，要靠单调性（或抛物线顶点）论证全局最大，不能只解 \(A'=0\)</td></tr>
+    </table>
+    <p class="brkkw"><b>英文 → 数学：</b>largest area → 求最大值；whose diagonal has length → 给出的是<b>约束条件</b>（先翻译约束，再写目标）</p>
+  </div></details>
   <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
     <div class="aver en"><div class="enexp"><span class="entag">EN</span> Max area \(=\mathbf{1}\), attained by the unit square (\(1\times1\)).</div></div>
     <div class="aver zh">
@@ -1151,6 +1233,15 @@ section.module > section.topic{margin:16px 0}
       <p class="stem">(8 分) John 乘船在离岸 3 km 处，要去海岸线上距最近点 5 km 远的盐田港。划船速度 3 km/h，步行 6 km/h。他应在何处登岸才能最快到达？</p>
     </div>
   </div>
+  <details class="brk"><summary class="dsum">题意拆解 · 已知 / 所求 / 关系 / 易错</summary><div class="dbody">
+    <table class="brkt">
+      <tr><th>已知</th><td>船离岸 3 km；港口在岸上距最近点 5 km；划船 3 km/h、步行 6 km/h</td></tr>
+      <tr><th>所求</th><td>登岸点位置 \(x\)（距最近点多远）使总时间最小</td></tr>
+      <tr><th>关系</th><td>划船距离 \(\sqrt{9+x^2}\)，步行距离 \(5-x\)：<b>\(T(x)=\dfrac{\sqrt{9+x^2}}{3}+\dfrac{5-x}{6}\)</b>，\(0\le x\le5\)。\(T'=0\Rightarrow 2x=\sqrt{9+x^2}\Rightarrow x=\sqrt3\approx1.73\) km</td></tr>
+      <tr><th>易错</th><td>定义域是<b>闭区间</b>，解出临界点后<b>还必须比端点</b> \(T(0)\)、\(T(5)\)；两段速度不同，时间要分段相加不能合成一条直线</td></tr>
+    </table>
+    <p class="brkkw"><b>英文 → 数学：</b>in the least amount of time → 求<b>最小值</b>；down a straight shoreline from the point nearest → 沿岸距离（画个直角三角形就出来了）</p>
+  </div></details>
   <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
     <div class="aver en"><div class="enexp"><span class="entag">EN</span> Land \(\mathbf{\sqrt3\approx1.73\ \text{km}}\) down the shore from the nearest point (then walk \(5-\sqrt3\approx3.27\) km).</div></div>
     <div class="aver zh">
@@ -1206,6 +1297,15 @@ section.module > section.topic{margin:16px 0}
       </div>
     </div>
   </div>
+  <details class="brk"><summary class="dsum">题意拆解 · 已知 / 所求 / 关系 / 易错</summary><div class="dbody">
+    <table class="brkt">
+      <tr><th>已知</th><td>高度函数 \(s(t)=98-4.9t^2\)（米），即起点 98 m、正方向<b>向上</b>、重力加速度 9.8</td></tr>
+      <tr><th>所求</th><td>(i) \(t\) 时刻的速度、速率、加速度（<b>带单位</b>）；(ii) 落地时间；(iii) 落地瞬间速度</td></tr>
+      <tr><th>关系</th><td>\(v=s'=-9.8t\) m/s；速率 \(=|v|=9.8t\) m/s；\(a=v'=-9.8\) m/s²。落地解 <b>\(s(t)=0\)</b>：\(t=2\sqrt5\approx4.47\) s；\(v(2\sqrt5)=-19.6\sqrt5\approx-43.8\) m/s</td></tr>
+      <tr><th>易错</th><td>velocity 是带符号的矢量、speed 是 \(|v|\)（非负），分开问就分开答；落地时间是解 \(s=0\)，<b>不是</b>解 \(v=0\)</td></tr>
+    </table>
+    <p class="brkkw"><b>英文 → 数学：</b>velocity / speed / acceleration → 三个量含义不同，逐项答；at the moment of impact → 先求落地时刻再代入；Write down the unit → 单位必写</p>
+  </div></details>
   <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
     <div class="aver en"><div class="enexp"><span class="entag">EN</span> (i) \(v=-9.8t\) m/s, speed \(=9.8t\) m/s, \(a=-9.8\) m/s². (ii) \(t=2\sqrt5\approx4.47\) s. (iii) \(-19.6\sqrt5\approx-43.8\) m/s.</div></div>
     <div class="aver zh">
@@ -1235,6 +1335,15 @@ section.module > section.topic{margin:16px 0}
       </div>
     </div>
   </div>
+  <details class="brk"><summary class="dsum">题意拆解 · 已知 / 所求 / 关系 / 易错</summary><div class="dbody">
+    <table class="brkt">
+      <tr><th>已知</th><td>\(a(t)=\cos t\)（\(t\ge0\)）；初值 \(v(0)=\dfrac12\)、\(s(0)=2\)</td></tr>
+      <tr><th>所求</th><td>位置函数 \(s(t)\)</td></tr>
+      <tr><th>关系</th><td>向上取两次反导数：\(v=\int\cos t\,dt=\sin t+C\)，由 \(v(0)=\frac12\) 定 \(C=\frac12\)；\(s=\int(\sin t+\frac12)dt=-\cos t+\dfrac t2+D\)，由 \(s(0)=2\) 定 \(D=3\) → \(s(t)=-\cos t+\dfrac t2+3\)</td></tr>
+      <tr><th>易错</th><td>两次反导数各出一个常数，分别用 \(v(0)\) 与 \(s(0)\) 定，别混成一个；算完把 \(s\) 求导两次验回 \(a=\cos t\)</td></tr>
+    </table>
+    <p class="brkkw"><b>英文 → 数学：</b>initial velocity / initial position → 初值，作用是<b>定积分常数</b>；moves on the s-axis → 一维直线上的位置函数</p>
+  </div></details>
   <details class="ans"><summary class="dsum">Answer &amp; Explanation</summary><div class="dbody">
     <div class="aver en"><div class="enexp"><span class="entag">EN</span> \(s(t)=-\cos t+\frac t2+3\).</div></div>
     <div class="aver zh">
